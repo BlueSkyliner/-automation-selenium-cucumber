@@ -12,4 +12,21 @@ export default function Carousel() {
         spaceBetween={22}
         slidesPerGroup={1}
         centeredSlides={true}
-   
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <Link href="/board/view/33">
+            <img
+              className={styles.image}
+              loading="lazy"
+      
