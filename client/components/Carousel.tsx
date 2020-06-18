@@ -29,4 +29,15 @@ export default function Carousel() {
             <img
               className={styles.image}
               loading="lazy"
-      
+              draggable="false"
+              src="https://user-images.githubusercontent.com/45745049/140465431-f7240c7a-f89c-477e-835a-14b4886cbf4a.png"
+            />
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/board/view/44">
+            <img
+              className={styles.image}
+              loading="lazy"
+              draggable="false"
+              src="https://user-images.githu
