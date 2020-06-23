@@ -50,4 +50,11 @@ export default function Carousel() {
               className={styles.image}
               loading="lazy"
               draggable="false"
-              src="https://user-images.githubusercontent.com/45745049/141732126-d525a873-d9b9-44a1-91c
+              src="https://user-images.githubusercontent.com/45745049/141732126-d525a873-d9b9-44a1-91ce-9ff325427308.png"
+            />
+          </Link>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}
