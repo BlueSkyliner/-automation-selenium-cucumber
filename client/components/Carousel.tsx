@@ -40,4 +40,14 @@ export default function Carousel() {
               className={styles.image}
               loading="lazy"
               draggable="false"
-              src="https://user-images.githu
+              src="https://user-images.githubusercontent.com/45745049/141259717-57ac83de-b74d-4751-add3-82cc3b10bf23.png"
+            />
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link href="/board/view/40">
+            <img
+              className={styles.image}
+              loading="lazy"
+              draggable="false"
+              src="https://user-images.githubusercontent.com/45745049/141732126-d525a873-d9b9-44a1-91c
