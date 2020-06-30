@@ -65,4 +65,13 @@ export default function Login({
         }}
       >
         <div id="screen" className={styles["loginmodal-wrapper"]}>
-          <div className={styles.logi
+          <div className={styles.loginmodal}>
+            <div className={styles.loginmodal__form}>
+              <div className={styles["loginmodal__form-upper"]}>
+                <div className={styles["form-flexstart"]}>로그인</div>
+                <div className={styles["form-flexend"]}>
+                  <div>아직 회원이 아니신가요?</div>
+                  <div
+                    onClick={() => {
+                      handleSignupModal();
+                      handleLoginModal
