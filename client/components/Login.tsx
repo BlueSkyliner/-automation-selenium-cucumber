@@ -50,4 +50,19 @@ export default function Login({
       })
       .catch((err) => {
         if (err.response.data.code === 4001) alert("비밀번호가 틀렸습니다");
-        if (err.response.data.co
+        if (err.response.data.code === 4003)
+          alert("존재하지 않는 이메일입니다");
+      });
+  }
+
+  return (
+    <div>
+      <div
+        className={styles["screen-wrapper"]}
+        onClick={(e) => {
+          const screen = document.getElementById("screen");
+          e.target === screen ? handleLoginModal() : null;
+        }}
+      >
+        <div id="screen" className={styles["loginmodal-wrapper"]}>
+          <div className={styles.logi
