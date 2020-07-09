@@ -74,4 +74,20 @@ export default function Login({
                   <div
                     onClick={() => {
                       handleSignupModal();
-                      handleLoginModal
+                      handleLoginModal();
+                    }}
+                  >
+                    회원가입
+                  </div>
+                </div>
+              </div>
+              <input
+                onChange={handleInputValue("email")}
+                placeholder="E-mail"
+                className={styles.input__text}
+                type="text"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+         
