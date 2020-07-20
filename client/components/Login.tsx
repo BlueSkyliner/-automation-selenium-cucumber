@@ -90,4 +90,16 @@ export default function Login({
               <input
                 type="password"
                 placeholder="Password"
-         
+                className={styles.input__text}
+                onChange={handleInputValue("password")}
+              />
+              <input
+                type="checkbox"
+                id="keeplogin"
+                className={styles.input__checkbox}
+              />
+              <label htmlFor="keeplogin">자동 로그인</label>
+              {/*TODO : 커스텀 체크박스버튼 만들기*/}
+              <button onClick={LoginSubmit}>로그인</button>
+              <div>
+               
