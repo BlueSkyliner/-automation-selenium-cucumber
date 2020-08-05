@@ -102,4 +102,17 @@ export default function Login({
               {/*TODO : 커스텀 체크박스버튼 만들기*/}
               <button onClick={LoginSubmit}>로그인</button>
               <div>
-               
+                <div>비밀번호 찾기</div>
+              </div>
+              <div>또는 소셜 로그인</div>
+              <div className={styles["oauth-icon"]}>
+                <img src="/kakao.png" width="180" height="55" />
+                <img src="/google.png" width="180" height="55" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
