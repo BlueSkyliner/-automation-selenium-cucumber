@@ -97,3 +97,67 @@ export default function Signup({
                 className={styles.input__text}
                 onChange={handleInputValue("email")}
                 onBlur={validationCheck("email")}
+                type="text"
+              />
+              {validation.email ? null : (
+                <div className={styles["error-message"]}>
+                  이미 가입된 이메일 입니다
+                </div>
+              )}
+              <input
+                placeholder="비밀번호"
+                className={styles.input__text}
+                onChange={handleInputValue("password")}
+                type="password"
+              />
+              <input
+                placeholder="비밀번호 재확인"
+                className={styles.input__text}
+                type="password"
+              />
+              <input
+                placeholder="닉네임"
+                className={styles.input__text}
+                onChange={handleInputValue("nickname")}
+                onBlur={validationCheck("nickname")}
+                type="text"
+              />
+              {validation.nickname ? null : (
+                <div className={styles["error-message"]}>
+                  이미 존재하는 닉네임 입니다
+                </div>
+              )}
+              <div>
+                <input
+                  type="checkbox"
+                  id="companyrule"
+                  onChange={(e) => {
+                    setUserData({ ...userData, ad_agree: e.target.value });
+                  }}
+                  className={styles.input__checkbox}
+                />
+                <label htmlFor="companyrule">
+                  <a>개인정보수집</a> 및 이용동의
+                </label>
+                <span>(필수)</span>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="subscribing"
+                  className={styles.input__checkbox}
+                />
+                <label htmlFor="subscribing">정기 알림 메일 수신</label>
+                <span>(선택)</span>
+              </div>
+              {errormessage === "" ? null : (
+                <div className={styles.errorbox}>{errormessage}</div>
+              )}
+              <button onClick={SignupSubmit}>회원가입</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
