@@ -30,4 +30,21 @@ export default function Cast({ cast, onFocus }: any) {
         <div>출연진</div>
         {onFocus ? null : (
           <button
-            className={style
+            className={styles.open}
+            onClick={() => {
+              setComponent(!component);
+            }}
+          >
+            +펼치기
+          </button>
+        )}
+      </div>
+      {!component && !onFocus ? null : (
+        <div className={styles["cast-wrapper"]}>
+          {cast.map((el: any) => {
+            count++;
+            if (!onFocus && count > 6) {
+              return;
+            }
+            return (
+              <div classNa
