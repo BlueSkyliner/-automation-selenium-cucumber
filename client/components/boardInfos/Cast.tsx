@@ -47,4 +47,15 @@ export default function Cast({ cast, onFocus }: any) {
               return;
             }
             return (
-              <div classNa
+              <div className={styles.infos} key={el.id}>
+                <div className={styles.imagebox}>
+                  {el.image ? (
+                    <img
+                      src={el.image}
+                      onError={(e) => {
+                        const img: any = e.target;
+                        const noimg: any = Emptyimg(el.position);
+                        img.src = noimg.props.src;
+                      }}
+                    />
+                  ) 
