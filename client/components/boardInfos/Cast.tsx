@@ -58,4 +58,17 @@ export default function Cast({ cast, onFocus }: any) {
                         img.src = noimg.props.src;
                       }}
                     />
-                  ) 
+                  ) : (
+                    Emptyimg(el.position)
+                  )}
+                </div>
+                <div className={styles.name}>{el.name}</div>
+                <div className={styles.role}>{Positioner(el.position)}</div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
