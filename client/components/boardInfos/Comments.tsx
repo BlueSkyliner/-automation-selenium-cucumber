@@ -14,4 +14,18 @@ export default function Comments({ comments }: { comments: Array<string> }) {
   }
   function sendLike(commentid: number) {
     Setaxios.postAxios("rating", { commentId: Number(commentid) })
- 
+      .then((res) => location.reload())
+      .catch((err) => {
+        if (err.response.data.code === 4000) {
+          alert("로그인이 필요합니다");
+        }
+      });
+  }
+  return (
+    <div className={styles["comments-wrapper"]}>
+      <div className={styles.head}>코멘트</div>
+      {comments.map((comment: any) => {
+        return (
+          <div key={comment.userNickname}>
+            <div className={styles["comment-block"]}>
+              <div
