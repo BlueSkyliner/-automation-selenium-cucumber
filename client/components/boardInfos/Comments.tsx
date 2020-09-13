@@ -28,4 +28,13 @@ export default function Comments({ comments }: { comments: Array<string> }) {
         return (
           <div key={comment.userNickname}>
             <div className={styles["comment-block"]}>
-              <div
+              <div className={styles["comment"]}>
+                <div className={styles["comment-header"]}>
+                  <div className={styles["fl-st"]}>
+                    <div className={styles["image-mask"]}>
+                      {comment.profilePicture ? (
+                        <img src={comment.profilePicture} />
+                      ) : (
+                        <img src="/defaultprofile.png" />
+                      )}
+               
