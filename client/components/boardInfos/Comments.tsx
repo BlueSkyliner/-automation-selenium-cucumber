@@ -37,4 +37,14 @@ export default function Comments({ comments }: { comments: Array<string> }) {
                       ) : (
                         <img src="/defaultprofile.png" />
                       )}
-               
+                    </div>
+                    <div className={styles.username}>
+                      {comment.userNickname}
+                    </div>
+                  </div>
+                  <div className={styles["fl-ed"]}>
+                    <div className={styles["rating-container"]}>
+                      <img src="/star.png" />
+                      <div className={styles.rating}>{comment.rating / 2}</div>
+                    </div>
+     
