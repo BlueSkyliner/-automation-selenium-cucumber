@@ -69,4 +69,16 @@ export default function Comments({ comments }: { comments: Array<string> }) {
                 <button
                   className={styles.likebutton}
                   onClick={() => {
-                    sendLike(com
+                    sendLike(comment.id);
+                  }}
+                >
+                  좋아요
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
