@@ -58,4 +58,15 @@ export default function Comments({ comments }: { comments: Array<string> }) {
                     <>
                       <img src="/coin.png" />
                       <div className={styles.donation}>₩{comment.donation}</div>
-                  
+                    </>
+                  ) : null}
+                  <img className={styles.likeimage} src="/like_icon.png" />
+                  <div>{comment.like}</div>
+                </div>
+                <div className={styles["comment-body"]}>
+                  <div>{comment.body}</div>
+                </div>
+                <button
+                  className={styles.likebutton}
+                  onClick={() => {
+                    sendLike(com
