@@ -47,4 +47,15 @@ export default function Comments({ comments }: { comments: Array<string> }) {
                       <img src="/star.png" />
                       <div className={styles.rating}>{comment.rating / 2}</div>
                     </div>
-     
+                  </div>
+                </div>
+              </div>
+              <div className={styles["comment-line"]} />
+
+              <div className={styles["comment"]}>
+                <div className={styles.like}>
+                  {comment.donation !== 0 ? (
+                    <>
+                      <img src="/coin.png" />
+                      <div className={styles.donation}>₩{comment.donation}</div>
+                  
