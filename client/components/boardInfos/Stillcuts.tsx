@@ -37,4 +37,18 @@ export default function Stillcuts({ stills, onFocus }: any) {
         <div className={styles.wrapper}>
           {stills.map((el: { image: string | undefined }) => {
             counter++;
-            if (counter >
+            if (counter > 4) {
+              return;
+            }
+            return (
+              <div
+                key={el.image}
+                className={
+                  counter === 4 && stills.length - 4 !== 0
+                    ? styles.reviewstills
+                    : styles.reviewstill
+                }
+                onClick={
+                  counter === 4 && stills.length - 4 !== 0
+                    ? () => {
+            
