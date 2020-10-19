@@ -21,4 +21,20 @@ export default function Stillcuts({ stills, onFocus }: any) {
                 <img
                   draggable="false"
                   onClick={() => setPictureModalOpen(false)}
-     
+                  src={selectedImage.src}
+                />
+              ) : null}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+  return (
+    <div className={styles["still-wrapper"]}>
+      <div className={styles.head}>갤러리</div>
+      {!onFocus ? (
+        <div className={styles.wrapper}>
+          {stills.map((el: { image: string | undefined }) => {
+            counter++;
+            if (counter >
