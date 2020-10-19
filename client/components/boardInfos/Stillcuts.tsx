@@ -10,4 +10,15 @@ export default function Stillcuts({ stills, onFocus }: any) {
       <div key="picmodal">
         <div
           className={styles["screen-wrapper"]}
-          onClick={(e) => 
+          onClick={(e) => {
+            const screen = document.getElementById("screen");
+            e.target === screen ? setPictureModalOpen(false) : null;
+          }}
+        >
+          <div id="screen" className={styles["picturemodal-wrapper"]}>
+            <div className={styles.picturemodal}>
+              {selectedImage?.src ? (
+                <img
+                  draggable="false"
+                  onClick={() => setPictureModalOpen(false)}
+     
