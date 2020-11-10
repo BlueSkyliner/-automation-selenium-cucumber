@@ -62,4 +62,18 @@ export default function Stillcuts({ stills, onFocus }: any) {
                 {counter === 4 && stills.length - 4 !== 0 ? (
                   <div>+{stills.length - 4}</div>
                 ) : null}
-                <img height="200px" draggable="false" s
+                <img height="200px" draggable="false" src={el.image} />
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div className={styles.fullwrapper}>
+          {stills.map((el: { image: string | undefined }) => {
+            return (
+              <div
+                key={el.image}
+                className={styles.displaystill}
+                onClick={(e) => {
+                  setSelectedImage(e.target);
+                  setPictureModalO
