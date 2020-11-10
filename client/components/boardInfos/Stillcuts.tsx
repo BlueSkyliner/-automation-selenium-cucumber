@@ -51,4 +51,15 @@ export default function Stillcuts({ stills, onFocus }: any) {
                 onClick={
                   counter === 4 && stills.length - 4 !== 0
                     ? () => {
-            
+                        document.getElementById("stills")?.click();
+                      }
+                    : (e) => {
+                        setSelectedImage(e.target);
+                        setPictureModalOpen(true);
+                      }
+                }
+              >
+                {counter === 4 && stills.length - 4 !== 0 ? (
+                  <div>+{stills.length - 4}</div>
+                ) : null}
+                <img height="200px" draggable="false" s
