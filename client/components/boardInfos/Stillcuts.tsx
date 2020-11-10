@@ -76,4 +76,16 @@ export default function Stillcuts({ stills, onFocus }: any) {
                 className={styles.displaystill}
                 onClick={(e) => {
                   setSelectedImage(e.target);
-                  setPictureModalO
+                  setPictureModalOpen(true);
+                }}
+              >
+                <img draggable="false" src={el.image} />
+              </div>
+            );
+          })}
+        </div>
+      )}
+      {pirctureModalOpen ? pictureModal() : null}
+    </div>
+  );
+}
