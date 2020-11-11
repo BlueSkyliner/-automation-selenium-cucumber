@@ -28,4 +28,11 @@ export default function Footer() {
           <Link href="https://github.com/EAJA">
             <div className={styles.member}>
               <img src="/git.png" />
-              
+              <span>김찬욱</span>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
