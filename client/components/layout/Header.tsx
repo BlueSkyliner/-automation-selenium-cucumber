@@ -14,4 +14,18 @@ export default function Header() {
   const [userAdminStatus, setUserAdminStatus] = useState<boolean>(false);
   const [searchedData, setSearchedData] = useState([]);
   const [searchedOnfocus, setSearchedOnfocus] = useState<boolean>(false);
-  const ro
+  const router = useRouter();
+  //헤더 상단 투명처리
+  //TODO::/효율적인 방법 찾기
+  useEffect(() => {
+    if (!router.isReady) return;
+    if (router.pathname !== "/board/view/[boardid]") {
+      return;
+    }
+    const header = document.querySelector("#header__div");
+    header?.classList.add(styles.transparent);
+    function CheckScroll() {
+      if (window.scrollY === 0) {
+        header?.classList.add(styles.transparent);
+      }
+   
