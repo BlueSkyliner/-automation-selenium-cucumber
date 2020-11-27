@@ -28,4 +28,16 @@ export default function Header() {
       if (window.scrollY === 0) {
         header?.classList.add(styles.transparent);
       }
-   
+      if (window.scrollY > 10) {
+        header?.classList.remove(styles.transparent);
+      }
+    }
+    window.addEventListener("scroll", CheckScroll);
+  }, [router.pathname]);
+  //쿠키 리프레쉬 토큰확인하여 엑세스토큰 받아오기
+  useEffect(() => {
+    if (Cookies.get("refreshToken")) {
+      Setaxios.getAxios("reissuance")
+        .then((res) => {
+          const resData: any = res.data;
+          Cookies.set("accesstoken", resData.data.accessToken
