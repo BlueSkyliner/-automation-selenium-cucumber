@@ -69,4 +69,19 @@ export default function Header() {
   };
 
   async function Signout() {
-    Setaxios.postAxios(
+    Setaxios.postAxios("signout")
+      .then(() => {
+        alert("로그아웃에 성공하였습니다");
+        setUserLoginStatus(false);
+        Cookies.set("accesstoken", "");
+        Cookies.remove("accesstoken");
+        router.push("/");
+        location.reload();
+        delete axios.defaults.headers.common["accesstoken"];
+      })
+      .catch((err) => {
+        alert(err);
+      });
+  }
+  const searchData = (e: any) => {
+    const query = `query SearchBoardName ($what: String){
