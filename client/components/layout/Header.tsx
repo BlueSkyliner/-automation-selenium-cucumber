@@ -122,4 +122,21 @@ export default function Header() {
         >
           {movie.posterImg ? (
             <img
-       
+              width="25px"
+              onError={(e) => {
+                const img: any = e.target;
+                img.src = "/Poster.jpg";
+              }}
+              src={movie.posterImg}
+            />
+          ) : null}
+          <Link href="/board/view/[boardid]" as={`/board/view/${movie.id}`}>
+            {movie.title}
+          </Link>
+        </div>
+      );
+    });
+  };
+  return (
+    <>
+      <header
