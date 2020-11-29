@@ -85,3 +85,24 @@ export default function Header() {
   }
   const searchData = (e: any) => {
     const query = `query SearchBoardName ($what: String){
+      SearchBoardName(what: $what){
+        code
+        data{
+          id
+          posterImg
+          title
+        }
+      }
+    }`;
+    if (e.target.value === "") {
+      setSearchedData([]);
+      return;
+    }
+    Setaxios.postSearchBoardGraphql(query, e.target.value)
+      .then((res) => {
+        const data: any = res.data;
+        console.log(res);
+        setSearchedData(data.data.SearchBoardName.data);
+      })
+      .catch((err) => alert(err));
+  }
