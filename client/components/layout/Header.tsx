@@ -105,4 +105,21 @@ export default function Header() {
         setSearchedData(data.data.SearchBoardName.data);
       })
       .catch((err) => alert(err));
-  }
+  };
+
+  const displaySearchedData = () => {
+    return searchedData.map((movie: any) => {
+      return (
+        <div
+          onClick={(e) => {
+            setSearchedData([]);
+            setSearchedOnfocus(false);
+            let text: any = document.getElementById("inputText");
+            text.value = "";
+          }}
+          className={styles.link}
+          key={movie.title}
+        >
+          {movie.posterImg ? (
+            <img
+       
