@@ -53,4 +53,20 @@ export default function Header() {
                 setUserAdminStatus(true);
               }
             })
-            .catch((err
+            .catch((err) => console.log(err.response));
+        })
+        .catch((err) => console.log(err.response));
+    }
+  }, []);
+  const handleSignupModal = (): void => {
+    setSignupModalOpen(!signupModalOpen);
+  };
+  const handleLoginModal = (): void => {
+    setLoginModalOpen(!loginModalOpen);
+  };
+  const handleLoginStatus = (): void => {
+    setUserLoginStatus(true);
+  };
+
+  async function Signout() {
+    Setaxios.postAxios(
