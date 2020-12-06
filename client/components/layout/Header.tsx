@@ -139,4 +139,15 @@ export default function Header() {
   };
   return (
     <>
-      <header
+      <header>
+        <div id="header__div" className={styles.header__div__wrapper}>
+          <div className={styles.header__div}>
+            <ul className={styles.header__ul}>
+              <div className={styles["flex-start"]}>
+                <li className={styles.header__ul__logo}>
+                  <Link href="/">
+                    <img
+                      className={styles.logo}
+                      src="/gofundindie_icon.png"
+                      width="220"
+   
