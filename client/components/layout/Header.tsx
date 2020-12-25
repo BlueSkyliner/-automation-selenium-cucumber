@@ -150,4 +150,18 @@ export default function Header() {
                       className={styles.logo}
                       src="/gofundindie_icon.png"
                       width="220"
-   
+                      height="40"
+                    />
+                  </Link>
+                </li>
+                <li className={styles.home}>
+                  <Link href="/">홈</Link>
+                </li>
+                <li>
+                  <Link href="/board">영화</Link>
+                </li>
+              </div>
+              <li>
+                <div className={styles["header-searchbar"]}>
+                  <input
+         
