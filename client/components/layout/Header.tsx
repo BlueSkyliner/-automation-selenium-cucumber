@@ -201,4 +201,17 @@ export default function Header() {
                   <>
                     <li>
                       <button
-              
+                        onClick={() => {
+                          setSignupModalOpen(!loginModalOpen);
+                        }}
+                      >
+                        회원가입
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        onClick={() => {
+                          setLoginModalOpen(!loginModalOpen);
+                        }}
+                      >
+   
