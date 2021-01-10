@@ -164,4 +164,15 @@ export default function Header() {
               <li>
                 <div className={styles["header-searchbar"]}>
                   <input
-         
+                    type="text"
+                    id="inputText"
+                    placeholder="컨텐츠를 검색해보세요"
+                    onBlur={(e) => {
+                      if (e.target.value === "") {
+                        setSearchedOnfocus(false);
+                      }
+                    }}
+                    onFocus={() => setSearchedOnfocus(true)}
+                    onChange={searchData}
+                  />
+   
