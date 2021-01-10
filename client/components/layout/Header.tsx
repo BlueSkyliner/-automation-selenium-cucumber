@@ -175,4 +175,16 @@ export default function Header() {
                     onFocus={() => setSearchedOnfocus(true)}
                     onChange={searchData}
                   />
-   
+                </div>
+                {searchedOnfocus ? (
+                  <div className={styles.searchlist}>
+                    {displaySearchedData()}
+                  </div>
+                ) : null}
+              </li>
+              <div className={styles["flex-end"]}>
+                {userAdminStatus ? (
+                  <li>
+                    <Link href="/management">관리 페이지</Link>
+                  </li>
+                ) : nu
