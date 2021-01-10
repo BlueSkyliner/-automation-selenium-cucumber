@@ -187,4 +187,18 @@ export default function Header() {
                   <li>
                     <Link href="/management">관리 페이지</Link>
                   </li>
-                ) : nu
+                ) : null}
+                {userLoginStatus ? (
+                  <>
+                    <li>
+                      <Link href="/mypage">마이페이지</Link>
+                    </li>
+                    <li>
+                      <button onClick={Signout}>로그아웃</button>
+                    </li>
+                  </>
+                ) : (
+                  <>
+                    <li>
+                      <button
+              
