@@ -214,4 +214,21 @@ export default function Header() {
                           setLoginModalOpen(!loginModalOpen);
                         }}
                       >
-   
+                        로그인
+                      </button>
+                    </li>
+                  </>
+                )}
+              </div>
+            </ul>
+          </div>
+        </div>
+      </header>
+      {loginModalOpen ? (
+        <Login
+          handleLoginModal={handleLoginModal}
+          handleLoginStatus={handleLoginStatus}
+          handleSignupModal={handleSignupModal}
+        />
+      ) : null}
+ 
