@@ -231,4 +231,12 @@ export default function Header() {
           handleSignupModal={handleSignupModal}
         />
       ) : null}
- 
+      {signupModalOpen ? (
+        <Signup
+          handleSignupModal={handleSignupModal}
+          handleLoginModal={handleLoginModal}
+        />
+      ) : null}
+    </>
+  );
+}
