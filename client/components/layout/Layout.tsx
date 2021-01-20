@@ -6,4 +6,11 @@ import styles from "../../styles/components/layout/layout.module.scss";
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className={styl
+      <div className={styles["body-wrapper"]}>
+        <Header />
+        <main className={styles.body}>{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
+}
