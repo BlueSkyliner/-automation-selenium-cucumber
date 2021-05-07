@@ -30,4 +30,7 @@ export default function Approval() {
   }, [timer]);
   return (
     <div className={styles.payment}>
-      <div className={sty
+      <div className={styles.loader}></div>
+    </div>
+  );
+}
