@@ -34,4 +34,19 @@ export default function BoarDetails({ film }: any) {
         if (err.response.data.code === 4016) {
           alert("먼저 영화에 대한 평을 작성해주세요!");
         }
-       
+        if (err.response.data.code === 4000) {
+          alert("로그인이 필요합니다");
+        }
+      });
+  }
+  async function SwitchLikeBoard() {
+    const query = `mutation SwitchLikeBoard($boardId: ID!){
+      SwitchLikeBoard(boardId: $boardId){
+        code
+      }
+    }`;
+    Setaxios.postFindboardGraphql(query, filmData.id)
+      .then((res) => {
+        const data: any = res.data;
+        if (data.data.SwitchLikeBoard.code === 2000) {
+          alert
