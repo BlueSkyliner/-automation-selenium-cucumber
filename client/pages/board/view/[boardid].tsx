@@ -49,4 +49,19 @@ export default function BoarDetails({ film }: any) {
       .then((res) => {
         const data: any = res.data;
         if (data.data.SwitchLikeBoard.code === 2000) {
-          alert
+          alert("성공적으로 담아두었습니다");
+        }
+      })
+      .catch((err) => alert(err));
+  }
+  return (
+    <div className={styles["board-detail__wrapper"]}>
+      <div className={styles.header__img__wrapper}>
+        <div className={styles.header__img}>
+          {filmData.still[0] ? (
+            <img draggable="false" src={filmData.still[0].image} />
+          ) : null}
+        </div>
+      </div>
+      <div className={styles.poster__img__div}>
+        <div className={styles["poster__img-po
