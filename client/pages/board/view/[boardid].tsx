@@ -64,4 +64,17 @@ export default function BoarDetails({ film }: any) {
         </div>
       </div>
       <div className={styles.poster__img__div}>
-        <div className={styles["poster__img-po
+        <div className={styles["poster__img-positional"]}>
+          <div className={styles["poster__img-wrapper"]}>
+            {filmData.posterImg ? (
+              <img
+                className={styles.poster__img}
+                onError={(e) => {
+                  const img: any = e.target;
+                  img.src = "/Poster.jpg";
+                }}
+                src={filmData.posterImg}
+              />
+            ) : (
+              <img src="/Poster.jpg" loading="lazy" />
+          
