@@ -88,4 +88,12 @@ export default function BoarDetails({ film }: any) {
             <div className={styles.filminfo__info}>
               <span>{filmData.infoCreatedYear}</span>
               <span className={styles.dot}>・</span>
-            
+              <span>{filmData.genre.map((el: any) => el.name)}</span>
+              <span className={styles.dot}>・</span>
+              <span>{filmData.infoCountry}</span>
+            </div>
+            <div className={styles.like}>{`평균 ★${
+              filmData.averageRating / 2
+            } (${filmData.commentAmount}명)`}</div>
+            <div className={styles.bucket} onClick={SwitchLikeBoard}>
+              <img src="/plusButton.pn
