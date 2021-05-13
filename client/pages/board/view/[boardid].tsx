@@ -77,4 +77,15 @@ export default function BoarDetails({ film }: any) {
               />
             ) : (
               <img src="/Poster.jpg" loading="lazy" />
-          
+            )}
+          </div>
+        </div>
+      </div>
+      <div className={styles.content__wrapper}>
+        <div className={styles.content}>
+          <div className={styles.filminfo__wrapper}>
+            <div className={styles.filminfo__title}>{filmData.title}</div>
+            <div className={styles.filminfo__info}>
+              <span>{filmData.infoCreatedYear}</span>
+              <span className={styles.dot}>・</span>
+            
