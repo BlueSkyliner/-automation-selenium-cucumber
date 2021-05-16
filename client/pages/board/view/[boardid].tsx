@@ -146,4 +146,28 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         createdAt
         commentAmount
         averageRating
-        likeAm
+        likeAmount
+        genre {
+            id
+            name
+        }
+        casting {
+            id
+            name
+            position
+            image
+        }
+        still {
+            id
+            image
+        }
+        comment {
+            id
+            rating
+            userNickname
+            profilePicture
+            donation
+            body
+            spoiler
+            like
+            ratingCheck
