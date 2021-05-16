@@ -124,4 +124,26 @@ export default function BoarDetails({ film }: any) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  if (context.params === undefined) retur
+  if (context.params === undefined) return { props: {} };
+  //TODO:query를 따로 관리하기
+  const query = `{
+    FindBoardId(id: ${context.params.boardid}) {
+      data {
+        id
+        isApprove
+        title
+        producer
+        distributor
+        posterImg
+        viewLink
+        infoCountry
+        infoCreatedYear
+        infoCreatedDate
+        infoTime
+        infoLimit
+        infoStory
+        infoSubtitle
+        createdAt
+        commentAmount
+        averageRating
+        likeAm
