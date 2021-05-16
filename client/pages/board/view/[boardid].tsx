@@ -96,4 +96,16 @@ export default function BoarDetails({ film }: any) {
               filmData.averageRating / 2
             } (${filmData.commentAmount}명)`}</div>
             <div className={styles.bucket} onClick={SwitchLikeBoard}>
-              <img src="/plusButton.pn
+              <img src="/plusButton.png" alt="plus" />
+              <div>담아둘래요</div>
+            </div>
+            <div className={styles.ratings}>
+              <Rating boardid={filmData.id} />
+              <button className={styles.donation} onClick={Payment}>
+                <img src="/heart.png" />
+                후원하기
+              </button>
+            </div>
+          </div>
+          {filmData.viewLink ? (
+            <div classN
