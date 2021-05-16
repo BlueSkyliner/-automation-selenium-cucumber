@@ -108,4 +108,20 @@ export default function BoarDetails({ film }: any) {
             </div>
           </div>
           {filmData.viewLink ? (
-            <div classN
+            <div className={styles.filmLink}>
+              <div>지금 보고싶어요</div>
+              <div>
+                <a href={filmData.viewLink}>외부 링크로 연결하기...</a>
+              </div>
+            </div>
+          ) : null}
+
+          <InfoWrapper filmData={filmData} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  if (context.params === undefined) retur
