@@ -170,4 +170,23 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             body
             spoiler
             like
-            ratingCheck
+            ratingChecked
+        }
+      }
+    }
+}`;
+
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/graphql`, {
+    method: "POST",
+    body: JSON.stringify({ query }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).catch((err) => {
+    return err;
+  });
+
+  if (res.code === "ECONNREFUSED") return { props: { film: null } };
+  const film = await (await res).json();
+
+  i
