@@ -14,4 +14,18 @@ export default function Management() {
                 <div>
                   <div className={styles.password}>
                     <div className={styles.text}>
-                
+                      <div>보드 네임 샘플</div>
+                    </div>
+                    <div className={styles.button}>
+                      <button>승인/취소 버튼 위치</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
