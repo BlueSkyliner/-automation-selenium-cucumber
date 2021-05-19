@@ -189,4 +189,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   if (res.code === "ECONNREFUSED") return { props: { film: null } };
   const film = await (await res).json();
 
-  i
+  if (film === null) return { props: {} };
+  return {
+    props: {
+      film: film.data,
+    },
+  };
+};
