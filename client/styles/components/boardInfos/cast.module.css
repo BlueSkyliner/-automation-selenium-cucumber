@@ -1,0 +1,29 @@
+.cast {
+  margin: 1rem 0;
+}
+
+.cast-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.infos {
+  width: 180px;
+  margin-right: 24px;
+}
+
+.infos .name {
+  color: white;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.infos .imagebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+     
