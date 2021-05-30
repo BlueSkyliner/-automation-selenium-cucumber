@@ -24,4 +24,14 @@ $speed: 3000ms !default;
     top-color: $wheel-color;
     radius: 100%;
   }
-  
+  animation: spin $speed infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
