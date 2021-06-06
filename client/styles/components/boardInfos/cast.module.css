@@ -51,4 +51,17 @@
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  margin: 1rem 0;
+}
+
+.head button {
+  all: unset;
+  background-color: #00c896;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 20px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=cast.module.css.map */
