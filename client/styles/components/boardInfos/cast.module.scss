@@ -1,2 +1,29 @@
 .cast {
-  margin: 
+  margin: 1rem 0;
+}
+.cast-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infos {
+  width: 180px;
+  margin-right: 24px;
+  .name {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 20px;
+    img {
+      width: auto;
+      height: 260px;
+    }
+  }
+  &:nth-child(6n)
