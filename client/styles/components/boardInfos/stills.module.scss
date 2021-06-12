@@ -1,0 +1,32 @@
+
+@use "../../modal.module.scss" as modal;
+.wrapper {
+  display: flex;
+  .reviewstill,
+  .reviewstills {
+    cursor: pointer;
+    width: 282px;
+    height: 200px;
+    margin-right: 24px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    div {
+      color: white;
+      font-size: 3rem;
+      position: absolute;
+    }
+    img {
+      width: 330px;
+      height: auto;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.still-wrapper {
