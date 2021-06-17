@@ -1,0 +1,7 @@
+@use "../modal.module.scss" as modal;
+
+@function padding_handler($n) {
+  @return 100%-$n;
+}
+.screen-wrapper {
+  z-index: 
