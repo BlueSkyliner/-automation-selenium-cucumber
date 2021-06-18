@@ -50,4 +50,28 @@
               display: flex;
             }
             div:first-child {
-             
+              font-size: 14px;
+            }
+            div:last-child {
+              font-size: 18px;
+              color: #009063;
+              cursor: pointer;
+              margin-left: 5px;
+            }
+          }
+        }
+        .input__text {
+          @include modal.input();
+        }
+      }
+    }
+  }
+}
+
+.input__checkbox {
+  margin-bottom: 15px;
+}
+.oauth-icon {
+  width: 100%;
+  margin-top: 15px;
+  display: 
