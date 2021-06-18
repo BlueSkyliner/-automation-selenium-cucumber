@@ -4,4 +4,18 @@
   @return 100%-$n;
 }
 .screen-wrapper {
-  z-index: 
+  z-index: 500;
+  @include modal.screen_wrapper();
+  .loginmodal-wrapper {
+    @include modal.modal_wrapper();
+    .loginmodal {
+      @include modal.modal_block(modal.$modal-width, modal.$modal-height);
+      animation: fadeIn ease-out 0.5s;
+      .loginmodal__form {
+        width: 400px;
+        height: 400px;
+        button {
+          @include modal.button();
+          & + div {
+            display: flex;
+            justify-content
