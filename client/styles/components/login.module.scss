@@ -33,4 +33,21 @@
             display: flex;
             width: 30%;
             font-size: 18px;
-            justif
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: #333333;
+            div {
+              display: flex;
+            }
+          }
+          .form-flexend {
+            display: flex;
+            width: 70%;
+            color: #333333;
+            justify-content: flex-end;
+            align-items: flex-end;
+            div {
+              display: flex;
+            }
+            div:first-child {
+             
