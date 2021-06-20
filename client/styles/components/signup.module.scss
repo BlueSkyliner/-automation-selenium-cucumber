@@ -1,0 +1,12 @@
+@use "../modal.module.scss" as modal;
+
+.screen-wrapper {
+  z-index: 500;
+  @include modal.screen_wrapper();
+
+  .signupmodal-wrapper {
+    @include modal.modal_wrapper();
+
+    .signupmodal {
+      @include modal.modal_block(605px, 700px);
+      animation: fadeIn ease-out 0.5

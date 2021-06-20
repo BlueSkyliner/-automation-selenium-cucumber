@@ -74,4 +74,17 @@
 .oauth-icon {
   width: 100%;
   margin-top: 15px;
-  display: 
+  display: flex;
+  justify-content: space-between;
+  img {
+    cursor: pointer;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
