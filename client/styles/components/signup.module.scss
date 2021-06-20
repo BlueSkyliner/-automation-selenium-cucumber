@@ -9,4 +9,31 @@
 
     .signupmodal {
       @include modal.modal_block(605px, 700px);
-      animation: fadeIn ease-out 0.5
+      animation: fadeIn ease-out 0.5s;
+
+      .signupmodal__form {
+        width: 400px;
+        height: 550px;
+
+        .input__text {
+          @include modal.input();
+        }
+        button {
+          @include modal.button();
+
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+.signupmodal__form-upper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  .form-flexstart {
+    display: flex;
+    width: 60%;
+    font-size: 12px;
+    justify-
