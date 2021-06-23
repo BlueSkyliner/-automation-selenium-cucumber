@@ -42,3 +42,28 @@ a {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: hidden;
+}
+
+.posterSwiper {
+  width: 100px;
+  height: 100px;
+}
+.swiper-button-prev {
+  left: 20% !important;
+}
+.swiper-button-next {
+  right: 20% !important;
+}
