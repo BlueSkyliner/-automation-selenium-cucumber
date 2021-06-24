@@ -11,4 +11,25 @@ $modal-height: 610px;
 @mixin modal_wrapper() {
   display: flex;
   width: 100%;
-  he
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@mixin modal_block($modal-width, $modal-height) {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  width: $modal-width;
+  height: $modal-height;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button() {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  padding: 0 35px;
+  background-color: #009063;
