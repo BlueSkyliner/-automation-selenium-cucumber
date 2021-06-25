@@ -1,4 +1,32 @@
 .mypage {
   background-color: #f3f3f3;
   width: 100%;
-  min-height: 9
+  min-height: 90vh;
+  .header__blank__div {
+    background-color: #1b1b1b;
+    width: 100%;
+    height: 74px;
+  }
+}
+.info-header {
+  color: #333333;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+.myinfo-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .myinfo {
+    width: 1200px;
+  }
+}
+.dividingline {
+  width: 100%;
+  margin: 1rem 0;
+  border-bottom: solid 1px #999999;
+}
+.information {
+  display: flex;
+  .blankarea {
+    width: 282px
