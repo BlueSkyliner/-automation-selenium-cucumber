@@ -33,3 +33,26 @@ $modal-height: 610px;
   height: 60px;
   padding: 0 35px;
   background-color: #009063;
+  opacity: 0.8;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+@mixin input() {
+  all: unset;
+  display: block;
+  padding: 15px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #747474;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
