@@ -29,4 +29,40 @@
 .information {
   display: flex;
   .blankarea {
-    width: 282px
+    width: 282px;
+  }
+}
+
+.password,
+.nickname {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+  button {
+    all: unset;
+    cursor: pointer;
+    color: #009063;
+  }
+  .text {
+    width: 50%;
+  }
+  .button {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.blankedinfos {
+  width: 100%;
+}
+.cardinfoline {
+  width: 100%;
+  border-bottom: 1px solid #999999;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width
