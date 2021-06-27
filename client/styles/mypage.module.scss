@@ -65,4 +65,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width
+  width: 100vw;
+  height: 100vh;
+  font-size: 3rem;
+  color: white;
+  opacity: 0.7;
+}
+
+.information {
+  display: flex;
+  margin: 2rem 0;
+  .posterimg {
+    width: 282px;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.blankedinfos {
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .link {
+    margin-left: 2rem;
+  }
+  .dot {
+    margin: 0 0.5rem;
+  }
+}
+
+.pay {
+  display: flex;
+  align-items: center;
+  .logo {
+    margin: 1rem 0;
