@@ -101,3 +101,32 @@
   align-items: center;
   .logo {
     margin: 1rem 0;
+    width: 50%;
+    .border {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      background-color: #fee500;
+      padding: 10px 5px 10px 5px;
+      border-radius: 50px;
+    }
+  }
+  img {
+    width: 60px;
+  }
+  .donation {
+    width: 50%;
+    .amount {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.inputtable {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid rgb(0, 144, 99);
+}
+.thstyle {
+  pa
