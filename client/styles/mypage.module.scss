@@ -180,4 +180,34 @@
   transition: all 0.3s;
 }
 
-.button_wrapper 
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.profilePicture {
+  width: 100%;
+}
+.fileselector {
+  display: none;
+}
+
+.inputfilebutton {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  cursor: pointer;
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.profilepic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  max-height: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+  bac
