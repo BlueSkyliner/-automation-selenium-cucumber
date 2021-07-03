@@ -1,0 +1,161 @@
+
+$font-color: #bbbbbb;
+$impact-font-color: #ffffff;
+.board-detail__wrapper {
+  color: #bbbbbb;
+}
+
+.content__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .content {
+    width: 1200px;
+  }
+}
+.header__img__wrapper {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  z-index: -1;
+  .header__img {
+    width: 100%;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: cover;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.poster__img__div {
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  .poster__img-positional {
+    position: relative;
+    top: -50px;
+    width: 1200px;
+  }
+  .poster__img-wrapper {
+    width: 282px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .poster__img {
+    animation: fadeIn ease-out 0.5s;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
+
+.filminfo__wrapper {
+  height: 400px;
+  margin-left: 306px;
+  z-index: -1;
+
+  .filminfo__title {
+    margin-bottom: 1rem;
+    padding-top: 50px;
+    font-size: 35px;
+    color: white;
+  }
+}
+
+.filmLink {
+  color: white;
+  font-size: 1.3rem;
+  div {
+    &:first-child {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.like {
+  margin-bottom: 1rem;
+}
+.bucket {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin: 1rem 0;
+  width: 12%;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  div {
+    color: #00c896;
+    margin-left: 0.2rem;
+  }
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.filminfo__info {
+  margin-bottom: 1rem;
+  span {
+    font-size: 18px;
+    & + .dot {
+      margin: 0 0.2rem;
+      font-size: 20px;
+    }
+  }
+}
+
+.donation {
+  all: unset;
+  margin: 1rem 0;
+  background-color: #00c896;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 50px;
+  height: 4rem;
+  width: 282px;
+  font-size: 1.3rem;
+  img {
+    width: 25px;
+    height: 25px;
+    margin: 0 0.5rem;
+  }
+  &:hover {
+    box-shadow: 0 80px 0 0 rgba(0, 0, 0, 0.25) inset,
+      0 -80px 0 0 rgba(0, 0, 0, 0.25) inset;
+  }
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
