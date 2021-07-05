@@ -2,4 +2,11 @@
 <project version="4">
   <component name="PersistenceUnitSettings">
     <persistence-units>
-      <persistence-unit name="D
+      <persistence-unit name="Default">
+        <packages>
+          <package value="com.IndieAn.GoFundIndie" />
+        </packages>
+      </persistence-unit>
+    </persistence-units>
+  </component>
+</project>
