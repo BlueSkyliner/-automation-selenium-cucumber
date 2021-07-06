@@ -10,4 +10,14 @@ public enum BoardPageOrderTypes {
 
     private final String types;
 
-  
+    BoardPageOrderTypes(String types) {
+        this.types = types;
+    }
+
+    public static BoardPageOrderTypes findPathType(String path) {
+        for(BoardPageOrderTypes el : BoardPageOrderTypes.values()) {
+            if(el.types.equals(path)) return el;
+        }
+        throw new RuntimeException();
+    }
+}
