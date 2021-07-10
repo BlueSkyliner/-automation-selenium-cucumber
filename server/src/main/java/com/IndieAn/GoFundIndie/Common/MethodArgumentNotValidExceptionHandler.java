@@ -30,4 +30,8 @@ public class MethodArgumentNotValidExceptionHandler {
             }});
         } catch (NullPointerException e) {
             return ResponseEntity.status(400).body(new HashMap<>(){{
-          
+                put("code", 4006);
+            }});
+        }
+    }
+}
