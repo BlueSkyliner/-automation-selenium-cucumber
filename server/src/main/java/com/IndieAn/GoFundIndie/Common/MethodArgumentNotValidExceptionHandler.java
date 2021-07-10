@@ -21,4 +21,13 @@ public class MethodArgumentNotValidExceptionHandler {
     public ResponseEntity<?> processValidationError(MethodArgumentNotValidException exception) {
         BindingResult bindingResult = exception.getBindingResult();
         try {
-            fo
+            for (FieldError fieldError : bindingResult.getFieldErrors()){
+                if(fieldError == null) break;
+                log.info(fieldError.getField() + "is Blank");
+            }
+            return ResponseEntity.status(400).body(new HashMap<>(){{
+                put("code", 4006);
+            }});
+        } catch (NullPointerException e) {
+            return ResponseEntity.status(400).body(new HashMap<>(){{
+          
