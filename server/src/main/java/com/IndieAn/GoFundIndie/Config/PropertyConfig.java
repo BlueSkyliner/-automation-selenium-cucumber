@@ -11,4 +11,10 @@ public class PropertyConfig {
     @Bean(name = "info")
     public PropertiesFactoryBean propertiesFactoryBean() throws Exception {
         PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
-        ClassPathResource classPathResource = new ClassPath
+        ClassPathResource classPathResource = new ClassPathResource("info.properties");
+
+        propertiesFactoryBean.setLocation(classPathResource);
+
+        return propertiesFactoryBean;
+    }
+}
