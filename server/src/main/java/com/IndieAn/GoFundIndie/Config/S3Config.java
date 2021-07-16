@@ -17,4 +17,19 @@ public class S3Config {
     @Value("#{info['gofundindie.s3.access-key']}")
     private String accessKey;
 
-    
+    @Value("#{info['gofundindie.s3.secret-key']}")
+    private String secretKey;
+
+    @Value("${cloud.aws.region.static}")
+    private String region;
+
+    @Bean
+    @Primary
+    public BasicAWSCredentials awsCredentialsProvider(){
+        return new BasicAWSCredentials(accessKey, secretKey);
+    }
+
+    @Bean
+    public AmazonS3 amazonS3() {
+//        AWSCredentials credentials = new BasicAWSCredentials(this.accessKey, this.secretKey);
+        return AmazonS3ClientBuilder.standard()
