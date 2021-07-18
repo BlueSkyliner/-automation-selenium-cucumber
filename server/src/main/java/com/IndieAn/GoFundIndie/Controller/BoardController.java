@@ -10,4 +10,6 @@ import java.util.HashMap;
 @RestController
 @RequiredArgsConstructor
 public class BoardController {
-    private final HashMap
+    private final HashMap<String, Object> body = new HashMap<>();
+
+}
