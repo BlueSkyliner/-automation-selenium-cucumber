@@ -13,4 +13,17 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.EntityManager;
 import java.util.HashMap;
-impo
+import java.util.Map;
+
+@Slf4j
+@RestController
+@RequiredArgsConstructor
+public class ImageController {
+    private final ImageService imageService;
+    private final EntityManager entityManager;
+
+    private final HashMap<String, Object> body = new HashMap<>();
+
+    @PostMapping(value = {"/image/{path}/{path_id}", "/image/{path}"})
+    public ResponseEntity<?> UploadImage(@RequestHeader Map<String, String> header,
+                
