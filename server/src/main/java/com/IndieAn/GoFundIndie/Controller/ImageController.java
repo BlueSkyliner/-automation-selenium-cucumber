@@ -26,4 +26,11 @@ public class ImageController {
 
     @PostMapping(value = {"/image/{path}/{path_id}", "/image/{path}"})
     public ResponseEntity<?> UploadImage(@RequestHeader Map<String, String> header,
-                
+                                         @PathVariable(value = "path") String path,
+                                         @PathVariable(value = "path_id", required = false) Long pathId,
+                                         @RequestPart(value = "upload",required = false) MultipartFile image ) {
+        //image dir result
+        try {
+            ImagePathTypes type = ImagePathTypes.findImagePathType(path);
+            log.info(type.toString());
+            
