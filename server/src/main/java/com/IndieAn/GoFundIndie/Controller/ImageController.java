@@ -33,4 +33,12 @@ public class ImageController {
         try {
             ImagePathTypes type = ImagePathTypes.findImagePathType(path);
             log.info(type.toString());
-            
+            switch (type) {
+                case IMAGE_PATH_TYPES_USER:
+                    return imageService.uploadUserImage(image, header);
+                case IMAGE_PATH_TYPES_STILL:
+                    return imageService.uploadStillImage(image, pathId, header);
+                case IMAGE_PATH_TYPES_CASTING:
+                    return imageService.uploadCastingImage(image, pathId, header);
+                case IMAGE_PATH_TYPES_BOARD:
+                    retur
