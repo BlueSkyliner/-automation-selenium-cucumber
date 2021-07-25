@@ -41,4 +41,16 @@ public class ImageController {
                 case IMAGE_PATH_TYPES_CASTING:
                     return imageService.uploadCastingImage(image, pathId, header);
                 case IMAGE_PATH_TYPES_BOARD:
-                    retur
+                    return imageService.uploadPosterImage(image, pathId, header);
+                default:
+                    return imageService.pathTypeDefault();
+            }
+        } catch (MultipartException e) {
+            return imageService.noFileUploadHandler();
+        } catch (RuntimeException e) {
+            return imageService.pathTypeDefault();
+        }
+    }
+
+    @DeleteMapping(value = {"/image/{path}/{path_id}", "/image/{path}"})
+    public ResponseE
