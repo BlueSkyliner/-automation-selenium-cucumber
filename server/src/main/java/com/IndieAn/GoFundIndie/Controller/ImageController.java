@@ -53,4 +53,10 @@ public class ImageController {
     }
 
     @DeleteMapping(value = {"/image/{path}/{path_id}", "/image/{path}"})
-    public ResponseE
+    public ResponseEntity<?> DeleteImage(@RequestHeader Map<String, String> header,
+                                         @PathVariable(value = "path") String path,
+                                         @PathVariable(value = "path_id", required = false) Long pathId) {
+        try {
+            switch (ImagePathTypes.findImagePathType(path)) {
+                case IMAGE_PATH_TYPES_USER:
+                    return imageService.de
