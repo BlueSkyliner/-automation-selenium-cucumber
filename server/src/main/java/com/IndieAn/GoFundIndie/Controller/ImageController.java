@@ -59,4 +59,12 @@ public class ImageController {
         try {
             switch (ImagePathTypes.findImagePathType(path)) {
                 case IMAGE_PATH_TYPES_USER:
-                    return imageService.de
+                    return imageService.deleteUserImage(header);
+                case IMAGE_PATH_TYPES_STILL:
+                    return imageService.deleteStill(pathId, header);
+                case IMAGE_PATH_TYPES_CASTING:
+                    return imageService.deleteCastingImage(pathId, header);
+                case IMAGE_PATH_TYPES_BOARD:
+                    return imageService.deletePosterImage(pathId, header);
+                default:
+                    return imageService.pathT
