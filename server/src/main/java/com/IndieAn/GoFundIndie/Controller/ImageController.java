@@ -67,4 +67,10 @@ public class ImageController {
                 case IMAGE_PATH_TYPES_BOARD:
                     return imageService.deletePosterImage(pathId, header);
                 default:
-                    return imageService.pathT
+                    return imageService.pathTypeDefault();
+            }
+        } catch (RuntimeException e) {
+            return imageService.pathTypeDefault();
+        }
+    }
+}
