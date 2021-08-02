@@ -29,4 +29,11 @@ public class KakaoPayController {
     }
 
     @PostMapping(value = "/pay/approve")
-    public ResponseEntity<?> Approvement(@RequestBody KakaoPayApproveInputDTO kakaoPayApproveInputDTO, @RequestHeader
+    public ResponseEntity<?> Approvement(@RequestBody KakaoPayApproveInputDTO kakaoPayApproveInputDTO, @RequestHeader Map<String, String> requestHeader) {
+        try {
+            return kakaoPayService.KakaoPayApproval(kakaoPayApproveInputDTO, requestHeader);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+}
