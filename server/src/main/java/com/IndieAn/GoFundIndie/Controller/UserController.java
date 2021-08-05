@@ -23,4 +23,14 @@ public class UserController {
     private final static Integer ACCESS_TIME = 30;
     // refreshToken 유효 시간
     private final static Integer REFRESH_TIME = 30 * 24;
-    privat
+    private HashMap<String, Object> body = new HashMap<>();
+    private HashMap<String, Object> data = new HashMap<>();
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    @GetMapping(value = "/check")
+    public ResponseEntity<?> CheckDuplicate(@RequestParam(name = "type") String type, @RequestParam(name = "query") String query) {
+        // email이나 nickname의 중복체크를 위한 api
