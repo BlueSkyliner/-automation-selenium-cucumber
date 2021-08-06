@@ -34,3 +34,16 @@ public class UserController {
     @GetMapping(value = "/check")
     public ResponseEntity<?> CheckDuplicate(@RequestParam(name = "type") String type, @RequestParam(name = "query") String query) {
         // email이나 nickname의 중복체크를 위한 api
+        try {
+            body.clear();
+            // type이 email일 경우
+            if(type.equals("email")) {
+                User user = userService.FindUserUseEmail(query);
+                // user가 null이 아니라면 4002 응답을 한다.
+                if(user != null) {
+                    body.put("code", 4002);
+                    return ResponseEntity.badRequest().body(body);
+                }
+            }
+            // type이 닉네임일 경우
+  
