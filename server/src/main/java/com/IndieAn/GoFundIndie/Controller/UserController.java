@@ -56,4 +56,15 @@ public class UserController {
             }
             // null이라면 없는 것이므로 2000 응답을 한다.
             body.put("code", 2000);
-            return ResponseEntity.ok
+            return ResponseEntity.ok().body(body);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @PostMapping(value = "/signup")
+    public ResponseEntity<?> UserSignUp(@RequestBody UserSignUpDTO  userSignUpDTO) {
+        try {
+            body.clear();
+            // DB에 해당 email이 존재하는지 확인한다. 반환 값이 null이라면 이미 존재하는 email이다.
+            User user = userService.CreateUserData(userSig
