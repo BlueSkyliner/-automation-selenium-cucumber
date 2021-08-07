@@ -46,4 +46,14 @@ public class UserController {
                 }
             }
             // type이 닉네임일 경우
-  
+            else {
+                User user = userService.CheckUserByNickname(query);
+                // user가 null이 아니라면 4013 응답을 한다.
+                if(user != null) {
+                    body.put("code", 4013);
+                    return ResponseEntity.badRequest().body(body);
+                }
+            }
+            // null이라면 없는 것이므로 2000 응답을 한다.
+            body.put("code", 2000);
+            return ResponseEntity.ok
