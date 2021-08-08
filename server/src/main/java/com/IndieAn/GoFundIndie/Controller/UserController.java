@@ -67,4 +67,19 @@ public class UserController {
         try {
             body.clear();
             // DB에 해당 email이 존재하는지 확인한다. 반환 값이 null이라면 이미 존재하는 email이다.
-            User user = userService.CreateUserData(userSig
+            User user = userService.CreateUserData(userSignUpDTO);
+
+            if(user == null) {
+                body.put("code", 4002);
+                return ResponseEntity.badRequest().body(body);
+            }
+
+            body.put("code", 2000);
+            return ResponseEntity.status(201).body(body);
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @PostMapping(value = "/signin")
+    public ResponseEntity<?> UserLogin(@RequestBod
