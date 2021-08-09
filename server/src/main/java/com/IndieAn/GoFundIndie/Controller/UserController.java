@@ -82,4 +82,14 @@ public class UserController {
     }
 
     @PostMapping(value = "/signin")
-    public ResponseEntity<?> UserLogin(@RequestBod
+    public ResponseEntity<?> UserLogin(@RequestBody UserSIgnInDTO userSIgnInDTO) {
+        try {
+            body.clear();
+            data.clear();
+            // id와 password 를 기준으로 DB에 일치하는 유저 데이터를 불러온다.
+            // 유저 데이터에 email을 토큰에 담아 accesstoken과 refreshToken을 생성한다.
+            // accessToken은 클라이언트에서 관리할 수 있게 body에, refreshToken은 쿠키에 담겨 전달한다.
+            User user = userService.FindUser(userSIgnInDTO);
+
+            // 해당 이메일이 없다면 code 4003 응답
+            if(userService.FindUserUseEmail(userSIgnInDTO.getEm
