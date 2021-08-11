@@ -92,4 +92,15 @@ public class UserController {
             User user = userService.FindUser(userSIgnInDTO);
 
             // 해당 이메일이 없다면 code 4003 응답
-            if(userService.FindUserUseEmail(userSIgnInDTO.getEm
+            if(userService.FindUserUseEmail(userSIgnInDTO.getEmail()) == null) {
+                body.put("code", 4003);
+                return ResponseEntity.badRequest().body(body);
+            }
+            // 해당 비밀번호가 다르다면 code 4001 응답
+            else if(user == null) {
+                body.put("code", 4001);
+                return ResponseEntity.badRequest().body(body);
+            }
+            else {
+                // accessToken은 응답 바디로 넘겨준다.
+                b
