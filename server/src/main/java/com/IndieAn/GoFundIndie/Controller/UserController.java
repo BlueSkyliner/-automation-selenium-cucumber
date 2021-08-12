@@ -103,4 +103,10 @@ public class UserController {
             }
             else {
                 // accessToken은 응답 바디로 넘겨준다.
-                b
+                body.put("code", 2000);
+                data.put("accessToken", userService.CreateToken(user, ACCESS_TIME));
+                data.put("refreshToken", userService.CreateToken(user, REFRESH_TIME));
+
+                // key로 유저 email을 갖고 value로 refresh 값을 갖는 정보를 DB에 저장한다.
+                RefreshToken refreshToken = userService.AddRefreshToken(user.getEmail(), (String)data.get("refreshToken"));
+                // refreshToken 값이 null이면
