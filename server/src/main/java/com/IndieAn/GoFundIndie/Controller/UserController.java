@@ -109,4 +109,16 @@ public class UserController {
 
                 // key로 유저 email을 갖고 value로 refresh 값을 갖는 정보를 DB에 저장한다.
                 RefreshToken refreshToken = userService.AddRefreshToken(user.getEmail(), (String)data.get("refreshToken"));
-                // refreshToken 값이 null이면
+                // refreshToken 값이 null이면 이미 해당 email에 refreshToken이 발급되어있다. 즉, 어디에서 로그인 되어있다는 것이다.
+                if(refreshToken == null) {
+                    body.put("code", 4012);
+                    return ResponseEntity.badRequest().body(body);
+                }
+
+                body.put("data", data);
+                return ResponseEntity.ok().body(body);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+   
