@@ -121,4 +121,13 @@ public class UserController {
         } catch (Exception e) {
             return ResponseEntity.status(500).body("err");
         }
-   
+    }
+
+    @PostMapping(value = "/signout")
+    public ResponseEntity<?> UserSignOut(@RequestHeader Map<String, String> requestHeader) {
+        // 토큰 유효성 검사 후 유저를 로그아웃 시킨다.
+        // access token 이 유효하면 모든 토큰을 만료시킨다.
+        try {
+            body.clear();
+            // 헤더에 access token이 없거나 refresh token이 없으면 응답코드 400을 응답한다.
+            if(requestHeader.get("accesstoken") == null || requestHeader.get("refreshtok
