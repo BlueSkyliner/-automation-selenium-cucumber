@@ -130,4 +130,12 @@ public class UserController {
         try {
             body.clear();
             // 헤더에 access token이 없거나 refresh token이 없으면 응답코드 400을 응답한다.
-            if(requestHeader.get("accesstoken") == null || requestHeader.get("refreshtok
+            if(requestHeader.get("accesstoken") == null || requestHeader.get("refreshtoken") == null) {
+                body.put("code", 4000);
+                return ResponseEntity.badRequest().body(body);
+            }
+
+            // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("accesstoken"));
+            // token에 email정보가 있다면 로그아웃 과정을 수행한다.
+            if(checkToken.get("emai
