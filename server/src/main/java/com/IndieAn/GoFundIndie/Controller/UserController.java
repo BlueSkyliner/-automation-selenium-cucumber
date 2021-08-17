@@ -147,4 +147,16 @@ public class UserController {
                 if(user == null) {
                     body.put("code", 4000);
                     return ResponseEntity.badRequest().body(body);
-               
+                }
+                RefreshToken rt = userService.DeleteRefreshToken(user.getEmail(), requestHeader.get("refreshtoken"));
+
+                // refresh token ID를 찾을 수 없을 때 응답을 해준다.
+                if(rt == null) {
+                    body.put("code", 4407);
+                    return ResponseEntity.status(404).body(body);
+                }
+
+                body.put("code", 2000);
+                return ResponseEntity.ok().body(body);
+            }
+            //
