@@ -159,4 +159,16 @@ public class UserController {
                 body.put("code", 2000);
                 return ResponseEntity.ok().body(body);
             }
-            //
+            // 토큰에 email 정보가 없다면 그에 맞는 오류 응답을 낸다.
+            else {
+                return ResponseEntity.status(401).body(checkToken);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @GetMapping(value = "/user")
+    public ResponseEntity<?> GetUserInfo(@RequestHeader Map<String, String> requestHeader) {
+        // 토큰 유효성 검사 후 해당 유저의 데이터를 전달한다.
+        // access token이 유효하면 DB에서 동일한 email값을 가진 유저 데이터를 찾아
