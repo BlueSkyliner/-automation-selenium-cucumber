@@ -184,4 +184,13 @@ public class UserController {
             // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
             Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("accesstoken"));
 
-            // token에 email정보가 있다
+            // token에 email정보가 있다면 정보를 가져오는 과정을 수행한다.
+            if(checkToken.get("email") != null) {
+                User user = userService.FindUserUseEmail((String)checkToken.get("email"));
+                // 토큰으로 찾은 email이 DB에 존재하지 않으면 4000응답을 한다.
+                if(user == null) {
+                    body.put("code", 4000);
+                    return ResponseEntity.badRequest().body(body);
+                }
+                userService.MakeUserInfoRes(user, data);
+     
