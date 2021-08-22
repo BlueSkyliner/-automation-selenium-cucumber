@@ -171,4 +171,17 @@ public class UserController {
     @GetMapping(value = "/user")
     public ResponseEntity<?> GetUserInfo(@RequestHeader Map<String, String> requestHeader) {
         // 토큰 유효성 검사 후 해당 유저의 데이터를 전달한다.
-        // access token이 유효하면 DB에서 동일한 email값을 가진 유저 데이터를 찾아
+        // access token이 유효하면 DB에서 동일한 email값을 가진 유저 데이터를 찾아 응답한다.
+        // 헤더에 토큰이 없으면 응답코드 400을 응답한다.
+        try {
+            body.clear();
+            data.clear();
+
+            if(requestHeader.get("accesstoken") == null) {
+                body.put("code", 4000);
+                return ResponseEntity.badRequest().body(body);
+            }
+            // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("accesstoken"));
+
+            // token에 email정보가 있다
