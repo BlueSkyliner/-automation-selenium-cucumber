@@ -193,4 +193,17 @@ public class UserController {
                     return ResponseEntity.badRequest().body(body);
                 }
                 userService.MakeUserInfoRes(user, data);
-     
+                body.put("code", 2000);
+                body.put("data", data);
+                return ResponseEntity.ok().body(body);
+            }
+            else {
+                return ResponseEntity.status(401).body(checkToken);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @PutMapping(value = "/user")
+    public ResponseEntity<?> ModifyUserInfo(@RequestBody UserModifyDTO userMod
