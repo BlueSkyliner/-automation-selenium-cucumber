@@ -216,4 +216,14 @@ public class UserController {
 
             if(requestHeader.get("accesstoken") == null) {
                 body.put("code", 4000);
-                return ResponseEntity.badRequest().
+                return ResponseEntity.badRequest().body(body);
+            }
+
+            // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("accesstoken"));
+
+            // token에 email정보가 있다면 정보를 수정하는 과정을 수행한다.
+            if(checkToken.get("email") != null) {
+                // 요청 바디에 어떤 값도 들어오지 않으며, 광고수신 동의 값이 똑같을 때 4006 오류를 낸다.
+                if(userModifyDTO.getNickname() == null && userModifyDTO.getPassword() == null
+                  
