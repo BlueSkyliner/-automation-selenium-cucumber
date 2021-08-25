@@ -226,4 +226,10 @@ public class UserController {
             if(checkToken.get("email") != null) {
                 // 요청 바디에 어떤 값도 들어오지 않으며, 광고수신 동의 값이 똑같을 때 4006 오류를 낸다.
                 if(userModifyDTO.getNickname() == null && userModifyDTO.getPassword() == null
-                  
+                        && userModifyDTO.getProfilePic() == null && userModifyDTO.isAdAgree() == userService.FindUserUseEmail((String)checkToken.get("email")).isAdAgree()) {
+                    body.put("code", 4006);
+                    return ResponseEntity.badRequest().body(body);
+                }
+
+                User user = userService.ModifyUserData(userModifyDTO, (String)checkToken.get("email"));
+                // 토큰으로 찾은 email이 DB에 존재하지 않으
