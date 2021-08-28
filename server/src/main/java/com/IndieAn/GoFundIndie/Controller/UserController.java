@@ -232,4 +232,15 @@ public class UserController {
                 }
 
                 User user = userService.ModifyUserData(userModifyDTO, (String)checkToken.get("email"));
-                // 토큰으로 찾은 email이 DB에 존재하지 않으
+                // 토큰으로 찾은 email이 DB에 존재하지 않으면 4000응답을 한다.
+                if(user == null) {
+                    body.put("code", 4000);
+                    return ResponseEntity.badRequest().body(body);
+                }
+                userService.MakeUserInfoRes(user, data);
+                body.put("code", 2000);
+                body.put("data", data);
+                return ResponseEntity.ok().body(body);
+            }
+            else {
+                return ResponseEntity.status(401).body(checkToken);
