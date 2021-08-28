@@ -244,3 +244,16 @@ public class UserController {
             }
             else {
                 return ResponseEntity.status(401).body(checkToken);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @DeleteMapping(value = "/user")
+    public ResponseEntity<?> DeleteUserinfo(@RequestHeader Map<String, String> requestHeader) {
+        // 토큰 유효성 검사 후 해당 유저의 데이터를 전달한다.
+        // access token이 유효하면 DB에서 동일한 email값을 가진 유저 데이터를 찾아 DB 데이터 삭제 후 응답한다.
+        try {
+            body.clear();
+          
