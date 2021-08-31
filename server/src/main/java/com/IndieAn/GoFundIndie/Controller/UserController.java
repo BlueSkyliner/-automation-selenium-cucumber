@@ -263,4 +263,14 @@ public class UserController {
             }
 
             // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
-            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("acces
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("accesstoken"));
+
+            if(checkToken.get("email") != null) {
+                // 유저 정보가 확인되면 token 키 값을 가진 쿠키가 제거돼야 한다.
+                // DB에 있는 유저 email과 refreshToken 값이 제거돼야 한다.
+
+                User user = userService.FindUserUseEmail((String)checkToken.get("email"));
+                // 토큰으로 찾은 email이 DB에 존재하지 않으면 4000응답을 한다.
+                if(user == null) {
+                    body.put("code", 4000);
+                    return Resp
