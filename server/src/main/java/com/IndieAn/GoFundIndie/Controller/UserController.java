@@ -256,4 +256,11 @@ public class UserController {
         // access token이 유효하면 DB에서 동일한 email값을 가진 유저 데이터를 찾아 DB 데이터 삭제 후 응답한다.
         try {
             body.clear();
-          
+            // 헤더에 access token이 없거나 refresh token이 없으면 응답코드 400을 응답한다.
+            if(requestHeader.get("accesstoken") == null || requestHeader.get("refreshtoken") == null) {
+                body.put("code", 4000);
+                return ResponseEntity.badRequest().body(body);
+            }
+
+            // 헤더에 존재하는 토큰을 가지고 유효성 검증을 한다.
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("acces
