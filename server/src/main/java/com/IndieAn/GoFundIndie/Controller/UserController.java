@@ -273,4 +273,14 @@ public class UserController {
                 // 토큰으로 찾은 email이 DB에 존재하지 않으면 4000응답을 한다.
                 if(user == null) {
                     body.put("code", 4000);
-                    return Resp
+                    return ResponseEntity.badRequest().body(body);
+                }
+                RefreshToken rt = userService.DeleteRefreshToken(user.getEmail(), requestHeader.get("refreshtoken"));
+
+                // refresh token ID를 찾을 수 없을 때 응답을 해준다.
+                if(rt == null) {
+                    body.put("code", 4407);
+                    return ResponseEntity.status(404).body(body);
+                }
+                // DB에 유저 email과 refresh token 쌍이 제거됐다면, 해당 email을 가진 유저를 DB에서 삭제한다.
+            
