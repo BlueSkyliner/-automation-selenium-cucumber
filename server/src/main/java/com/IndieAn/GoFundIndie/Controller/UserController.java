@@ -283,4 +283,18 @@ public class UserController {
                     return ResponseEntity.status(404).body(body);
                 }
                 // DB에 유저 email과 refresh token 쌍이 제거됐다면, 해당 email을 가진 유저를 DB에서 삭제한다.
-            
+                userService.DeleteUserData((String)checkToken.get("email"));
+
+                body.put("code", 2000);
+                return ResponseEntity.ok().body(body);
+            }
+            else {
+                return ResponseEntity.status(401).body(checkToken);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+
+    @GetMapping(value = "/reissuance")
+ 
