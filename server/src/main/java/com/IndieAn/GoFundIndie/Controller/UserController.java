@@ -297,4 +297,13 @@ public class UserController {
     }
 
     @GetMapping(value = "/reissuance")
- 
+    public ResponseEntity<?> ReissueAccessToken(@RequestHeader Map<String, String> requestHeader) {
+        // access token이 만료됐을 때, refresh token을 검증해 새로운 access token을 발급받는다.
+        try {
+            body.clear();
+            data.clear();
+
+            // 쿠키에 refresh token이 없으면 응답코드 400을 응답한다.
+            if(requestHeader.get("refreshtoken") == null) {
+                body.put("code", 4000);
+                return Resp
