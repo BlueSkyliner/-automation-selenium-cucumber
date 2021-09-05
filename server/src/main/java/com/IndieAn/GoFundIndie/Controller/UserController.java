@@ -306,4 +306,13 @@ public class UserController {
             // 쿠키에 refresh token이 없으면 응답코드 400을 응답한다.
             if(requestHeader.get("refreshtoken") == null) {
                 body.put("code", 4000);
-                return Resp
+                return ResponseEntity.badRequest().body(body);
+            }
+
+            // 헤더에 존재하는 refresh token을 가지고 유효성 검증을 한다.
+            Map<String, Object> checkToken = userService.CheckToken(requestHeader.get("refreshtoken"));
+
+            if(checkToken.get("email") != null) {
+                // 해당 refresh token이 가지고 있는 email로 다시 access token을 발급한다.
+                User user = userService.FindUserUseEmail((String)checkToken.get("email"));
+ 
