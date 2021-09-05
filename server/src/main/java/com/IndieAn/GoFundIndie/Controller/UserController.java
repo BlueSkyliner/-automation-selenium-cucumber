@@ -315,4 +315,13 @@ public class UserController {
             if(checkToken.get("email") != null) {
                 // 해당 refresh token이 가지고 있는 email로 다시 access token을 발급한다.
                 User user = userService.FindUserUseEmail((String)checkToken.get("email"));
- 
+                // 토큰으로 찾은 email이 DB에 존재하지 않으면 4000응답을 한다.
+                if(user == null) {
+                    body.put("code", 4000);
+                    return ResponseEntity.badRequest().body(body);
+                }
+
+                RefreshToken rt = userService.FindRefreshToken(user.getEmail(), requestHeader.get("refreshtoken"));
+
+                // refresh token를 찾을 수 없을 때 응답을 해준다.
+    
