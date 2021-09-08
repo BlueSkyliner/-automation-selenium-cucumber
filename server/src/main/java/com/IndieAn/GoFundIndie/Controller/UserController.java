@@ -324,4 +324,14 @@ public class UserController {
                 RefreshToken rt = userService.FindRefreshToken(user.getEmail(), requestHeader.get("refreshtoken"));
 
                 // refresh token를 찾을 수 없을 때 응답을 해준다.
-    
+                if(rt == null) {
+                    body.put("code", 4407);
+                    return ResponseEntity.status(404).body(body);
+                }
+                // accessToken은 응답 바디로 넘겨준다.
+                body.put("code", 2000);
+                data.put("accessToken",  userService.CreateToken(user, ACCESS_TIME));
+                body.put("data", data);
+                return ResponseEntity.ok().body(body);
+            }
+ 
