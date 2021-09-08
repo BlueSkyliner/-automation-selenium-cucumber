@@ -334,4 +334,12 @@ public class UserController {
                 body.put("data", data);
                 return ResponseEntity.ok().body(body);
             }
- 
+            // 토큰에 email 정보가 없다면 그에 맞는 오류 응답을 낸다.
+            else {
+                return ResponseEntity.status(401).body(checkToken);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("err");
+        }
+    }
+}
