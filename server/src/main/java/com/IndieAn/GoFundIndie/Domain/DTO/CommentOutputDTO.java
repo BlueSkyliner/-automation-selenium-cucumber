@@ -24,4 +24,7 @@ public class CommentOutputDTO {
         this.donation = donation;
         this.body = body;
         this.spoiler = spoiler;
-        this.
+        this.like = like;
+        this.ratingChecked = ratingChecked;
+    }
+}
