@@ -19,4 +19,7 @@ public class CommentModifyDTO {
     }
 
     public String getCommentBody() {
-        return comment
+        return commentBody;
+    }
+
+}
