@@ -12,4 +12,11 @@ public class KakaoPayApproveInputDTO {
         return next_redirect_pc_url;
     }
 
-    public long
+    public long getBoardId() {
+        return boardId;
+    }
+
+    public String getPg_token() {
+        return pg_token;
+    }
+}
