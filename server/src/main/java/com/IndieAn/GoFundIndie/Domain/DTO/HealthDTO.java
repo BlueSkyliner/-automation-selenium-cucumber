@@ -6,4 +6,10 @@ import lombok.Getter;
 
 @Getter
 @Builder
-@AllArgsConstr
+@AllArgsConstructor
+public class HealthDTO {
+    private String server;
+    private String health;
+
+    public HealthDTO() {}
+}
