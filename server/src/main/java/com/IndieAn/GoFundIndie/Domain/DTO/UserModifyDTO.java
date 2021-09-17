@@ -17,3 +17,20 @@ public class UserModifyDTO {
         this.profilePic = profilePic;
         this.adAgree = adAgree;
     }
+
+    public boolean isAdAgree() {
+        return adAgree;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+}
