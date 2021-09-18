@@ -4,4 +4,11 @@ public class UserSIgnInDTO {
     private String email;
     private String password;
 
-    pub
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+}
