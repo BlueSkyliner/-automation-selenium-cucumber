@@ -36,4 +36,14 @@ public class UserSignUpDTO {
     }
 
     public void setNickname(String nickname) {
-      
+        this.nickname = nickname;
+    }
+
+    public void setProfilePic(String profilePic) {
+        this.profilePic = profilePic;
+    }
+
+    public void setAdAgree(boolean adAgree) {
+        this.adAgree = adAgree;
+    }
+}
