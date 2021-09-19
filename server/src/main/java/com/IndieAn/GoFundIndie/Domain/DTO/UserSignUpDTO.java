@@ -12,4 +12,28 @@ public class UserSignUpDTO {
     }
 
     public String getEmail() {
-        return email
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public String getProfilePic() {
+        return profilePic;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setNickname(String nickname) {
+      
