@@ -11,4 +11,24 @@ public class BoardLike {
 
     @ManyToOne(targetEntity = User.class)
     @JoinColumn(name = "user_id", nullable = false)
-    priva
+    private User userId;
+
+    @ManyToOne(targetEntity = Board.class)
+    @JoinColumn(name = "board_id", nullable = false)
+    private Board boardId;
+
+    @Column(name = "created_at", columnDefinition = "datetime default now()")
+    @Temporal(TemporalType.DATE)
+    private Date createdAt;
+
+    public BoardLike() {}
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    p
