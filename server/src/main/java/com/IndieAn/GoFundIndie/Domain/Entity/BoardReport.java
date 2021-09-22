@@ -16,4 +16,20 @@ public class BoardReport {
     private User userId;
 
     @ManyToOne(targetEntity = Board.class)
-    @JoinCol
+    @JoinColumn(name = "board_id", nullable = false)
+    private Board boardId;
+
+    @Column(nullable = false)
+    private String body;
+
+    public BoardReport() {}
+
+    @Builder
+    public BoardReport(long id, User userId, Board boardId, String body) {
+        Assert.notNull(userId, "userId not null");
+        Assert.notNull(boardId, "boardId not null");
+        Assert.notNull(body, "body not null");
+
+        this.id = id;
+        this.userId = userId;
+        this.board
