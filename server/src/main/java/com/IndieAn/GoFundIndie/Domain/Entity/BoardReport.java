@@ -32,4 +32,32 @@ public class BoardReport {
 
         this.id = id;
         this.userId = userId;
-        this.board
+        this.boardId = boardId;
+        this.body = body;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public User getUserId() {
+        return userId;
+    }
+
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }
+
+    public Board getBoardId() {
+        return boardId;
+    }
+
+    public void setBoardId(Board boardId) {
+        this.boardId = boardId;
+    }
+
+    
