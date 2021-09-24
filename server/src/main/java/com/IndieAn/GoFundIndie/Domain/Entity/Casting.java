@@ -36,4 +36,28 @@ public class Casting {
     }
 
     public void setName(String name) {
-        this.name
+        this.name = name;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public Board getBoardId() {
+        return boardId;
+    }
+
+    public void setBoardId(Board boardId) {
+        this.boardId = 
