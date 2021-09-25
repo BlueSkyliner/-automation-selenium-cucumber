@@ -60,4 +60,6 @@ public class Casting {
     }
 
     public void setBoardId(Board boardId) {
-        this.boardId = 
+        this.boardId = boardId;
+    }
+}
