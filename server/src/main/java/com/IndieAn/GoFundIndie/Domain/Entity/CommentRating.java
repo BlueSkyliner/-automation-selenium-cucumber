@@ -34,4 +34,11 @@ public class CommentRating {
         this.userId = userId;
     }
 
-    public Comment getCommentId(
+    public Comment getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(Comment commentId) {
+        this.commentId = commentId;
+    }
+}
