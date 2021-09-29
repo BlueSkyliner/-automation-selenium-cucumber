@@ -33,4 +33,23 @@ public class CommentReport {
         return userId;
     }
 
- 
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }
+
+    public Comment getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(Comment commentId) {
+        this.commentId = commentId;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+}
