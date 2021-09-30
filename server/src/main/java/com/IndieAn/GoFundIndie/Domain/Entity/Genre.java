@@ -18,4 +18,27 @@ public class Genre {
 
     public Genre() {}
 
-    public List<BoardGenre>
+    public List<BoardGenre> getBoardGenres() {
+        return boardGenres;
+    }
+
+    public void setBoardGenres(List<BoardGenre> boardGenres) {
+        this.boardGenres = boardGenres;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
