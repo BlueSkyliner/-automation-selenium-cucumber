@@ -22,4 +22,22 @@ public class Still {
     }
 
     public void setId(long id) {
-    
+        this.id = id;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public Board getBoardId() {
+        return boardId;
+    }
+
+    public void setBoardId(Board boardId) {
+        this.boardId = boardId;
+    }
+}
