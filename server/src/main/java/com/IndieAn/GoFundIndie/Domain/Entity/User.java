@@ -18,4 +18,21 @@ public class User {
     @Column(columnDefinition = "boolean default false")
     private boolean banned;
 
-    @Column(nullable = false
+    @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private String password;
+
+    @Column(name = "profile_picture")
+    private String profilePicture;
+
+    @Column(nullable = false)
+    private String nickname;
+
+    @Column(name = "created_at", columnDefinition = "datetime default now()")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdAt;
+
+    @Column(name = "total_donation", columnDefinition = "integer default 0")
+    privat
