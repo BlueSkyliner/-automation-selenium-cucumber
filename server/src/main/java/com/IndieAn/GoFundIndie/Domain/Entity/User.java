@@ -35,4 +35,15 @@ public class User {
     private Date createdAt;
 
     @Column(name = "total_donation", columnDefinition = "integer default 0")
-    privat
+    private int totalDonation;
+
+    @Column(name = "ad_agree", columnDefinition = "boolean default true")
+    private boolean adAgree;
+
+    @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<CommentReport> commentReports = new ArrayList<>();
+
+    @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<BoardLike> boardLikes = new ArrayList<>();
+
+    
