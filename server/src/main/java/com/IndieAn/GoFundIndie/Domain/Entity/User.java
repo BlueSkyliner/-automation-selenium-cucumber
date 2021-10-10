@@ -46,4 +46,13 @@ public class User {
     @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private List<BoardLike> boardLikes = new ArrayList<>();
 
-    
+    @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<BoardReport> boardReports = new ArrayList<>();
+
+    @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<CommentRating> commentRatings = new ArrayList<>();
+
+    @OneToMany(mappedBy = "userId", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    private List<Comment> comments = new ArrayList<>();
+
+    @OneT
