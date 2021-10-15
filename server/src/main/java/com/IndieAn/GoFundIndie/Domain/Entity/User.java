@@ -72,4 +72,20 @@ public class User {
         return boardLikes;
     }
 
-    publi
+    public void setBoardLikes(List<BoardLike> boardLikes) {
+        this.boardLikes = boardLikes;
+    }
+
+    public List<BoardReport> getBoardReports() {
+        return boardReports;
+    }
+
+    public void setBoardReports(List<BoardReport> boardReports) {
+        this.boardReports = boardReports;
+    }
+
+    public List<CommentRating> getCommentRatings() {
+        return commentRatings;
+    }
+
+    public void setCommentRatings(
