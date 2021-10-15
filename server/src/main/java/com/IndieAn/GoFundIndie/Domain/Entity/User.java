@@ -88,4 +88,26 @@ public class User {
         return commentRatings;
     }
 
-    public void setCommentRatings(
+    public void setCommentRatings(List<CommentRating> commentRatings) {
+        this.commentRatings = commentRatings;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public List<Board> getBoards() {
+        return boards;
+    }
+
+    public void setBoards(List<Board> boards) {
+        this.boards = boards;
+    }
+
+    public long getId() {
+        return id;
+  
