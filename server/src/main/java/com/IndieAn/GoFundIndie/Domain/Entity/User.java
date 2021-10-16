@@ -110,4 +110,30 @@ public class User {
 
     public long getId() {
         return id;
-  
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public boolean isAdminRole() {
+        return adminRole;
+    }
+
+    public void setAdminRole(boolean adminRole) {
+        this.adminRole = adminRole;
+    }
+
+    public boolean isBanned() {
+        return banned;
+    }
+
+    public void setBanned(boolean banned) {
+        this.banned = banned;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public
