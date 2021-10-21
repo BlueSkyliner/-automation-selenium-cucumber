@@ -156,4 +156,26 @@ public class User {
         this.profilePicture = profilePicture;
     }
 
-    public String getNickname()
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public int getTotalDonation() {
+        return totalDonation;
+    }
+
+    public void setTotalDonation(int totalDonation) {
+        this.totalDonation = totalDonation;
+ 
