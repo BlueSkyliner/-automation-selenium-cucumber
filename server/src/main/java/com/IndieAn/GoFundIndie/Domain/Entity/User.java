@@ -178,4 +178,21 @@ public class User {
 
     public void setTotalDonation(int totalDonation) {
         this.totalDonation = totalDonation;
- 
+    }
+
+    public boolean isAdAgree() {
+        return adAgree;
+    }
+
+    public void setAdAgree(boolean adAgree) {
+        this.adAgree = adAgree;
+    }
+
+    public static User from(UserGraphQLDTO dto) {
+        User user = new User();
+
+        if(dto.getEmail() == null || dto.getPassword() == null || dto.getNickname() == null) {
+            return null;
+        } else {
+            user.setEmail(dto.getEmail());
+          
