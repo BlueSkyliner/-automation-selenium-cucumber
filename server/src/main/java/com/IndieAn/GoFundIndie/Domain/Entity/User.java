@@ -195,4 +195,11 @@ public class User {
             return null;
         } else {
             user.setEmail(dto.getEmail());
-          
+            user.setPassword(dto.getPassword());
+            user.setNickname(dto.getNickname());
+        }
+        if(dto.isAdminRole()) user.setAdminRole(dto.isAdminRole());
+        if(dto.isBanned()) user.setBanned(dto.isBanned());
+        if(dto.getProfilePicture() != null) user.setProfilePicture(dto.getProfilePicture());
+        if(dto.getTotalDonation() != 0) user.setTotalDonation(dto.getTotalDonation());
+        if(dto.isAdAgree()) use
