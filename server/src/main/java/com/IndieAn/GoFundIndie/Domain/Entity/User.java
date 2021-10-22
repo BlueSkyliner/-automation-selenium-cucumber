@@ -202,4 +202,9 @@ public class User {
         if(dto.isBanned()) user.setBanned(dto.isBanned());
         if(dto.getProfilePicture() != null) user.setProfilePicture(dto.getProfilePicture());
         if(dto.getTotalDonation() != 0) user.setTotalDonation(dto.getTotalDonation());
-        if(dto.isAdAgree()) use
+        if(dto.isAdAgree()) user.setAdAgree(dto.isAdAgree());
+        user.setCreatedAt(new Date());
+
+        return user;
+    }
+}
