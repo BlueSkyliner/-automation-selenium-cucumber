@@ -6,4 +6,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer;
 
 @SpringBootApplication
-public clas
+public class GoFundIndieApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GoFundIndieApplication.class, args);
+	}
+
+	@Bean
+	public PageableHandlerMethodArgumentResolverCustomizer customize() {
+		return p -> {
+			p.setOneIndexedParameters(true); // 1부터 시작
+		};
+	}
+}
