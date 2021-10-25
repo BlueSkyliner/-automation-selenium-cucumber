@@ -17,4 +17,14 @@ import javax.persistence.EntityManager;
 public class BoardGenreRepository extends EntityManagerExtend{
     private final EntityManager entityManager;
 
-    priva
+    private String queryGenerator (long boardId, long genreId) {
+        return "SELECT a " +
+               "FROM BoardGenre AS a " +
+               "WHERE a.boardId = " + boardId +
+               " AND a.genreId = " + genreId + "";
+    }
+
+    public void CreateLink(Board board, Genre genre) {
+        if(entityManager.createQuery(queryGenerator(board.getId(), genre.getId()), BoardGenre.class)
+                .getResultList().size() == 0){
+            BoardGenre bg = new BoardGe
