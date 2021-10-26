@@ -27,4 +27,17 @@ public class BoardGenreRepository extends EntityManagerExtend{
     public void CreateLink(Board board, Genre genre) {
         if(entityManager.createQuery(queryGenerator(board.getId(), genre.getId()), BoardGenre.class)
                 .getResultList().size() == 0){
-            BoardGenre bg = new BoardGe
+            BoardGenre bg = new BoardGenre();
+            bg.setBoardId(board);
+            bg.setGenreId(genre);
+
+            singlePersist(bg, entityManager);
+        }
+    }
+
+    public void DisLink(long boardId, long genreId) {
+        try {
+            entityManager.createQuery(queryGenerator(boardId, genreId), BoardGenre.class)
+                    .getResultList()
+                    .forEach(el -> {
+                        if(el != null) entityManager.remove(el);
