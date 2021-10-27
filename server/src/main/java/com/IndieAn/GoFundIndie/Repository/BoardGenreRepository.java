@@ -41,3 +41,11 @@ public class BoardGenreRepository extends EntityManagerExtend{
                     .getResultList()
                     .forEach(el -> {
                         if(el != null) entityManager.remove(el);
+                    });
+
+            end(entityManager);
+        } catch (IllegalArgumentException e) {
+            log.info("DisLink query is illegality");
+        }
+    }
+}
