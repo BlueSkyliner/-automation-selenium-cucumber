@@ -103,3 +103,131 @@ public class BoardRepository extends EntityManagerExtend{
                     "ORDER BY c.createdAt DESC", DonationBoardGraphQLDTO.class)
                 .setMaxResults(limit)
                 .getResultList();
+    }
+
+    public List<BoardGraphQLDTO> findBoardsByGenre(SearchTypes type, int limit) {
+        int genreId = Arrays.asList(SearchTypes.values()).indexOf(type) + 1;
+        return entityManager.createQuery(
+            SELECT_BoardGraphQLDTO +
+                    "FROM BoardGenre g " +
+                    "LEFT JOIN g.boardId b " +
+                    "ON g.genreId = " + genreId + " " +
+                    "WHERE b.isApprove = true " +
+                    "ORDER BY b.commentAmount DESC", BoardGraphQLDTO.class)
+                .setMaxResults(limit)
+                .getResultList();
+    }
+
+    public List<BoardGraphQLDTO> findBoardsNew(int limit) {
+        return entityManager.createQuery(
+            SELECT_BoardGraphQLDTO +
+                    "FROM Board b " +
+                    "WHERE b.isApprove = true " +
+                    "ORDER BY b.createdAt DESC", BoardGraphQLDTO.class)
+                .setMaxResults(limit).getResultList();
+    }
+
+    public List<BoardGraphQLDTO> findBoardsRandom(int limit) {
+        List<BoardGraphQLDTO> list = findBoards(true, Integer.MAX_VALUE - 1);
+        Collections.shuffle(list);
+        return list.subList(0, limit);
+    }
+
+    public List<BoardGraphQLDTO> findBoardsSeoul2020(int limit) {
+        return entityManager.createQuery(
+            SELECT_BoardGraphQLDTO +
+                    "FROM Board b " +
+                    "WHERE b.id < 81 " +
+                    "AND b.id > 74 " +
+                    "ORDER BY b.id" ,BoardGraphQLDTO.class
+        ).setMaxResults(limit).getResultList();
+    }
+
+    // Upload or Update poster image
+    public void updateBoardImg(Board board, String img) {
+        board.setPosterImg(img);
+        singlePersist(board, entityManager);
+    }
+
+    // Create Temp Board
+    public long RegisterTempBoard(User user) {
+        Board board = new Board();
+
+        board.setUserId(user);
+        board.setInfoCountry("TEMP");
+
+        singlePersist(board, entityManager);
+
+        return board.getId();
+    }
+
+    // Put Complete Board
+    // TODO 객체 순회로 변경
+    public long CompleteBoard(Board board, CreateBoardCompleteDTO dto) {
+        // not null values
+        board.setTitle(dto.getTitle());
+        board.setInfoCountry(dto.getInfoCountry());
+        board.setInfoCreatedYear(dto.getInfoCreatedYear());
+        board.setInfoTime(dto.getInfoTime());
+        board.setInfoStory(dto.getInfoStory());
+
+        // nullable values
+        board.setProducer(dto.getProducer());
+        board.setDistributor(dto.getDistributor());
+        board.setPosterImg(dto.getPosterImg());
+        board.setViewLink(dto.getViewLink());
+        board.setInfoLimit(dto.getInfoLimit());
+        board.setInfoSubtitle(dto.isInfoSubtitle());
+        board.setInfoCreatedDate(dto.getInfoCreatedDate());
+
+        singlePersist(board, entityManager);
+
+        return board.getId();
+    }
+
+    public long PutBoard(Board board, PutBoardDTO dto) {
+        if(dto.getTitle()!=null)
+            board.setTitle(dto.getTitle());
+        if(dto.getInfoCountry()!=null)
+            board.setInfoCountry(dto.getInfoCountry());
+        if(dto.getInfoCreatedYear()!=null)
+            board.setInfoCreatedYear(dto.getInfoCreatedYear());
+        if(dto.getInfoTime()!=0)
+            board.setInfoTime(dto.getInfoTime());
+        if(dto.getInfoStory()!=null)
+            board.setInfoStory(dto.getInfoStory());
+        if(dto.getProducer()!=null)
+            board.setProducer(dto.getProducer());
+        if(dto.getDistributor()!=null)
+            board.setDistributor(dto.getDistributor());
+        if(dto.getPosterImg()!=null)
+            board.setPosterImg(dto.getPosterImg());
+        if(dto.getViewLink()!=null)
+            board.setViewLink(dto.getViewLink());
+        if(dto.getInfoLimit()!=0)
+            board.setInfoLimit(dto.getInfoLimit());
+        if(dto.getInfoSubtitle()!=null)
+            board.setInfoSubtitle(dto.getInfoSubtitle());
+        if(dto.getInfoCreatedDate()!=null)
+            board.setInfoCreatedDate(dto.getInfoCreatedDate());
+
+        singlePersist(board, entityManager);
+
+        return board.getId();
+    }
+
+    public void ApproveBoard(Board board, boolean isApprove) {
+        board.setApprove(isApprove);
+        board.setCreatedAt(new Date());
+
+        singlePersist(board, entityManager);
+    }
+
+    public void DeleteBoard(Board board) {
+        singleRemove(board, entityManager);
+    }
+
+    public void DeleteBoards(List<Board> boards) {
+        listRemove(boards, entityManager);
+    }
+}
