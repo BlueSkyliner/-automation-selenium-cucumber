@@ -42,4 +42,13 @@ public class BoardLikeRepository extends EntityManagerExtend{
             bl.setUserId(user);
             bl.setCreatedAt(new Date());
             board.setLikeAmount(board.getLikeAmount() + 1);
- 
+            entityManager.persist(board);
+            singlePersist(bl, entityManager);
+        } else {
+            board.setLikeAmount(board.getLikeAmount() - list.size());
+            entityManager.persist(board);
+            listRemove(list, entityManager);
+        }
+    }
+}
+
