@@ -13,4 +13,21 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import java.util.List;
-import java.util.concurrent.atomic.At
+import java.util.concurrent.atomic.AtomicBoolean;
+
+@Slf4j
+@Repository
+@Transactional
+@RequiredArgsConstructor
+public class CastingRepository extends EntityManagerExtend{
+    private final EntityManager entityManager;
+
+    private final AtomicBoolean isChange = new AtomicBoolean(false);
+
+    public long RegisterTempCasting(Board board) {
+        Casting casting = new Casting();
+        casting.setBoardId(board);
+
+        singlePersist(casting, entityManager);
+
+        ret
