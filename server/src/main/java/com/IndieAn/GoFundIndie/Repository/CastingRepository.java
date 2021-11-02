@@ -46,4 +46,20 @@ public class CastingRepository extends EntityManagerExtend{
         isChange.set(false);
 
         if(dto.getName() != null) {
-            casting.setName(dto.getNam
+            casting.setName(dto.getName());
+            isChange.set(true);
+        }
+        if(dto.getPosition() != 0) {
+            casting.setPosition(dto.getPosition());
+            isChange.set(true);
+        }
+        if(dto.getImage() != null) {
+            casting.setImage(dto.getImage());
+            isChange.set(true);
+        }
+
+        if(isChange.get()){
+            singlePersist(casting, entityManager);
+        }
+
+       
