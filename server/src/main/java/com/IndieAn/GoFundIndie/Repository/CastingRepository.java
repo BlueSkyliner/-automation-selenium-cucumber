@@ -30,4 +30,20 @@ public class CastingRepository extends EntityManagerExtend{
 
         singlePersist(casting, entityManager);
 
-        ret
+        return casting.getId();
+    }
+
+    public long CompleteCasting(Casting casting, CreateCastingCompleteDTO dto) {
+        casting.setName(dto.getName());
+        casting.setPosition(dto.getPosition());
+
+        singlePersist(casting, entityManager);
+
+        return casting.getId();
+    }
+
+    public long PutCasting(Casting casting, PutCastingDTO dto) {
+        isChange.set(false);
+
+        if(dto.getName() != null) {
+            casting.setName(dto.getNam
