@@ -62,4 +62,21 @@ public class CastingRepository extends EntityManagerExtend{
             singlePersist(casting, entityManager);
         }
 
+        return casting.getId();
+    }
+
+    public void updateCastingImage(Casting casting, String image) {
+        casting.setImage(image);
+        singlePersist(casting, entityManager);
+    }
+
+    public Casting findCastingById(Long id) {
+        try {
+            return entityManager.find(Casting.class, id);
+        } catch (NullPointerException e) {
+            return null;
+        }
+    }
+
+    public void RemoveCasting(Casting casting) {
        
