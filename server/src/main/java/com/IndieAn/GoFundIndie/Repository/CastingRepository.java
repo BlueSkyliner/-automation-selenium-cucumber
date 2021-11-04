@@ -79,4 +79,13 @@ public class CastingRepository extends EntityManagerExtend{
     }
 
     public void RemoveCasting(Casting casting) {
-       
+        singleRemove(casting, entityManager);
+    }
+
+    public List<CastingGraphQLDTO> findCastingByBoard(long boardId) {
+        return entityManager.createQuery(
+                "SELECT DISTINCT new com.IndieAn.GoFundIndie.Resolvers.DTO.Casting.CastingGraphQLDTO" +
+                        "(c.id, c.name, c.position, c.image) " +
+                        "FROM Casting c " +
+                        "JOIN c.boardId b " +
+                  
