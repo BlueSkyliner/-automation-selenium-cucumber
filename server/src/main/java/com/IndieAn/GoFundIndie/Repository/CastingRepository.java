@@ -88,4 +88,8 @@ public class CastingRepository extends EntityManagerExtend{
                         "(c.id, c.name, c.position, c.image) " +
                         "FROM Casting c " +
                         "JOIN c.boardId b " +
-                  
+                        "ON c.boardId = " + boardId + " " +
+                        "ORDER BY c.position", CastingGraphQLDTO.class
+        ).getResultList();
+    }
+}
