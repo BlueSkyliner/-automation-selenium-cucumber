@@ -20,4 +20,13 @@ public class CommentRatingRepository extends EntityManagerExtend{
         this.entityManager = entityManager;
     }
 
-    public CommentRating FindRatingByUserA
+    public CommentRating FindRatingByUserAndComment(long userId, long commentId) {
+        List<CommentRating> commentRatingList = entityManager
+                .createQuery("SELECT cr FROM CommentRating cr " +
+                        "WHERE user_id =" + userId + " AND comment_id =" + commentId + "", CommentRating.class)
+                .getResultList();
+        if(commentRatingList.size() == 0) return null;
+        return commentRatingList.get(0);
+    }
+
+    pu
