@@ -50,4 +50,16 @@ public class CommentRatingRepository extends EntityManagerExtend{
 
         entityManager.persist(commentRating);
 
-  
+        end(entityManager);
+
+        return commentRating;
+    }
+
+    // DB CommentRating 테이블에 id를 사용해 CommentRating 정보를 삭제한다.
+    public CommentRating DeleteRating(long id) {
+        CommentRating deleteRating = entityManager.find(CommentRating.class, id);
+        Comment comment = entityManager.find(Comment.class, deleteRating.getCommentId().getId());
+        comment.setLike(comment.getLike()-1);
+        entityManager.remove(deleteRating);
+
+        end(e
