@@ -8,4 +8,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.transac
+import javax.transaction.Transactional;
+import java.util.List;
+
+@Slf4j
+@Transactional
+@Repository
+public class CommentReportRepository extends EntityManagerExtend{
+    private final EntityManager entityManager;
+
+    @Autowired
+    public CommentReportRepository(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
+    // id를 통해서 comment report 정보를 찾아낸다.
+    public CommentReport FindById(long reportId) {
+        return entityManag
