@@ -62,4 +62,8 @@ public class CommentRatingRepository extends EntityManagerExtend{
         comment.setLike(comment.getLike()-1);
         entityManager.remove(deleteRating);
 
-        end(e
+        end(entityManager);
+
+        return deleteRating;
+    }
+}
