@@ -24,4 +24,13 @@ public class CommentReportRepository extends EntityManagerExtend{
 
     // id를 통해서 comment report 정보를 찾아낸다.
     public CommentReport FindById(long reportId) {
-        return entityManag
+        return entityManager.find(CommentReport.class, reportId);
+    }
+
+    // comment id를 통해 해당 신고내역이 있는지 확인하는 기능
+    public CommentReport FindByCommentId(long commentId) {
+        List<CommentReport> commentReportList = entityManager
+                .createQuery("SELECT cr FROM CommentReport AS cr WHERE comment_id =" + commentId + "", CommentReport.class)
+                .getResultList();
+        if(commentReportList.size() == 0) return null;
+        return commentReportLis
