@@ -33,4 +33,19 @@ public class CommentReportRepository extends EntityManagerExtend{
                 .createQuery("SELECT cr FROM CommentReport AS cr WHERE comment_id =" + commentId + "", CommentReport.class)
                 .getResultList();
         if(commentReportList.size() == 0) return null;
-        return commentReportLis
+        return commentReportList.get(0);
+    }
+
+    // comment report 정보를 DB에 저장
+    public void CreateCommentReport(String body, Comment comment, User user) {
+        CommentReport commentReport = new CommentReport();
+        commentReport.setUserId(user);
+        commentReport.setCommentId(comment);
+        commentReport.setBody(body);
+
+        entityManager.persist(commentReport);
+        end(entityManager);
+    }
+
+    // comment report 정보를 DB에서 삭제
+    pub
