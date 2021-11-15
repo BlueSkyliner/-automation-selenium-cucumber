@@ -48,4 +48,10 @@ public class CommentReportRepository extends EntityManagerExtend{
     }
 
     // comment report 정보를 DB에서 삭제
-    pub
+    public void DeleteCommentReport(long reportId) {
+        CommentReport commentReport = entityManager.find(CommentReport.class, reportId);
+        entityManager.remove(commentReport);
+
+        end(entityManager);
+    }
+}
