@@ -16,4 +16,18 @@ import java.util.List;
 
 @Repository
 @Transactional
-publi
+public class CommentRepository extends EntityManagerExtend{
+    private final EntityManager entityManager;
+
+    @Autowired
+    public CommentRepository(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
+    // DB Comment 테이블의 모든 comment 정보를 리턴한다.
+    public List<Comment> FindCommentList() {
+        return entityManager.createQuery("SELECT c FROM Comment as c", Comment.class).getResultList();
+    }
+
+    // Id를 통해서 Comment를 찾는 기능
+  
