@@ -30,4 +30,11 @@ public class CommentRepository extends EntityManagerExtend{
     }
 
     // Id를 통해서 Comment를 찾는 기능
-  
+    public Comment FindCommentById(long commentId) {
+        return entityManager.find(Comment.class, commentId);
+//        return entityManager.createQuery("SELECT c FROM Comment as c where c.id = '"+ commentId +"'", Comment.class).getResultList().get(0);
+    }
+
+    // DB Comment 테이블에 매개변수 commentInputDTO의 데이터를 사용하여 Comment 정보를 저장한다.
+    public void AddComment(CommentInputDTO commentInputDTO, User user) {
+        Co
