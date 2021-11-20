@@ -46,4 +46,16 @@ public class CommentRepository extends EntityManagerExtend{
         if(commentInputDTO.getDonation() > 0) comment.setDonation(commentInputDTO.getDonation());
         comment.setBody(commentInputDTO.getCommentBody());
         comment.setCreatedAt(new Date());
-        comment.setSpoi
+        comment.setSpoiler(commentInputDTO.isSpoiler());
+
+        board.setCommentAmount(board.getCommentAmount() + 1);
+
+        entityManager.persist(comment);
+        entityManager.persist(board);
+
+        end(entityManager);
+    }
+
+    // DB Comment 테이블에 매개변수 commentId를 사용하여 Comment 정보를 수정한다.
+    public void ModifyComment(CommentModifyDTO commentModifyDTO, long commentId) {
+        Comment modifyComment = entityManager.find(Comment.class, commentId)
