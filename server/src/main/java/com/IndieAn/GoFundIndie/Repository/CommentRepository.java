@@ -58,4 +58,14 @@ public class CommentRepository extends EntityManagerExtend{
 
     // DB Comment 테이블에 매개변수 commentId를 사용하여 Comment 정보를 수정한다.
     public void ModifyComment(CommentModifyDTO commentModifyDTO, long commentId) {
-        Comment modifyComment = entityManager.find(Comment.class, commentId)
+        Comment modifyComment = entityManager.find(Comment.class, commentId);
+
+        if(commentModifyDTO.getRating() != null) modifyComment.setRating(commentModifyDTO.getRating());
+        if(commentModifyDTO.getCommentBody() != null) modifyComment.setBody(commentModifyDTO.getCommentBody());
+        modifyComment.setSpoiler(commentModifyDTO.isSpoiler());
+
+        end(entityManager);
+    }
+
+    // DB Comment 테이블에 매개변수 commentId를 사용하여 Comment 정보를 삭제한다.
+    publi
