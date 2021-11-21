@@ -68,4 +68,17 @@ public class CommentRepository extends EntityManagerExtend{
     }
 
     // DB Comment 테이블에 매개변수 commentId를 사용하여 Comment 정보를 삭제한다.
-    publi
+    public void DeleteComment(long commentId) {
+        Comment deleteComment = entityManager.find(Comment.class, commentId);
+        Board board = deleteComment.getBoardId();
+
+        board.setCommentAmount(board.getCommentAmount() - 1);
+
+        entityManager.persist(board);
+        entityManager.remove(deleteComment);
+
+        end(entityManager);
+    }
+
+    // ViewBoard gql comments
+    public List<CommentGraphQLDTO> findCommentByBoar
