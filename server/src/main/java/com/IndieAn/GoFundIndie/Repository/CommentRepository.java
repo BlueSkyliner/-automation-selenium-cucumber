@@ -81,4 +81,10 @@ public class CommentRepository extends EntityManagerExtend{
     }
 
     // ViewBoard gql comments
-    public List<CommentGraphQLDTO> findCommentByBoar
+    public List<CommentGraphQLDTO> findCommentByBoard(long boardId, Integer limit) {
+        String query = "SELECT DISTINCT new com.IndieAn.GoFundIndie.Resolvers.DTO.Comment.CommentGraphQLDTO" +
+                       "(c.id, c.rating, u.id, u.nickname, u.profilePicture, c.donation, c.body, c.spoiler, c.like, false) " +
+                       "FROM Comment c " +
+                       "JOIN c.boardId b " +
+                       "ON c.boardId = " + boardId + " " +
+             
