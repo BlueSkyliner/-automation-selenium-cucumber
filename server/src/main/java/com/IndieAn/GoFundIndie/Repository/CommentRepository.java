@@ -87,4 +87,18 @@ public class CommentRepository extends EntityManagerExtend{
                        "FROM Comment c " +
                        "JOIN c.boardId b " +
                        "ON c.boardId = " + boardId + " " +
-             
+                       "JOIN c.userId u " +
+                       "ORDER BY c.like DESC";
+
+        if(limit == null) {
+            return entityManager.createQuery(query, CommentGraphQLDTO.class)
+                    .getResultList();
+        } else {
+            return entityManager.createQuery(query, CommentGraphQLDTO.class)
+                    .setMaxResults(limit)
+                    .getResultList();
+        }
+    }
+
+    // 후원을 했을 경우 DB에서 댓글을 찾아 후원 금액을 수정한다.
+    
