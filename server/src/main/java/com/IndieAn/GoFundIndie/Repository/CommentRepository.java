@@ -101,4 +101,10 @@ public class CommentRepository extends EntityManagerExtend{
     }
 
     // 후원을 했을 경우 DB에서 댓글을 찾아 후원 금액을 수정한다.
-    
+    public void ModifyDonation(long commentId, Integer total) {
+        Comment comment = entityManager.find(Comment.class, commentId);
+        comment.setDonation(comment.getDonation() + total);
+
+        end(entityManager);
+    }
+}
