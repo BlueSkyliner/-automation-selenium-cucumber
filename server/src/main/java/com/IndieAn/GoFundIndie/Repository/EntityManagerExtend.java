@@ -7,4 +7,22 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 @Component
-@Requir
+@RequiredArgsConstructor
+public class EntityManagerExtend {
+    public void end(EntityManager em) {
+        em.flush();
+        em.close();
+    }
+
+    public void singlePersist(Object e, EntityManager em) {
+        em.persist(e);
+        end(em);
+    }
+
+    public void singleRemove(Object e, EntityManager em) {
+        em.remove(e);
+        end(em);
+    }
+
+    public void listPersist(List<?> eList, EntityManager em) {
+        eList.forEach(
