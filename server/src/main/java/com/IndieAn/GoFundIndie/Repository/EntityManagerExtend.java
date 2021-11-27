@@ -25,4 +25,12 @@ public class EntityManagerExtend {
     }
 
     public void listPersist(List<?> eList, EntityManager em) {
-        eList.forEach(
+        eList.forEach(em::persist);
+        end(em);
+    }
+
+    public void listRemove(List<?> eList, EntityManager em) {
+        eList.forEach(em::remove);
+        end(em);
+    }
+}
