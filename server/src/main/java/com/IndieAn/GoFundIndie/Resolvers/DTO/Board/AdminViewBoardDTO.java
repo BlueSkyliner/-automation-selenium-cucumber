@@ -201,3 +201,40 @@ public class AdminViewBoardDTO {
     public int getLikeAmount() {
         return likeAmount;
     }
+
+    public void setLikeAmount(int likeAmount) {
+        this.likeAmount = likeAmount;
+    }
+
+    public List<GenreGraphQLDTO> getGenre() {
+        return genre;
+    }
+
+    public void setGenre(List<GenreGraphQLDTO> genre) {
+        this.genre = genre;
+    }
+
+    public List<CastingGraphQLDTO> getCasting() {
+        return casting;
+    }
+
+    public void setCasting(List<CastingGraphQLDTO> casting) {
+        this.casting = casting;
+    }
+
+    public List<StillGraphQLDTO> getStill() {
+        return still;
+    }
+
+    public void setStill(List<StillGraphQLDTO> still) {
+        this.still = still;
+    }
+
+    public List<CommentGraphQLDTO> getComment() {
+        return comment;
+    }
+
+    public void setComment(List<CommentGraphQLDTO> comment) {
+        this.comment = comment;
+    }
+}
