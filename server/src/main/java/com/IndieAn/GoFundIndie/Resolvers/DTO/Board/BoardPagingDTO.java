@@ -33,4 +33,24 @@ public class BoardPagingDTO {
     }
 
     public void setCountBoards(Integer countBoards) {
-        this.cou
+        this.countBoards = countBoards;
+    }
+
+    public Integer getCountPages() {
+        return countPages;
+    }
+
+    public void setCountPages(Integer countPages) {
+        this.countPages = countPages;
+    }
+
+    public Integer getBoardsPerPage() {
+        return boardsPerPage;
+    }
+
+    public void setBoardsPerPage(Integer boardsPerPage) {
+        this.boardsPerPage = boardsPerPage;
+    }
+
+    public Integer getCurrentPage() {
+        return currentPage;
