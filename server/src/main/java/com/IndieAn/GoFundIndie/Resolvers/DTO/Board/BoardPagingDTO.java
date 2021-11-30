@@ -18,4 +18,19 @@ public class BoardPagingDTO {
     public BoardPagingDTO(Integer countBoards, Integer countPages, Integer boardsPerPage, Integer currentPage, List<BoardGraphQLDTO> content) {
         Assert.notNull(countBoards, "countBoards not null");
         Assert.notNull(countPages, "countPages not null");
-        Assert.notNull(b
+        Assert.notNull(boardsPerPage, "boardsPerPage not null");
+        Assert.notNull(currentPage, "currentPage not null");
+
+        this.countBoards = countBoards;
+        this.countPages = countPages;
+        this.boardsPerPage = boardsPerPage;
+        this.currentPage = currentPage;
+        this.content = content;
+    }
+
+    public Integer getCountBoards() {
+        return countBoards;
+    }
+
+    public void setCountBoards(Integer countBoards) {
+        this.cou
