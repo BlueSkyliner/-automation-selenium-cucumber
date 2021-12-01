@@ -54,3 +54,17 @@ public class BoardPagingDTO {
 
     public Integer getCurrentPage() {
         return currentPage;
+    }
+
+    public void setCurrentPage(Integer currentPage) {
+        this.currentPage = currentPage;
+    }
+
+    public List<BoardGraphQLDTO> getContent() {
+        return content;
+    }
+
+    public void setContent(List<BoardGraphQLDTO> content) {
+        this.content = content;
+    }
+}
