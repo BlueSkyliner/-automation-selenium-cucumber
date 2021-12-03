@@ -86,3 +86,54 @@ public class LikeBoardGraphQLDTO {
     }
 
     public void setInfoCountry(String infoCountry) {
+        this.infoCountry = infoCountry;
+    }
+
+    public String getInfoCreatedYear() {
+        return infoCreatedYear;
+    }
+
+    public void setInfoCreatedYear(String infoCreatedYear) {
+        this.infoCreatedYear = infoCreatedYear;
+    }
+
+    public String getInfoCreatedDate() {
+        return infoCreatedDate;
+    }
+
+    public void setInfoCreatedDate(String infoCreatedDate) {
+        this.infoCreatedDate = infoCreatedDate;
+    }
+
+    public Integer getInfoTime() {
+        return infoTime;
+    }
+
+    public void setInfoTime(Integer infoTime) {
+        this.infoTime = infoTime;
+    }
+
+    public Integer getInfoLimit() {
+        return infoLimit;
+    }
+
+    public void setInfoLimit(Integer infoLimit) {
+        this.infoLimit = infoLimit;
+    }
+
+    public String getInfoStory() {
+        return infoStory;
+    }
+
+    public void setInfoStory(String infoStory) {
+        this.infoStory = infoStory;
+    }
+
+    public List<GenreGraphQLDTO> getGenre() {
+        return genre;
+    }
+
+    public void setGenre(List<GenreGraphQLDTO> genre) {
+        this.genre = genre;
+    }
+}
