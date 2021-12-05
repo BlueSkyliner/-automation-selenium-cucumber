@@ -22,4 +22,17 @@ public class PutBoardDTO {
 
     public PutBoardDTO() {}
 
-    public PutBoardDTO(Long boardId, String title, String infoCountry, String infoCreatedYear, int infoTime, String infoStory, String producer, String distributor, String posterImg, String viewLink, int infoLimit, Boolean infoSubtitle, 
+    public PutBoardDTO(Long boardId, String title, String infoCountry, String infoCreatedYear, int infoTime, String infoStory, String producer, String distributor, String posterImg, String viewLink, int infoLimit, Boolean infoSubtitle, String infoCreatedDate) {
+        Assert.notNull(boardId, "boardId is not null");
+
+        this.boardId = boardId;
+        this.title = title;
+        this.infoCountry = infoCountry;
+        this.infoCreatedYear = infoCreatedYear;
+        this.infoTime = infoTime;
+        this.infoStory = infoStory;
+        this.producer = producer;
+        this.distributor = distributor;
+        this.posterImg = posterImg;
+        this.viewLink = viewLink;
+        this.info
