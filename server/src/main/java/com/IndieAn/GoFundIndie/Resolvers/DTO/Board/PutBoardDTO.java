@@ -13,4 +13,13 @@ public class PutBoardDTO {
     private int infoTime;
     private String infoStory;
     private String producer;
-    private String distri
+    private String distributor;
+    private String posterImg;
+    private String viewLink;
+    private int infoLimit;
+    private Boolean infoSubtitle;
+    private String infoCreatedDate;
+
+    public PutBoardDTO() {}
+
+    public PutBoardDTO(Long boardId, String title, String infoCountry, String infoCreatedYear, int infoTime, String infoStory, String producer, String distributor, String posterImg, String viewLink, int infoLimit, Boolean infoSubtitle, 
