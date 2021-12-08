@@ -35,4 +35,26 @@ public class PutBoardDTO {
         this.distributor = distributor;
         this.posterImg = posterImg;
         this.viewLink = viewLink;
-        this.info
+        this.infoLimit = infoLimit;
+        this.infoSubtitle = infoSubtitle;
+        this.infoCreatedDate = infoCreatedDate;
+    }
+
+    public long getBoardId() {
+        return boardId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getInfoCountry() {
+        return infoCountry;
+    }
+
+    public String getInfoCreatedYear() {
+        return infoCreatedYear;
+    }
+
+    public int getInfoTime() {
+        retur
