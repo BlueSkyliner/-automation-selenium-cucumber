@@ -57,4 +57,31 @@ public class PutBoardDTO {
     }
 
     public int getInfoTime() {
-        retur
+        return infoTime;
+    }
+
+    public String getInfoStory() {
+        return infoStory;
+    }
+
+    public String getProducer() {
+        return producer;
+    }
+
+    public String getDistributor() {
+        return distributor;
+    }
+
+    public String getPosterImg() {
+        return posterImg;
+    }
+
+    public String getViewLink() {
+        return viewLink;
+    }
+
+    public int getInfoLimit() {
+        return infoLimit;
+    }
+
+    pub
