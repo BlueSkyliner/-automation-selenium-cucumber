@@ -84,4 +84,11 @@ public class PutBoardDTO {
         return infoLimit;
     }
 
-    pub
+    public Boolean getInfoSubtitle() {
+        return infoSubtitle;
+    }
+
+    public String getInfoCreatedDate() {
+        return infoCreatedDate;
+    }
+}
