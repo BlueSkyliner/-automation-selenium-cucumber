@@ -225,3 +225,52 @@ public class ViewBoardDTO {
     }
 
     public void setGenre(List<GenreGraphQLDTO> genre) {
+        this.genre = genre;
+    }
+
+    public List<CastingGraphQLDTO> getCasting() {
+        return casting;
+    }
+
+    public void setCasting(List<CastingGraphQLDTO> casting) {
+        this.casting = casting;
+    }
+
+    public List<StillGraphQLDTO> getStill() {
+        return still;
+    }
+
+    public void setStill(List<StillGraphQLDTO> still) {
+        this.still = still;
+    }
+
+    public List<CommentGraphQLDTO> getComment() {
+        return comment;
+    }
+
+    public void setComment(List<CommentGraphQLDTO> comment) {
+        this.comment = comment;
+    }
+
+    public static ViewBoardDTO from(Board en) {
+        return ViewBoardDTO.builder()
+                .id(en.getId())
+                .isApprove(en.isApprove())
+                .title(en.getTitle())
+                .producer(en.getProducer())
+                .distributor(en.getDistributor())
+                .posterImg(en.getPosterImg())
+                .viewLink(en.getViewLink())
+                .infoCountry(en.getInfoCountry())
+                .infoCreatedYear(en.getInfoCreatedYear())
+                .infoCreatedDate(en.getInfoCreatedDate())
+                .infoTime(en.getInfoTime())
+                .infoLimit(en.getInfoLimit())
+                .infoStory(en.getInfoStory())
+                .infoSubtitle(en.isInfoSubtitle())
+                .createdAt(en.getCreatedAt().toString())
+                .commentAmount(en.getCommentAmount())
+                .likeAmount(en.getLikeAmount())
+                .build();
+    }
+}
