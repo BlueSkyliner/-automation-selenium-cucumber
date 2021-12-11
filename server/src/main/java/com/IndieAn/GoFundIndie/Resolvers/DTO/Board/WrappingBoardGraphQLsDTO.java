@@ -18,4 +18,10 @@ public class WrappingBoardGraphQLsDTO {
     }
 
     public int getCode() {
- 
+        return code;
+    }
+
+    public List<BoardGraphQLDTO> getData() {
+        return data;
+    }
+}
