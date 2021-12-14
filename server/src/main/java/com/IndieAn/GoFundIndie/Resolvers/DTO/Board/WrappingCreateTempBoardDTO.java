@@ -8,4 +8,8 @@ import lombok.Getter;
 @Builder
 @AllArgsConstructor
 public class WrappingCreateTempBoardDTO {
-  
+    private int code;
+    private CreateTempBoardDTO data;
+
+    public WrappingCreateTempBoardDTO() {}
+}
