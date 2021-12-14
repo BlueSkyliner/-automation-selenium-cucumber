@@ -7,9 +7,5 @@ import lombok.Getter;
 @Getter
 @Builder
 @AllArgsConstructor
-public class WrappingCreateBoardCompleteDTO {
-    private int code;
-    private CreateBoardCompleteDTO data;
-
-    public WrappingCreateBoardCompleteDTO() {}
-}
+public class WrappingCreateTempBoardDTO {
+  
