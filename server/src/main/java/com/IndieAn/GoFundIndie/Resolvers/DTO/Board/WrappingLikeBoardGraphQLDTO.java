@@ -16,4 +16,19 @@ public class WrappingLikeBoardGraphQLDTO {
         this.data = data;
     }
 
-    public in
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public List<LikeBoardGraphQLDTO> getData() {
+        return data;
+    }
+
+    public void setData(List<LikeBoardGraphQLDTO> data) {
+        this.data = data;
+    }
+}
