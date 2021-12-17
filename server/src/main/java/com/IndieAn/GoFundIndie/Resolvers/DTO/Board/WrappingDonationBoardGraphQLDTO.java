@@ -31,4 +31,7 @@ public class WrappingDonationBoardGraphQLDTO {
         return data;
     }
 
-    public void setData(List<Donat
+    public void setData(List<DonationBoardGraphQLDTO> data) {
+        this.data = data;
+    }
+}
