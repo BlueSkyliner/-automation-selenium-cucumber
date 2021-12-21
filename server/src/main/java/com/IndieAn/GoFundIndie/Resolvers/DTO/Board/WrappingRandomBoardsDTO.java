@@ -28,4 +28,11 @@ public class WrappingRandomBoardsDTO {
         this.code = code;
     }
 
-    public List<RandomBoar
+    public List<RandomBoardDTO> getData() {
+        return data;
+    }
+
+    public void setData(List<RandomBoardDTO> data) {
+        this.data = data;
+    }
+}
