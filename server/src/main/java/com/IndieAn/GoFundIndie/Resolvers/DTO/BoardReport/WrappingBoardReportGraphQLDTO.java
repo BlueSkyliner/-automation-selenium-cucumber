@@ -29,4 +29,8 @@ public class WrappingBoardReportGraphQLDTO {
     }
 
     public static WrappingBoardReportGraphQLDTO bad(int code) {
-        return WrappingBoardReportGraphQLDTO.builde
+        return WrappingBoardReportGraphQLDTO.builder()
+                .code(code)
+                .build();
+    }
+}
