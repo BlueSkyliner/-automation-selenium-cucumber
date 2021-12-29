@@ -30,4 +30,9 @@ public class WrappingBoardReportsGraphqlDTO {
         this.data = data;
     }
 
-    public static WrappingBoardReportsGraphqlDTO bad(int code)
+    public static WrappingBoardReportsGraphqlDTO bad(int code) {
+        return WrappingBoardReportsGraphqlDTO.builder()
+                .code(code)
+                .build();
+    }
+}
