@@ -26,4 +26,11 @@ public class PutCastingDTO {
         return name;
     }
 
-    public int getPosi
+    public int getPosition() {
+        return position;
+    }
+
+    public String getImage() {
+        return image;
+    }
+}
