@@ -21,4 +21,22 @@ public class GenreGraphQLDTO {
     }
 
     public long getId() {
-     
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public static GenreGraphQLDTO from(Genre genre) {
+        return GenreGraphQLDTO.builder()
+                .id(genre.getId())
+                .name(genre.getName())
+                .build();
+    }
+
+    public static Genre to(GenreGraphQLDTO dto) {
+        if(dto.getName() == null) return null;
+        Genre genre = new Genre();
+        genre.setName(dto.getName());
+      
