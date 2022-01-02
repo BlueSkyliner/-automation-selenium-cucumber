@@ -39,4 +39,6 @@ public class GenreGraphQLDTO {
         if(dto.getName() == null) return null;
         Genre genre = new Genre();
         genre.setName(dto.getName());
-      
+        return genre;
+    }
+}
