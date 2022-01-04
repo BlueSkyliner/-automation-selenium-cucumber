@@ -20,4 +20,15 @@ public class GqlResponseCodeDTO {
         this.code = code;
     }
 
-    public static GqlResponseC
+    public static GqlResponseCodeDTO ok() {
+        return GqlResponseCodeDTO.builder()
+                .code(2000)
+                .build();
+    }
+
+    public static GqlResponseCodeDTO bad(int code) {
+        return GqlResponseCodeDTO.builder()
+                .code(code)
+                .build();
+    }
+}
