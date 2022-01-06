@@ -14,4 +14,16 @@ public class UserGraphQLDTO {
     private String profilePicture;
     private String nickname; //non-null
     private String createdAt; // default exist
-   
+    private int totalDonation; // default exist
+    private boolean adAgree; // default exist
+
+    public UserGraphQLDTO() {}
+
+    public static UserGraphQLDTO from(User user) {
+        UserGraphQLDTO dt = new UserGraphQLDTO();
+        dt.setId(user.getId());
+        dt.setAdminRole(user.isAdminRole());
+        dt.setBanned(user.isBanned());
+        dt.setEmail(user.getEmail());
+        dt.setPassword(user.getPassword());
+        dt.setProfilePicture(user.getProfilePic
