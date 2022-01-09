@@ -26,4 +26,11 @@ public class UserGraphQLDTO {
         dt.setBanned(user.isBanned());
         dt.setEmail(user.getEmail());
         dt.setPassword(user.getPassword());
-        dt.setProfilePicture(user.getProfilePic
+        dt.setProfilePicture(user.getProfilePicture());
+        dt.setNickname(user.getNickname());
+        dt.setCreatedAt(user.getCreatedAt().toString());
+        dt.setTotalDonation(user.getTotalDonation());
+        dt.setAdAgree(user.isAdAgree());
+        return dt;
+    }
+}
