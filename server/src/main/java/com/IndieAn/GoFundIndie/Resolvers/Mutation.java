@@ -27,4 +27,17 @@ public class Mutation implements GraphQLMutationResolver {
     private final BoardMutation boardMutation;
     private final CastingMutation castingMutation;
     private final GenreMutation genreMutation;
-    private final UserMutation use
+    private final UserMutation userMutation;
+    private final BoardGenreMutation boardGenreMutation;
+    private final BoardLikeMutation boardLikeMutation;
+    private final BoardReportMutation boardReportMutation;
+
+    // ---- USER ----
+    //
+    public int CreateUser(UserGraphQLDTO dto) {
+        return userMutation.CreateUser(dto);
+    }
+
+    // ---- GENRE ----
+    //
+    public GqlResponseCodeDTO CreateGenre(GenreGraphQLDTO dto, Da
