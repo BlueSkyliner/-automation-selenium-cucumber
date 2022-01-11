@@ -40,4 +40,18 @@ public class Mutation implements GraphQLMutationResolver {
 
     // ---- GENRE ----
     //
-    public GqlResponseCodeDTO CreateGenre(GenreGraphQLDTO dto, Da
+    public GqlResponseCodeDTO CreateGenre(GenreGraphQLDTO dto, DataFetchingEnvironment env) {
+        return genreMutation.CreateGenre(dto, env);
+    }
+
+    public GqlResponseCodeDTO DeleteGenreId(Long id, DataFetchingEnvironment env) {
+        return genreMutation.DeleteGenreId(id, env);
+    }
+
+    // ---- BOARD ----
+    //
+    public WrappingCreateTempBoardDTO CreateTempBoard(DataFetchingEnvironment env) {
+        return boardMutation.CreateTempBoard(env);
+    }
+
+    public WrappingCreateTempBoardDTO CompleteBoard(Create
