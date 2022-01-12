@@ -54,4 +54,16 @@ public class Mutation implements GraphQLMutationResolver {
         return boardMutation.CreateTempBoard(env);
     }
 
-    public WrappingCreateTempBoardDTO CompleteBoard(Create
+    public WrappingCreateTempBoardDTO CompleteBoard(CreateBoardCompleteDTO dto, DataFetchingEnvironment env) {
+        return boardMutation.CompleteBoard(dto, env);
+    }
+
+    public WrappingCreateTempBoardDTO PutBoard(PutBoardDTO dto, DataFetchingEnvironment env) {
+        return boardMutation.PutBoard(dto, env);
+    }
+
+    public GqlResponseCodeDTO DeleteBoard(long id, DataFetchingEnvironment env) {
+        return boardMutation.DeleteBoard(id, env);
+    }
+
+    public GqlResponse
