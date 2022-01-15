@@ -66,4 +66,16 @@ public class Mutation implements GraphQLMutationResolver {
         return boardMutation.DeleteBoard(id, env);
     }
 
-    public GqlResponse
+    public GqlResponseCodeDTO ApproveBoard(long id, DataFetchingEnvironment env) {
+        return boardMutation.ApproveBoard(id, true, env);
+    }
+
+    public GqlResponseCodeDTO DisapproveBoard(long id, DataFetchingEnvironment env) {
+        return boardMutation.ApproveBoard(id, false, env);
+    }
+
+    public GqlResponseCodeDTO SwitchLikeBoard(long boardId, DataFetchingEnvironment env) {
+        return boardLikeMutation.SwitchLikeBoard(boardId, env);
+    }
+
+    // ---- Casting ---
