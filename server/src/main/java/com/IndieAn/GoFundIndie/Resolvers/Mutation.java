@@ -78,4 +78,15 @@ public class Mutation implements GraphQLMutationResolver {
         return boardLikeMutation.SwitchLikeBoard(boardId, env);
     }
 
-    // ---- Casting ---
+    // ---- Casting ----
+    //
+
+    public WrappingCreateTempCastingDTO CreateTempCasting(long id, DataFetchingEnvironment env) {
+        return castingMutation.CreateTempCasting(id,env);
+    }
+
+    public WrappingCreateTempCastingDTO CompleteCasting(CreateCastingCompleteDTO dto, DataFetchingEnvironment env) {
+        return castingMutation.CompleteCasting(dto, env);
+    }
+
+    public WrappingCreateTempCastingDTO PutCasting(PutCastingDTO dto, DataFetchingEnvi
