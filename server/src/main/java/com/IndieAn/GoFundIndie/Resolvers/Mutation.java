@@ -89,4 +89,16 @@ public class Mutation implements GraphQLMutationResolver {
         return castingMutation.CompleteCasting(dto, env);
     }
 
-    public WrappingCreateTempCastingDTO PutCasting(PutCastingDTO dto, DataFetchingEnvi
+    public WrappingCreateTempCastingDTO PutCasting(PutCastingDTO dto, DataFetchingEnvironment env) {
+        return castingMutation.PutCasting(dto, env);
+    }
+
+    public GqlResponseCodeDTO DeleteCasting(long id, DataFetchingEnvironment env) {
+        return castingMutation.DeleteCasting(id, env);
+    }
+
+    // ---- BoardGenre ----
+    //
+
+    public WrappingLinkBoardGenreDTO LinkBoardGenre(Long boardId, Long genreId, DataFetchingEnvironment env) {
+        return boardGenreMutation.LinkBoardGenre(boardId, genreId, true, 
