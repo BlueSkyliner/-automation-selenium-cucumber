@@ -101,4 +101,18 @@ public class Mutation implements GraphQLMutationResolver {
     //
 
     public WrappingLinkBoardGenreDTO LinkBoardGenre(Long boardId, Long genreId, DataFetchingEnvironment env) {
-        return boardGenreMutation.LinkBoardGenre(boardId, genreId, true, 
+        return boardGenreMutation.LinkBoardGenre(boardId, genreId, true, env);
+    }
+
+    public WrappingLinkBoardGenreDTO DisLinkBoardGenre(Long boardId, Long genreId, DataFetchingEnvironment env) {
+        return boardGenreMutation.LinkBoardGenre(boardId, genreId, false, env);
+    }
+
+    // ---- BoardReport ----
+    //
+
+    public GqlResponseCodeDTO ReportBoard(CreateBoardReportDTO dto, DataFetchingEnvironment env) {
+        return boardReportMutation.ReportBoard(dto, env);
+    }
+
+    publ
