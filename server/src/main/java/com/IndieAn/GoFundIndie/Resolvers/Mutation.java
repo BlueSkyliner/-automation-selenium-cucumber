@@ -115,4 +115,7 @@ public class Mutation implements GraphQLMutationResolver {
         return boardReportMutation.ReportBoard(dto, env);
     }
 
-    publ
+    public GqlResponseCodeDTO DeleteReport(Long id, DataFetchingEnvironment env) {
+        return boardReportMutation.DeleteReport(id, env);
+    }
+}
