@@ -11,4 +11,18 @@ import com.IndieAn.GoFundIndie.Service.GenreService;
 import com.IndieAn.GoFundIndie.Service.GqlUserValidService;
 import com.IndieAn.GoFundIndie.Service.UserService;
 import graphql.kickstart.servlet.context.GraphQLServletContext;
-import graphql.
+import graphql.schema.DataFetchingEnvironment;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
+
+@Slf4j
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class BoardGenreMutation {
+    private final BoardGenreRepository boa
