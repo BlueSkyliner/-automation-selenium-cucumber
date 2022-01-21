@@ -25,4 +25,14 @@ import java.util.Map;
 @Transactional
 @RequiredArgsConstructor
 public class BoardGenreMutation {
-    private final BoardGenreRepository boa
+    private final BoardGenreRepository boardGenreRepository;
+
+    private final UserService userService;
+    private final BoardService boardService;
+    private final GenreService genreService;
+    private final GqlUserValidService gqlUserValidService;
+
+    public WrappingLinkBoardGenreDTO LinkBoardGenre(Long boardId, Long genreId, boolean CreateOrDisLink, DataFetchingEnvironment env) {
+        if(boardId == null || genreId == null)
+            // Path null : 4009
+            return WrappingL
