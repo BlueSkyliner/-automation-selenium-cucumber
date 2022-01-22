@@ -35,4 +35,15 @@ public class BoardGenreMutation {
     public WrappingLinkBoardGenreDTO LinkBoardGenre(Long boardId, Long genreId, boolean CreateOrDisLink, DataFetchingEnvironment env) {
         if(boardId == null || genreId == null)
             // Path null : 4009
-            return WrappingL
+            return WrappingLinkBoardGenreDTO.builder().code(4009).build();
+
+        try{
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                // Token invalid
+                return WrappingLinkBoardGenreDTO.builder().code(code).build();
+            } else {
+                User user = gqlUserValidService.findUser(env);
+                // User not found : 4400
+                if(user == null) return WrappingLinkBo
