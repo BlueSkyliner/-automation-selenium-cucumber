@@ -46,4 +46,12 @@ public class BoardGenreMutation {
             } else {
                 User user = gqlUserValidService.findUser(env);
                 // User not found : 4400
-                if(user == null) return WrappingLinkBo
+                if(user == null) return WrappingLinkBoardGenreDTO.builder().code(4400).build();
+
+                Board board = boardService.FindBoardId(boardId);
+                // Board not found : 4401
+                if(board == null) return WrappingLinkBoardGenreDTO.builder().code(4401).build();
+
+                // Authorization denied : 4301
+                if(!user.isAdminRole() && board.getUserId().getId() != user.getId())
+                    return WrappingLinkBoardGenreDTO.builder().code(4301).build(
