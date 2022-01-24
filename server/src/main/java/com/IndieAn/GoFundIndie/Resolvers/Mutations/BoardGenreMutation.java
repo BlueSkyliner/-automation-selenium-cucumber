@@ -63,4 +63,14 @@ public class BoardGenreMutation {
                 if(CreateOrDisLink) boardGenreRepository.CreateLink(board, genre);
                 else boardGenreRepository.DisLink(board.getId(), genre.getId());
 
-                return WrappingLinkBoardGenre
+                return WrappingLinkBoardGenreDTO.builder()
+                        .code(2000)
+                        .data(LinkBoardGenreDTO.builder()
+                                .boardId(boardId).genreId(genreId).build())
+                        .build();
+            }
+
+            // Test Code
+//            Board board = boardService.FindBoardId(boardId);
+//            // Board not found : 4401
+//            if(board == null) retur
