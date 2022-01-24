@@ -54,4 +54,13 @@ public class BoardGenreMutation {
 
                 // Authorization denied : 4301
                 if(!user.isAdminRole() && board.getUserId().getId() != user.getId())
-                    return WrappingLinkBoardGenreDTO.builder().code(4301).build(
+                    return WrappingLinkBoardGenreDTO.builder().code(4301).build();
+
+                Genre genre = genreService.FindGenreId(genreId);
+                // Genre not found : 4404
+                if(genre == null) return WrappingLinkBoardGenreDTO.builder().code(4404).build();
+
+                if(CreateOrDisLink) boardGenreRepository.CreateLink(board, genre);
+                else boardGenreRepository.DisLink(board.getId(), genre.getId());
+
+                return WrappingLinkBoardGenre
