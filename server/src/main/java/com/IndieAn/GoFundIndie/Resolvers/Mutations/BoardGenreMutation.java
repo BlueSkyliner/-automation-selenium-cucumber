@@ -73,4 +73,13 @@ public class BoardGenreMutation {
             // Test Code
 //            Board board = boardService.FindBoardId(boardId);
 //            // Board not found : 4401
-//            if(board == null) retur
+//            if(board == null) return WrappingLinkBoardGenreDTO.builder().code(4401).build();
+//
+//            Genre genre = genreService.FindGenreId(genreId);
+//            // Genre not found : 4404
+//            if(genre == null) return WrappingLinkBoardGenreDTO.builder().code(4404).build();
+//
+//            if(CreateOrDisLink) boardGenreRepository.CreateLink(board, genre);
+//            else boardGenreRepository.DisLink(board.getId(), genre.getId());
+//
+//            re
