@@ -82,4 +82,14 @@ public class BoardGenreMutation {
 //            if(CreateOrDisLink) boardGenreRepository.CreateLink(board, genre);
 //            else boardGenreRepository.DisLink(board.getId(), genre.getId());
 //
-//            re
+//            return WrappingLinkBoardGenreDTO.builder()
+//                    .code(2000)
+//                    .data(LinkBoardGenreDTO.builder()
+//                            .boardId(boardId).genreId(genreId).build())
+//                    .build();
+
+        } catch (NullPointerException e) {
+            return WrappingLinkBoardGenreDTO.builder().code(4000).build();
+        }
+    }
+}
