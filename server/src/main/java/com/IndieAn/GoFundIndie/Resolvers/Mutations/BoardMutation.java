@@ -30,4 +30,13 @@ public class BoardMutation {
     private final GqlUserValidService gqlUserValidService;
 
     public WrappingCreateTempBoardDTO CreateTempBoard(DataFetchingEnvironment env) {
-  
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return WrappingCreateTempBoardDTO.builder().code(4400).build();
+
+                return WrappingCreateTempBoardDTO.builder().code(2000)
+                        .data(CreateTempBoardDTO.builder()
+                                .id(bo
