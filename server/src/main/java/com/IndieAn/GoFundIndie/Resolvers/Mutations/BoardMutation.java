@@ -20,4 +20,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class BoardMut
+public class BoardMutation {
+    private final BoardRepository boardRepository;
+    private final UserRepository userRepository;
+    private final BoardLikeRepository boardLikeRepository;
+
+    private final BoardService boardService;
+    private final UserService userService;
+    private final GqlUserValidService gqlUserValidService;
+
+    public WrappingCreateTempBoardDTO CreateTempBoard(DataFetchingEnvironment env) {
+  
