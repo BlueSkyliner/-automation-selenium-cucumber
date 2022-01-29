@@ -39,4 +39,14 @@ public class BoardMutation {
 
                 return WrappingCreateTempBoardDTO.builder().code(2000)
                         .data(CreateTempBoardDTO.builder()
-                                .id(bo
+                                .id(boardRepository.RegisterTempBoard(user))
+                                .build())
+                        .build();
+            } else
+                return WrappingCreateTempBoardDTO.builder().code(code).build();
+        } catch (NullPointerException e) {
+            return WrappingCreateTempBoardDTO.builder().code(4000).build();
+        }
+    }
+
+    public WrappingCreateTempBoardDTO CompleteBoard(CreateBoardCompleteDTO dto, DataFetching
