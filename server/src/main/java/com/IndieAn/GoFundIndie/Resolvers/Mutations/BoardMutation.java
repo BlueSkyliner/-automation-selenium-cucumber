@@ -49,4 +49,13 @@ public class BoardMutation {
         }
     }
 
-    public WrappingCreateTempBoardDTO CompleteBoard(CreateBoardCompleteDTO dto, DataFetching
+    public WrappingCreateTempBoardDTO CompleteBoard(CreateBoardCompleteDTO dto, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                Board board = boardRepository.findBoardId(dto.getBoardId());
+                // Can not find board : 4401
+                if(board == null)
+                    return WrappingCreateTempBoardDTO.builder().code(4401).build();
+                else if(board.getCastings().stream().noneMatch(el -> el.getPosition
