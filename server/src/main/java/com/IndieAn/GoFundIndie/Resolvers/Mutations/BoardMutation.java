@@ -58,4 +58,12 @@ public class BoardMutation {
                 // Can not find board : 4401
                 if(board == null)
                     return WrappingCreateTempBoardDTO.builder().code(4401).build();
-                else if(board.getCastings().stream().noneMatch(el -> el.getPosition
+                else if(board.getCastings().stream().noneMatch(el -> el.getPosition() == 1))
+                    // Can not find Director : 4403
+                    return WrappingCreateTempBoardDTO.builder().code(4403).build();
+                else if(board.getBoardGenres().size() == 0)
+                    // Can not find Genre : 4404
+                    return WrappingCreateTempBoardDTO.builder().code(4404).build();
+
+                User user = gqlUserValidService.findUser(env);
+               
