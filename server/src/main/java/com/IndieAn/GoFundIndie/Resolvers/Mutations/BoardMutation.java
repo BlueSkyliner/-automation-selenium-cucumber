@@ -74,4 +74,12 @@ public class BoardMutation {
 
                 try {
                     // User != Admin : 4300
-                    if(board
+                    if(board.isApprove() && !user.isAdminRole()) {
+                        return WrappingCreateTempBoardDTO.builder()
+                                .code(4300)
+                                .build();
+                    } else {
+                        try {
+                            return WrappingCreateTempBoardDTO.builder()
+                                    .code(2000)
+                                    .data(CreateTempBoardDTO.buil
