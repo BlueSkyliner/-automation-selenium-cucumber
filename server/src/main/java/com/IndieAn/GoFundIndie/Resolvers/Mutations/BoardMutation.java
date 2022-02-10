@@ -66,4 +66,12 @@ public class BoardMutation {
                     return WrappingCreateTempBoardDTO.builder().code(4404).build();
 
                 User user = gqlUserValidService.findUser(env);
-               
+                // Can not find User : 4400
+                if(user == null) return WrappingCreateTempBoardDTO.builder().code(4400).build();
+                // Invalid User : 4301
+                else if(!user.isAdminRole() && user.getId() != board.getUserId().getId())
+                    return WrappingCreateTempBoardDTO.builder().code(4301).build();
+
+                try {
+                    // User != Admin : 4300
+                    if(board
