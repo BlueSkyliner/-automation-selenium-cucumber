@@ -90,4 +90,14 @@ public class BoardMutation {
                                     .code(4006).build();
                         }
                     }
-      
+                } catch (NullPointerException e) {
+                    // Essential value is null : 4006
+                    return WrappingCreateTempBoardDTO.builder()
+                            .code(4006).build();
+                }
+            } else {
+                // Token Invalid
+                return WrappingCreateTempBoardDTO.builder().code(code).build();
+            }
+        } catch (NullPointerException e) {
+            retur
