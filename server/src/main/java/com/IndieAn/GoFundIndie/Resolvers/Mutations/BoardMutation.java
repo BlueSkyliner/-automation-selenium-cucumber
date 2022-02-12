@@ -82,4 +82,12 @@ public class BoardMutation {
                         try {
                             return WrappingCreateTempBoardDTO.builder()
                                     .code(2000)
-                                    .data(CreateTempBoardDTO.buil
+                                    .data(CreateTempBoardDTO.builder()
+                                            .id(boardRepository.CompleteBoard(board, dto)).build())
+                                    .build();
+                        } catch (IllegalArgumentException e) {
+                            return WrappingCreateTempBoardDTO.builder()
+                                    .code(4006).build();
+                        }
+                    }
+      
