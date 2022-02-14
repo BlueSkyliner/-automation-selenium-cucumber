@@ -113,4 +113,12 @@ public class BoardMutation {
                 Board board = boardRepository.findBoardId(dto.getBoardId());
                 // Can not find board : 4401
                 if (board == null)
-     
+                    return WrappingCreateTempBoardDTO.builder().code(4401).build();
+
+                User user = gqlUserValidService.findUser(env);
+                // Can not find user : 4400
+                if(user == null) return WrappingCreateTempBoardDTO.builder().code(4400).build();
+                // User != Admin : 4300
+                else if (!user.isAdminRole()) {
+                    return WrappingCreateTempBoardDTO.builder()
+                            .code
