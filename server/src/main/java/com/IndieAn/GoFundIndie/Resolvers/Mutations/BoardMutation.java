@@ -100,4 +100,17 @@ public class BoardMutation {
                 return WrappingCreateTempBoardDTO.builder().code(code).build();
             }
         } catch (NullPointerException e) {
-            retur
+            return WrappingCreateTempBoardDTO.builder().code(4000).build();
+        }
+    }
+
+    // ! Only -- Admin --
+    public WrappingCreateTempBoardDTO PutBoard(PutBoardDTO dto, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if (code == 0) {
+                Board board = boardRepository.findBoardId(dto.getBoardId());
+                // Can not find board : 4401
+                if (board == null)
+     
