@@ -132,4 +132,16 @@ public class BoardMutation {
                 }
             } else {
                 // Token Invalid
-                ret
+                return WrappingCreateTempBoardDTO.builder().code(code).build();
+            }
+        } catch (NullPointerException e) {
+            return WrappingCreateTempBoardDTO.builder().code(4000).build();
+        }
+    }
+
+    public GqlResponseCodeDTO DeleteBoard(long id, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if (code == 0) {
+                Board board = boa
