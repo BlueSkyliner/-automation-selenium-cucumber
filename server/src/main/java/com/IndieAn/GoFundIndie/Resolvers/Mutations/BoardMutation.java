@@ -121,4 +121,15 @@ public class BoardMutation {
                 // User != Admin : 4300
                 else if (!user.isAdminRole()) {
                     return WrappingCreateTempBoardDTO.builder()
-                            .code
+                            .code(4300)
+                            .build();
+                } else {
+                    return WrappingCreateTempBoardDTO.builder()
+                            .code(2000)
+                            .data(CreateTempBoardDTO.builder()
+                                    .id(boardRepository.PutBoard(board, dto)).build())
+                            .build();
+                }
+            } else {
+                // Token Invalid
+                ret
