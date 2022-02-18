@@ -144,4 +144,14 @@ public class BoardMutation {
             int code = gqlUserValidService.envValidCheck(env);
 
             if (code == 0) {
-                Board board = boa
+                Board board = boardRepository.findBoardId(id);
+                if(board == null)
+                    return GqlResponseCodeDTO.bad(4401);
+
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return GqlResponseCodeDTO.bad(4400);
+                else if(!user.isAdminRole())
+                    return GqlResponseCodeDTO.bad(4300);
+
+                boardRepository.DeleteBoard(board);
+         
