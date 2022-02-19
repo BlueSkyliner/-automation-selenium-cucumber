@@ -154,4 +154,16 @@ public class BoardMutation {
                     return GqlResponseCodeDTO.bad(4300);
 
                 boardRepository.DeleteBoard(board);
-         
+                return GqlResponseCodeDTO.ok();
+            } else {
+                // Token Invalid
+                return GqlResponseCodeDTO.bad(code);
+            }
+        } catch (NullPointerException e) {
+            return GqlResponseCodeDTO.bad(4000);
+        }
+    }
+
+    public GqlResponseCodeDTO ApproveBoard(long id, boolean isApprove, DataFetchingEnvironment env) {
+        try {
+            int code = gql
