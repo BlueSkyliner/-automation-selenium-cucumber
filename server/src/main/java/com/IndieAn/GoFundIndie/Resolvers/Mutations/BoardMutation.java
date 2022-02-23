@@ -176,4 +176,16 @@ public class BoardMutation {
                 User user = gqlUserValidService.findUser(env);
                 if(user == null) return GqlResponseCodeDTO.bad(4400);
                 else if(!user.isAdminRole())
-                  
+                    return GqlResponseCodeDTO.bad(4300);
+
+                boardRepository.ApproveBoard(board, isApprove);
+                return GqlResponseCodeDTO.ok();
+            } else {
+                // Token Invalid
+                return GqlResponseCodeDTO.bad(code);
+            }
+        } catch (NullPointerException e) {
+            return GqlResponseCodeDTO.bad(4000);
+        }
+    }
+}
