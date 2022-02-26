@@ -8,4 +8,16 @@ import com.IndieAn.GoFundIndie.Resolvers.DTO.BoardReport.CreateBoardReportDTO;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.GqlResponseCodeDTO;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.GqlResponseCodeIdDTO;
 import com.IndieAn.GoFundIndie.Service.GqlUserValidService;
-impo
+import graphql.schema.DataFetchingEnvironment;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Slf4j
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class BoardReportMutation {
+    private final BoardReportRepository boardReportRepository;
+    private final BoardRepository boardRepository;
