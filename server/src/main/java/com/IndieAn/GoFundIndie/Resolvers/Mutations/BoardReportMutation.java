@@ -21,3 +21,15 @@ import org.springframework.transaction.annotation.Transactional;
 public class BoardReportMutation {
     private final BoardReportRepository boardReportRepository;
     private final BoardRepository boardRepository;
+
+    private final GqlUserValidService gqlUserValidService;
+
+    public GqlResponseCodeDTO ReportBoard(CreateBoardReportDTO dto, DataFetchingEnvironment env) {
+        try {
+            // request body wrong : 4006
+            if(dto == null) return GqlResponseCodeDTO.bad(4006);
+
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                User user = gqlUserValidService.findUs
