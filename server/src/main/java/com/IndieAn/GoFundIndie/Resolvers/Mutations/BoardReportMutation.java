@@ -32,4 +32,14 @@ public class BoardReportMutation {
             int code = gqlUserValidService.envValidCheck(env);
 
             if(code == 0) {
-                User user = gqlUserValidService.findUs
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return GqlResponseCodeDTO.bad(4400);
+
+                Board board = boardRepository.findBoardId(dto.getBoardId());
+                if(board == null) return GqlResponseCodeDTO.bad(4401);
+
+                if(boardReportRepository.ReportNew(user, board, dto.getBody())) {
+                    return GqlResponseCodeDTO.ok();
+                } else {
+                    // already reported : 4005
+  
