@@ -42,4 +42,16 @@ public class BoardReportMutation {
                     return GqlResponseCodeDTO.ok();
                 } else {
                     // already reported : 4005
-  
+                    return GqlResponseCodeDTO.bad(4005);
+                }
+            } else {
+                // token invalid
+                return GqlResponseCodeDTO.bad(code);
+            }
+        } catch (IllegalArgumentException e) {
+            // request body wrong : 4006
+            return GqlResponseCodeDTO.bad(4006);
+        } catch (NullPointerException e) {
+            // token empty : 4000
+            return GqlResponseCodeDTO.bad(4000);
+ 
