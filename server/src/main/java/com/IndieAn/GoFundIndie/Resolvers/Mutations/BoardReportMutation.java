@@ -54,4 +54,15 @@ public class BoardReportMutation {
         } catch (NullPointerException e) {
             // token empty : 4000
             return GqlResponseCodeDTO.bad(4000);
- 
+        }
+    }
+
+    public GqlResponseCodeDTO DeleteReport(Long boardReportId, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                if(boardReportId == null) return GqlResponseCodeDTO.bad(4009);
+
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return GqlResponseCodeDTO.bad(4400);
