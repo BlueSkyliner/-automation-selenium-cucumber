@@ -66,3 +66,13 @@ public class BoardReportMutation {
 
                 User user = gqlUserValidService.findUser(env);
                 if(user == null) return GqlResponseCodeDTO.bad(4400);
+                else if(!user.isAdminRole()) return GqlResponseCodeDTO.bad(4300);
+
+                if(boardReportRepository.DeleteReport(boardReportId)) {
+                    return GqlResponseCodeDTO.ok();
+                } else {
+                    // can not find report_id : 4406
+                    return GqlResponseCodeDTO.bad(4406);
+                }
+            } else {
+                return GqlResponseCodeDTO.bad(c
