@@ -75,4 +75,10 @@ public class BoardReportMutation {
                     return GqlResponseCodeDTO.bad(4406);
                 }
             } else {
-                return GqlResponseCodeDTO.bad(c
+                return GqlResponseCodeDTO.bad(code);
+            }
+        } catch (NullPointerException e) {
+            return GqlResponseCodeDTO.bad(4000);
+        }
+    }
+}
