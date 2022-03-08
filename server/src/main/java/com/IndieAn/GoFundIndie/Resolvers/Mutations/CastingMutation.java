@@ -10,4 +10,17 @@ import com.IndieAn.GoFundIndie.Resolvers.DTO.Casting.CreateCastingCompleteDTO;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.Casting.CreateTempCastingDTO;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.Casting.PutCastingDTO;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.Casting.WrappingCreateTempCastingDTO;
-import com.IndieAn.GoFundIndie.Resolvers
+import com.IndieAn.GoFundIndie.Resolvers.DTO.GqlResponseCodeDTO;
+import com.IndieAn.GoFundIndie.Service.GqlUserValidService;
+import com.IndieAn.GoFundIndie.Service.UserService;
+import graphql.schema.DataFetchingEnvironment;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Slf4j
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class 
