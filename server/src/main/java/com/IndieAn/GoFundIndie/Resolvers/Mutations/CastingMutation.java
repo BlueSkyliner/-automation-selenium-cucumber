@@ -35,4 +35,13 @@ public class CastingMutation {
     // 캐스팅 임시
     public WrappingCreateTempCastingDTO CreateTempCasting(long id, DataFetchingEnvironment env) {
         try {
-  
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                // Token Invalid
+                return WrappingCreateTempCastingDTO.builder().code(code).build();
+            } else {
+                Board board = boardRepository.findBoardId(id);
+                // Can not find board_id : 4401
+                if(board == null)
+                    return WrappingCreateTempCastingDTO.bu
