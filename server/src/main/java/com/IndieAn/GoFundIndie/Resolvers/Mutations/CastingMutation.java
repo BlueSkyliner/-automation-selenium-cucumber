@@ -23,4 +23,16 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class 
+public class CastingMutation {
+    private final BoardRepository boardRepository;
+    private final CastingRepository castingRepository;
+    private final UserRepository userRepository;
+
+    private final UserService userService;
+    private final GqlUserValidService gqlUserValidService;
+
+    // TODO 보드가 승인나면 관리자만 할수 있게
+    // 캐스팅 임시
+    public WrappingCreateTempCastingDTO CreateTempCasting(long id, DataFetchingEnvironment env) {
+        try {
+  
