@@ -44,4 +44,12 @@ public class CastingMutation {
                 Board board = boardRepository.findBoardId(id);
                 // Can not find board_id : 4401
                 if(board == null)
-                    return WrappingCreateTempCastingDTO.bu
+                    return WrappingCreateTempCastingDTO.builder().code(4401).build();
+
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return WrappingCreateTempCastingDTO.builder().code(4400).build();
+                // No authorization : 4301
+                else if(!user.isAdminRole() && board.getUserId().getId() != user.getId())
+                    return WrappingCreateTempCastingDTO.builder().code(4301).build();
+
+                return Wrappin
