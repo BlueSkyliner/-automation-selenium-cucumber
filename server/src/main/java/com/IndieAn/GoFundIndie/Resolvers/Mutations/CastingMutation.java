@@ -61,4 +61,17 @@ public class CastingMutation {
             // Test Code
 //            return WrappingCreateTempCastingDTO.builder().code(2000)
 //                    .data(CreateTempCastingDTO.builder().id(
-//                            castingReposito
+//                            castingRepository.RegisterTempCasting(
+//                                    boardRepository.findBoardId(id)
+//                            )
+//                    ).build())
+//                    .build();
+
+        } catch (NullPointerException e) {
+            // No token : 4000
+            return WrappingCreateTempCastingDTO.builder().code(4000).build();
+        }
+    }
+
+    // 캐스팅 등록
+    public WrappingCreateTempCastingDTO CompleteCasting(CreateCastingCompleteDTO dto, DataFe
