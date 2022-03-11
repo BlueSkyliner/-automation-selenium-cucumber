@@ -52,4 +52,13 @@ public class CastingMutation {
                 else if(!user.isAdminRole() && board.getUserId().getId() != user.getId())
                     return WrappingCreateTempCastingDTO.builder().code(4301).build();
 
-                return Wrappin
+                return WrappingCreateTempCastingDTO.builder().code(2000)
+                        .data(CreateTempCastingDTO.builder()
+                                .id(castingRepository.RegisterTempCasting(board)).build())
+                        .build();
+            }
+
+            // Test Code
+//            return WrappingCreateTempCastingDTO.builder().code(2000)
+//                    .data(CreateTempCastingDTO.builder().id(
+//                            castingReposito
