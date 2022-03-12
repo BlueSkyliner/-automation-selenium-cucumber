@@ -84,4 +84,15 @@ public class CastingMutation {
             } else {
                 Casting casting = castingRepository.findCastingById(dto.getCastingId());
                 if(casting == null)
-                    return WrappingCre
+                    return WrappingCreateTempCastingDTO.builder().code(4403).build();
+
+                return WrappingCreateTempCastingDTO.builder().code(2000)
+                        .data(CreateTempCastingDTO.builder().id(
+                                castingRepository.CompleteCasting(casting, dto)
+                        ).build())
+                        .build();
+            }
+
+            // Test Code
+//            return WrappingCreateTempCastingDTO.builder().code(2000)
+//    
