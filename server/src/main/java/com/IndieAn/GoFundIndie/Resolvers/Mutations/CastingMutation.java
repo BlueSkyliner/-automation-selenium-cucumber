@@ -74,4 +74,14 @@ public class CastingMutation {
     }
 
     // 캐스팅 등록
-    public WrappingCreateTempCastingDTO CompleteCasting(CreateCastingCompleteDTO dto, DataFe
+    public WrappingCreateTempCastingDTO CompleteCasting(CreateCastingCompleteDTO dto, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                // Token Invalid
+                return WrappingCreateTempCastingDTO.builder().code(code).build();
+            } else {
+                Casting casting = castingRepository.findCastingById(dto.getCastingId());
+                if(casting == null)
+                    return WrappingCre
