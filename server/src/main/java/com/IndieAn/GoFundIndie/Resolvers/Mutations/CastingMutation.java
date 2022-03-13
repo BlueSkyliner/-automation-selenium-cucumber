@@ -95,4 +95,13 @@ public class CastingMutation {
 
             // Test Code
 //            return WrappingCreateTempCastingDTO.builder().code(2000)
-//    
+//                    .data(CreateTempCastingDTO.builder()
+//                            .id(
+//                                    castingRepository.CompleteCasting(castingRepository.findCastingById(dto.getCastingId()), dto)
+//                            ).build())
+//                    .build();
+
+        } catch (NullPointerException e) {
+            return WrappingCreateTempCastingDTO.builder().code(4000).build();
+        }
+    }
