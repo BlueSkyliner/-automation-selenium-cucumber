@@ -105,3 +105,14 @@ public class CastingMutation {
             return WrappingCreateTempCastingDTO.builder().code(4000).build();
         }
     }
+
+    // 캐스팅 수정
+    public WrappingCreateTempCastingDTO PutCasting(PutCastingDTO dto, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                // Token Invalid
+                return WrappingCreateTempCastingDTO.builder().code(code).build();
+            } else {
+                Casting casting = castingRepository.findCastingById(dto.getC
