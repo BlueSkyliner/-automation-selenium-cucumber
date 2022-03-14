@@ -115,4 +115,14 @@ public class CastingMutation {
                 // Token Invalid
                 return WrappingCreateTempCastingDTO.builder().code(code).build();
             } else {
-                Casting casting = castingRepository.findCastingById(dto.getC
+                Casting casting = castingRepository.findCastingById(dto.getCastingId());
+                if(casting == null)
+                    return WrappingCreateTempCastingDTO.builder().code(4403).build();
+
+                return WrappingCreateTempCastingDTO.builder().code(2000)
+                        .data(CreateTempCastingDTO.builder().id(
+                                castingRepository.PutCasting(casting, dto)
+                        ).build())
+                        .build();
+            }
+
