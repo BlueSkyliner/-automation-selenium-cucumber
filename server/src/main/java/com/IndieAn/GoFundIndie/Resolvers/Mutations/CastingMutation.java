@@ -135,4 +135,17 @@ public class CastingMutation {
 //                    .build();
 
         } catch (NullPointerException e) {
-            return Wrapping
+            return WrappingCreateTempCastingDTO.builder().code(4000).build();
+        }
+    }
+
+    // 캐스팅 삭제
+    public GqlResponseCodeDTO DeleteCasting(long id, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                // Token Invalid
+                return GqlResponseCodeDTO.builder().code(code).build();
+            } else {
+                Casting castin
