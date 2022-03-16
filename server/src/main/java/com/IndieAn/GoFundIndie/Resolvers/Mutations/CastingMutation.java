@@ -148,4 +148,14 @@ public class CastingMutation {
                 // Token Invalid
                 return GqlResponseCodeDTO.builder().code(code).build();
             } else {
-                Casting castin
+                Casting casting = castingRepository.findCastingById(id);
+                if(casting == null)
+                    return GqlResponseCodeDTO.builder().code(4403).build();
+
+                castingRepository.RemoveCasting(casting);
+                return GqlResponseCodeDTO.builder().code(2000).build();
+            }
+
+            // Test Code
+//            castingRepository.RemoveCasting(castingRepository.findCastingById(id));
+//            return OnlyCodeDTO.buil
