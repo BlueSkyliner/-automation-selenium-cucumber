@@ -158,4 +158,10 @@ public class CastingMutation {
 
             // Test Code
 //            castingRepository.RemoveCasting(castingRepository.findCastingById(id));
-//            return OnlyCodeDTO.buil
+//            return OnlyCodeDTO.builder().code(2000).build();
+
+        } catch (NullPointerException e) {
+            return GqlResponseCodeDTO.builder().code(4000).build();
+        }
+    }
+}
