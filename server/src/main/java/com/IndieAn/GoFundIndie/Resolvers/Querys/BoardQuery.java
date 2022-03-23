@@ -26,4 +26,14 @@ import java.util.stream.Collectors;
 @Transactional
 @RequiredArgsConstructor
 public class BoardQuery {
-    private final BoardRepository boardRe
+    private final BoardRepository boardRepository;
+    private final CommentRepository commentRepository;
+    private final CastingRepository castingRepository;
+    private final GenreRepository genreRepository;
+    private final ImageRepository imageRepository;
+    private final BoardLikeRepository boardLikeRepository;
+    private final CommentRatingRepository commentRatingRepository;
+
+    private final GqlUserValidService gqlUserValidService;
+
+    public WrappingV
