@@ -36,4 +36,14 @@ public class BoardQuery {
 
     private final GqlUserValidService gqlUserValidService;
 
-    public WrappingV
+    public WrappingViewBoardDTO FindBoardId(Long id, DataFetchingEnvironment env) {
+        try {
+            Board board = boardRepository.findBoardId(id);
+            if(board == null) return WrappingViewBoardDTO.builder().code(4401).build();
+
+            boolean envCheck = false;
+            User user = null;
+
+            if(gqlUserValidService.envValidCheck(env) == 0){
+                user = gqlUserValidService.findUser(env);
+                if(user != nul
