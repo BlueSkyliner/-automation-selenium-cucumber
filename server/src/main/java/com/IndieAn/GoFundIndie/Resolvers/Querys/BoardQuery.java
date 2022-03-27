@@ -46,4 +46,16 @@ public class BoardQuery {
 
             if(gqlUserValidService.envValidCheck(env) == 0){
                 user = gqlUserValidService.findUser(env);
-                if(user != nul
+                if(user != null){
+                    envCheck = true;
+                }
+            }
+
+            List<CommentGraphQLDTO> commentList = commentRepository.findCommentByBoard(id, null);
+
+            ViewBoardDTO dto = ViewBoardDTO.from(board);
+            dto.setCasting(castingRepository.findCastingByBoard(id));
+            dto.setGenre(genreRepository.findGenreByBoard(id));
+            dto.setStill(imageRepository.findStillByBoard(id));
+
+            if(comm
