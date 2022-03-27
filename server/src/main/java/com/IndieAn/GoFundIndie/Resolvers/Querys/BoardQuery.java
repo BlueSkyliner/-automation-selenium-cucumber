@@ -58,4 +58,17 @@ public class BoardQuery {
             dto.setGenre(genreRepository.findGenreByBoard(id));
             dto.setStill(imageRepository.findStillByBoard(id));
 
-            if(comm
+            if(commentList.size() > 0) {
+                List<CommentGraphQLDTO> commentTopFive = new ArrayList<>();
+
+                int listRange = 5;
+                if(commentList.size() < listRange) listRange = commentList.size();
+
+                for(int i = 0 ; i < listRange ; i++) {
+                    commentTopFive.add(commentList.get(i));
+                }
+
+                int a = 0;
+
+                // TODO Board 에 Comment rating 값도 저장 탐색 안해도 되게
+                for
