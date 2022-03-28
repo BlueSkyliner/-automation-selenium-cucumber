@@ -71,4 +71,14 @@ public class BoardQuery {
                 int a = 0;
 
                 // TODO Board 에 Comment rating 값도 저장 탐색 안해도 되게
-                for
+                for(CommentGraphQLDTO el : commentList) {
+                    a = a + el.getRating();
+                }
+
+                dto.setAverageRating(Math.round((a / commentList.size()) * 10) / 10);
+
+                if(envCheck) {
+                    long userId = user.getId();
+                    commentTopFive = commentTopFive.stream().map(el -> {
+                        el.setRatingChecked(
+                                commentRatingRepository.co
