@@ -81,4 +81,17 @@ public class BoardQuery {
                     long userId = user.getId();
                     commentTopFive = commentTopFive.stream().map(el -> {
                         el.setRatingChecked(
-                                commentRatingRepository.co
+                                commentRatingRepository.commentRatedCheck(userId, el.getId()));
+                        return el;
+                    }).collect(Collectors.toList());
+                }
+
+                dto.setComment(commentTopFive);
+            } else {
+                dto.setComment(commentList);
+                dto.setAverageRating(0);
+            }
+
+            if(envCheck) {
+                dto.setLiked(boardLikeRepository
+                     
