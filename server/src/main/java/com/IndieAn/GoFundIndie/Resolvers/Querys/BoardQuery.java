@@ -94,4 +94,20 @@ public class BoardQuery {
 
             if(envCheck) {
                 dto.setLiked(boardLikeRepository
-                     
+                        .isLikedBoard(user,board));
+            } else {
+                dto.setLiked(false);
+            }
+
+            return WrappingViewBoardDTO.builder()
+                    .code(2000)
+                    .data(dto)
+                    .build();
+        } catch (NullPointerException e) {
+            return WrappingViewBoardDTO.builder()
+                    .code(4401)
+                    .build();
+        }
+    }
+
+    public Wrapp
