@@ -110,4 +110,13 @@ public class BoardQuery {
         }
     }
 
-    public Wrapp
+    public WrappingAdminViewBoardDTO FindBoardIdAdmin(Long id, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code != 0) {
+                return WrappingAdminViewBoardDTO.builder().code(code).build();
+            } else {
+                User user = gqlUserValidService.findUser(env);
+
+                if(user == null) return WrappingAdminViewBoardDTO.builder().code(4400).build();
