@@ -120,3 +120,11 @@ public class BoardQuery {
                 User user = gqlUserValidService.findUser(env);
 
                 if(user == null) return WrappingAdminViewBoardDTO.builder().code(4400).build();
+                else if(!user.isAdminRole()) {
+                    return WrappingAdminViewBoardDTO.builder().code(4300).build();
+                }
+
+                AdminViewBoardDTO dto = AdminViewBoardDTO.from(boardRepository.findBoardId(id));
+                dto.setCasting(castingRepository.findCastingByBoard(id));
+                dto.setComment(commentRepository.findCommentByBoard(id,5));
+                dto.setGenre(genreRepository.findGenreByBoard(id
