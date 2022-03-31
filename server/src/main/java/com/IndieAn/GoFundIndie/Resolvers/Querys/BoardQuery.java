@@ -127,4 +127,17 @@ public class BoardQuery {
                 AdminViewBoardDTO dto = AdminViewBoardDTO.from(boardRepository.findBoardId(id));
                 dto.setCasting(castingRepository.findCastingByBoard(id));
                 dto.setComment(commentRepository.findCommentByBoard(id,5));
-                dto.setGenre(genreRepository.findGenreByBoard(id
+                dto.setGenre(genreRepository.findGenreByBoard(id));
+                dto.setStill(imageRepository.findStillByBoard(id));
+
+                return WrappingAdminViewBoardDTO.builder()
+                        .code(2000)
+                        .data(dto)
+                        .build();
+            }
+        } catch (NullPointerException e) {
+            return WrappingAdminViewBoardDTO.builder().code(4000).build();
+        }
+    }
+
+    public WrappingBoardGraphQLsDTO FindBoards(SearchTypes ty
