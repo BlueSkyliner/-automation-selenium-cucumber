@@ -152,4 +152,12 @@ public class BoardQuery {
                 //   - My = 내가 찜한 영화
                 case SEARCH_TYPES_MY:
                     try {
-      
+                        int code = gqlUserValidService.envValidCheck(env);
+
+                        if(code != 0) {
+                            return WrappingBoardGraphQLsDTO.builder().code(code).build();
+                        } else {
+                            User user = gqlUserValidService.findUser(env);
+                            if(user == null) return WrappingBoardGraphQLsDTO.builder().code(4400).build();
+
+               
