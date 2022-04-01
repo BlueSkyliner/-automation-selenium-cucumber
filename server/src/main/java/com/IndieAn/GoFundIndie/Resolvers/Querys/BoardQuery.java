@@ -140,4 +140,16 @@ public class BoardQuery {
         }
     }
 
-    public WrappingBoardGraphQLsDTO FindBoards(SearchTypes ty
+    public WrappingBoardGraphQLsDTO FindBoards(SearchTypes type, int limit, DataFetchingEnvironment env) {
+        if(type == null){
+            return WrappingBoardGraphQLsDTO.builder()
+                    .code(2000)
+                    .data(boardRepository.findBoards(true, limit))
+                    .build();
+        }
+        try {
+            switch (type) {
+                //   - My = 내가 찜한 영화
+                case SEARCH_TYPES_MY:
+                    try {
+      
