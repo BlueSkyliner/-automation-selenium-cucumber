@@ -160,4 +160,12 @@ public class BoardQuery {
                             User user = gqlUserValidService.findUser(env);
                             if(user == null) return WrappingBoardGraphQLsDTO.builder().code(4400).build();
 
-               
+                            return WrappingBoardGraphQLsDTO.builder()
+                                    .code(2000)
+                                    .data(boardRepository.findBoardsLike(user, limit))
+                                    .build();
+                        }
+                    } catch (NullPointerException e) {
+                        return WrappingBoardGraphQLsDTO.builder().code(4000).build();
+                    }
+   
