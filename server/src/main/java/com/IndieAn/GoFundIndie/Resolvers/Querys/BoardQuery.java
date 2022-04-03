@@ -168,4 +168,12 @@ public class BoardQuery {
                     } catch (NullPointerException e) {
                         return WrappingBoardGraphQLsDTO.builder().code(4000).build();
                     }
-   
+                //   - My_donation = 내가 후원한 영화
+                case SEARCH_TYPES_MY_DONATION:
+                    try {
+                        int code = gqlUserValidService.envValidCheck(env);
+
+                        if(code != 0) {
+                            return WrappingBoardGraphQLsDTO.builder().code(code).build();
+                        } else {
+                            User user = gqlUserValidService.fin
