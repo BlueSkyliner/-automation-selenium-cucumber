@@ -176,4 +176,12 @@ public class BoardQuery {
                         if(code != 0) {
                             return WrappingBoardGraphQLsDTO.builder().code(code).build();
                         } else {
-                            User user = gqlUserValidService.fin
+                            User user = gqlUserValidService.findUser(env);
+                            if(user == null) return WrappingBoardGraphQLsDTO.builder().code(4400).build();
+
+                            return WrappingBoardGraphQLsDTO.builder()
+                                    .code(2000)
+                                    .data(boardRepository.findBoardsDonation(user, limit))
+                                    .build();
+                        }
+                    } catch (NullPointerException e)
