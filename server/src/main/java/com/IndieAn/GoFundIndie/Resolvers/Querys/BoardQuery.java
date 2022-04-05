@@ -184,4 +184,13 @@ public class BoardQuery {
                                     .data(boardRepository.findBoardsDonation(user, limit))
                                     .build();
                         }
-                    } catch (NullPointerException e)
+                    } catch (NullPointerException e) {
+                        return WrappingBoardGraphQLsDTO.builder().code(4000).build();
+                    }
+                //   - Approve_false = 미승인 보드
+                case SEARCH_TYPES_APPROVE_FALSE:
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoards(false, limit))
+                            .build();
+ 
