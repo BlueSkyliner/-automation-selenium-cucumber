@@ -193,4 +193,12 @@ public class BoardQuery {
                             .code(2000)
                             .data(boardRepository.findBoards(false, limit))
                             .build();
- 
+                //   - Approve_true = 승인된 보드
+                case SEARCH_TYPES_APPROVE_TRUE:
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoards(true, limit))
+                            .build();
+                //   - All = 필터 없이 모든 보드
+                case SEARCH_TYPES_ALL:
+                    return WrappingBoardGraphQLsDTO.bu
