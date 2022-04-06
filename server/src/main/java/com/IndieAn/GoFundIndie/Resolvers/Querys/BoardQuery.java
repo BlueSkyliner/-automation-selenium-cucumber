@@ -201,4 +201,13 @@ public class BoardQuery {
                             .build();
                 //   - All = 필터 없이 모든 보드
                 case SEARCH_TYPES_ALL:
-                    return WrappingBoardGraphQLsDTO.bu
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findAllBoards(limit))
+                            .build();
+                //   - New = 최근 승인된 순으로 정렬
+                case SEARCH_TYPES_NEW:
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoardsNew(limit))
+      
