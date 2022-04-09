@@ -210,4 +210,13 @@ public class BoardQuery {
                     return WrappingBoardGraphQLsDTO.builder()
                             .code(2000)
                             .data(boardRepository.findBoardsNew(limit))
-      
+                            .build();
+                //   - Random = 승인된 보드들 중 랜덤 추천
+                case SEARCH_TYPES_RANDOM:
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoardsRandom(limit))
+                            .build();
+                //   - SEOUL 2020
+                case SEARCH_TYPES_SEOUL2020:
+                    return Wrappin
