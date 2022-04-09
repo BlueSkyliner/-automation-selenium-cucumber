@@ -219,4 +219,13 @@ public class BoardQuery {
                             .build();
                 //   - SEOUL 2020
                 case SEARCH_TYPES_SEOUL2020:
-                    return Wrappin
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoardsSeoul2020(limit))
+                            .build();
+                //   - Genre = 장르별 영화
+                default:
+                    return WrappingBoardGraphQLsDTO.builder()
+                            .code(2000)
+                            .data(boardRepository.findBoardsByGenre(type, limit))
+              
