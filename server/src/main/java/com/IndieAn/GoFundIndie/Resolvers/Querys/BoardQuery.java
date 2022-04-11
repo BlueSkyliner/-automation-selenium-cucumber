@@ -242,4 +242,12 @@ public class BoardQuery {
         try {
             int code = gqlUserValidService.envValidCheck(env);
 
-  
+            if(code != 0) {
+                return WrappingDonationBoardGraphQLDTO.builder().code(code).build();
+            } else {
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return WrappingDonationBoardGraphQLDTO.builder().code(4400).build();
+
+                return WrappingDonationBoardGraphQLDTO.builder()
+                        .code(2000)
+                 
