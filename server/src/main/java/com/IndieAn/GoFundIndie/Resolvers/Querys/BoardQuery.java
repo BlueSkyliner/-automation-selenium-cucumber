@@ -228,4 +228,18 @@ public class BoardQuery {
                     return WrappingBoardGraphQLsDTO.builder()
                             .code(2000)
                             .data(boardRepository.findBoardsByGenre(type, limit))
-              
+                            .build();
+            }
+        } catch (RuntimeException e) {
+            //   - type invalid case :
+            return WrappingBoardGraphQLsDTO.builder()
+                    .code(4009)
+                    .build();
+        }
+    }
+
+    public WrappingDonationBoardGraphQLDTO FindDonationBoards(int limit, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+  
