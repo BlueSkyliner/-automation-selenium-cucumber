@@ -262,4 +262,12 @@ public class BoardQuery {
         try {
             int code = gqlUserValidService.envValidCheck(env);
 
-            
+            if(code != 0) {
+                return WrappingLikeBoardGraphQLDTO.builder().code(code).build();
+            } else {
+                User user = gqlUserValidService.findUser(env);
+                if(user == null) return WrappingLikeBoardGraphQLDTO.builder().code(4400).build();
+
+                return WrappingLikeBoardGraphQLDTO.builder()
+                        .code(2000)
+                        .data(boardRepository.findBoardsMyLike(user, lim
