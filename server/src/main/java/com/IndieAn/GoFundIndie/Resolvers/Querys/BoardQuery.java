@@ -250,4 +250,16 @@ public class BoardQuery {
 
                 return WrappingDonationBoardGraphQLDTO.builder()
                         .code(2000)
-                 
+                        .data(boardRepository.findBoardsMyDonation(user, limit))
+                        .build();
+            }
+        } catch (NullPointerException e) {
+            return WrappingDonationBoardGraphQLDTO.builder().code(4000).build();
+        }
+    }
+
+    public WrappingLikeBoardGraphQLDTO FindLikeBoards(int limit, DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            
