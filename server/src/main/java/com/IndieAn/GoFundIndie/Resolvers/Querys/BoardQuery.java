@@ -270,4 +270,19 @@ public class BoardQuery {
 
                 return WrappingLikeBoardGraphQLDTO.builder()
                         .code(2000)
-                        .data(boardRepository.findBoardsMyLike(user, lim
+                        .data(boardRepository.findBoardsMyLike(user, limit))
+                        .build();
+            }
+        } catch (NullPointerException e) {
+            return WrappingLikeBoardGraphQLDTO.builder().code(4000).build();
+        }
+    }
+
+    public WrappingRandomBoardsDTO FindRandomBoard(int limit, DataFetchingEnvironment env) {
+        List<RandomBoardDTO> list;
+        List<SearchTypes> types;
+
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if (code !=
