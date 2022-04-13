@@ -285,4 +285,13 @@ public class BoardQuery {
         try {
             int code = gqlUserValidService.envValidCheck(env);
 
-            if (code !=
+            if (code != 0) types = SearchTypes.getRandomType(limit, false);
+            else types = SearchTypes.getRandomType(limit, true);
+        } catch (NullPointerException | IllegalArgumentException e) {
+            types = SearchTypes.getRandomType(limit, false);
+        }
+
+        list = types.stream().map(type -> RandomBoardDTO.builder()
+                .phrase(SearchTypes.getPhrase(type))
+
+                // TODO DT
