@@ -294,4 +294,10 @@ public class BoardQuery {
         list = types.stream().map(type -> RandomBoardDTO.builder()
                 .phrase(SearchTypes.getPhrase(type))
 
-                // TODO DT
+                // TODO DTO 포장지 없애기
+                .data(FindBoards(type, 12, env).getData())
+                .build()).collect(Collectors.toList());
+
+        return WrappingRandomBoardsDTO.builder().code(2000).data(list).build();
+    }
+}
