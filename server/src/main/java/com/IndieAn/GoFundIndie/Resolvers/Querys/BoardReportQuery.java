@@ -24,4 +24,13 @@ public class BoardReportQuery {
         try {
             if(id == null) return WrappingBoardReportGraphQLDTO.bad(4009);
 
-            int code = gqlUserValidService.envValid
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                try {
+                    User user = gqlUserValidService.findUser(env);
+                    if(user == null) return WrappingBoardReportGraphQLDTO.bad(4400);
+                    else if(!user.isAdminRole())
+                        return WrappingBoardReportGraphQLDTO.bad(4300);
+                } catch (NullPointerException e) {
+                    return WrappingBo
