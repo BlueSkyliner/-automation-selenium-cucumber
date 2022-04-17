@@ -14,4 +14,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Slf4j
 @Service
 @Transactional
-@Requi
+@RequiredArgsConstructor
+public class BoardReportQuery {
+    private final BoardReportRepository boardReportRepository;
+
+    private final GqlUserValidService gqlUserValidService;
+
+    public WrappingBoardReportGraphQLDTO FindBoardReport(Long id, DataFetchingEnvironment env) {
+        try {
+            if(id == null) return WrappingBoardReportGraphQLDTO.bad(4009);
+
+            int code = gqlUserValidService.envValid
