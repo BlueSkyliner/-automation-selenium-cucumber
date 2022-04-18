@@ -44,4 +44,17 @@ public class BoardReportQuery {
                 return WrappingBoardReportGraphQLDTO.bad(code);
             }
         } catch (NullPointerException e) {
-            return WrappingBoardReportGraphQL
+            return WrappingBoardReportGraphQLDTO.bad(4000);
+        }
+    }
+
+    public WrappingBoardReportsGraphqlDTO FindBoardReports(DataFetchingEnvironment env) {
+        try {
+            int code = gqlUserValidService.envValidCheck(env);
+
+            if(code == 0) {
+                try {
+                    User user = gqlUserValidService.findUser(env);
+                    if(user == null) WrappingBoardReportGraphQLDTO.bad(4400);
+                    else if(!user.isAdminRole())
+ 
