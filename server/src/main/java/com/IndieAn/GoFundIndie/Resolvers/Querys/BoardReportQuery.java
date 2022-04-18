@@ -33,4 +33,15 @@ public class BoardReportQuery {
                     else if(!user.isAdminRole())
                         return WrappingBoardReportGraphQLDTO.bad(4300);
                 } catch (NullPointerException e) {
-                    return WrappingBo
+                    return WrappingBoardReportGraphQLDTO.bad(4400);
+                }
+
+                return WrappingBoardReportGraphQLDTO.builder()
+                        .code(2000)
+                        .data(boardReportRepository.FindReport(id))
+                        .build();
+            } else {
+                return WrappingBoardReportGraphQLDTO.bad(code);
+            }
+        } catch (NullPointerException e) {
+            return WrappingBoardReportGraphQL
