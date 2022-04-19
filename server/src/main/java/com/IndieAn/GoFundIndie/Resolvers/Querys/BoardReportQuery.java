@@ -67,4 +67,10 @@ public class BoardReportQuery {
                         .data(boardReportRepository.FindReports())
                         .build();
             } else {
-                return Wrapp
+                return WrappingBoardReportsGraphqlDTO.bad(code);
+            }
+        } catch (NullPointerException e) {
+            return WrappingBoardReportsGraphqlDTO.bad(4000);
+        }
+    }
+}
