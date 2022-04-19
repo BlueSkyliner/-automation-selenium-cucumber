@@ -57,4 +57,14 @@ public class BoardReportQuery {
                     User user = gqlUserValidService.findUser(env);
                     if(user == null) WrappingBoardReportGraphQLDTO.bad(4400);
                     else if(!user.isAdminRole())
- 
+                        return WrappingBoardReportsGraphqlDTO.bad(4300);
+                } catch (NullPointerException e) {
+                    return WrappingBoardReportsGraphqlDTO.bad(4400);
+                }
+
+                return WrappingBoardReportsGraphqlDTO.builder()
+                        .code(2000)
+                        .data(boardReportRepository.FindReports())
+                        .build();
+            } else {
+                return Wrapp
