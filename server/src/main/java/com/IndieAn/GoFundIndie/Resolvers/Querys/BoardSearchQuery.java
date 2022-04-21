@@ -17,4 +17,15 @@ public class BoardSearchQuery {
     private final BoardSearchRepository boardSearchRepository;
 
     private final char[] consonant = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ".toCharArray();
-    private final char[] middWords = "가까나다따라마바빠사싸아자짜차카타파하".t
+    private final char[] middWords = "가까나다따라마바빠사싸아자짜차카타파하".toCharArray();
+    private final char[] lastWords = "깋낗닣딯띻맇밓빟삫싷앃잏짛찧칳킿팋핗힣".toCharArray();
+
+    private List<String> consonantMatch(char ch) {
+        char targetStaChar = ch;
+        char targetEndChar = targetStaChar;
+
+        if(targetEndChar <= 12622) {
+            for(int i = 0; i < 19; i++) {
+                if(targetEndChar == consonant[i]) {
+                    targetStaChar = middWords[i];
+                    targetEndChar = la
