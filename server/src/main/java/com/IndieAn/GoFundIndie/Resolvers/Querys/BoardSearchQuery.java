@@ -28,4 +28,19 @@ public class BoardSearchQuery {
             for(int i = 0; i < 19; i++) {
                 if(targetEndChar == consonant[i]) {
                     targetStaChar = middWords[i];
-                    targetEndChar = la
+                    targetEndChar = lastWords[i];
+                    break;
+                }
+            }
+        } else {
+            for (int i = 0; i < 19; i++) {
+                if (targetEndChar >= middWords[i] && targetEndChar <= lastWords[i]) {
+                    targetStaChar = middWords[i];
+                    targetEndChar = lastWords[i];
+                    break;
+                }
+            }
+        }
+
+        List<String> result = new ArrayList<>();
+        r
