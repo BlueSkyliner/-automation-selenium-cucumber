@@ -43,4 +43,13 @@ public class BoardSearchQuery {
         }
 
         List<String> result = new ArrayList<>();
-        r
+        result.add(String.valueOf(targetStaChar));
+        result.add(String.valueOf(targetEndChar));
+        return result;
+    }
+
+    // TODO 검색 로직 Full Search Text 로 교체
+    public WrappingSearchBoardDTO SearchBoardName(String str) {
+        if(str == null || str.equals("") || str.equals(" ")) {
+            return WrappingSearchBoardDTO.builder().code(2000)
+                    .data(boardSearchRepository.SearchBoardsFromN
