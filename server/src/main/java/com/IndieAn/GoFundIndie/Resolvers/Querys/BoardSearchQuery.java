@@ -62,4 +62,11 @@ public class BoardSearchQuery {
                 List<String> params = consonantMatch(lastWord);
                 String lastWordDeleted = str.substring(0, str.length() - 1);
 
-           
+                return WrappingSearchBoardDTO.builder().code(2000)
+                        .data(boardSearchRepository.SearchBoardsConsonant(
+                                lastWordDeleted + params.get(0),
+                                lastWordDeleted + params.get(1),
+                                10))
+                        .build();
+            } else {
+                return WrappingSearchBoardDTO.builder().
