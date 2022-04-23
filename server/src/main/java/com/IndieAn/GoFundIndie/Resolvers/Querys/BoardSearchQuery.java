@@ -52,4 +52,14 @@ public class BoardSearchQuery {
     public WrappingSearchBoardDTO SearchBoardName(String str) {
         if(str == null || str.equals("") || str.equals(" ")) {
             return WrappingSearchBoardDTO.builder().code(2000)
-                    .data(boardSearchRepository.SearchBoardsFromN
+                    .data(boardSearchRepository.SearchBoardsFromNull(10))
+                    .build();
+        } else {
+            char lastWord = str.toCharArray()[str.length() - 1];
+
+            // case: korean consonant / 12593 'ㄱ' / 12622 'ㅎ'
+            if(lastWord > 12592 && lastWord < 12623) {
+                List<String> params = consonantMatch(lastWord);
+                String lastWordDeleted = str.substring(0, str.length() - 1);
+
+           
