@@ -69,4 +69,10 @@ public class BoardSearchQuery {
                                 10))
                         .build();
             } else {
-                return WrappingSearchBoardDTO.builder().
+                return WrappingSearchBoardDTO.builder().code(2000)
+                        .data(boardSearchRepository.SearchBoards(str, 10))
+                        .build();
+            }
+        }
+    }
+}
