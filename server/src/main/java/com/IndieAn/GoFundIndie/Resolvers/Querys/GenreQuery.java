@@ -18,4 +18,12 @@ public class GenreQuery {
     private final GenreRepository genreRepository;
 
     public GenreGraphQLDTO FindGenreId(Long id) {
-        return GenreGraphQLDTO.from(genreRepository.FindByI
+        return GenreGraphQLDTO.from(genreRepository.FindById(id));
+    }
+
+    public List<GenreGraphQLDTO> FindAllGenre() {
+        return genreRepository.FindAll().stream()
+                .map(GenreGraphQLDTO::from)
+                .collect(Collectors.toList());
+    }
+}
