@@ -3,4 +3,21 @@ package com.IndieAn.GoFundIndie.Resolvers.Querys;
 import com.IndieAn.GoFundIndie.Repository.UserRepository;
 import com.IndieAn.GoFundIndie.Resolvers.DTO.User.UserGraphQLDTO;
 import lombok.RequiredArgsConstructor;
-import lombok.
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Slf4j
+@Service
+@Transactional
+@RequiredArgsConstructor
+public class UserQuery {
+    private final UserRepository userRepository;
+
+    public UserGraphQLDTO FindUserId(Long id) {
+        return UserGraphQLDTO.from(
+                userRepository.FindUserByIdDB(id)
+       
