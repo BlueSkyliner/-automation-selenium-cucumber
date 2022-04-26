@@ -20,4 +20,13 @@ public class UserQuery {
     public UserGraphQLDTO FindUserId(Long id) {
         return UserGraphQLDTO.from(
                 userRepository.FindUserByIdDB(id)
-       
+        );
+    }
+
+    public List<UserGraphQLDTO> FindAllUser() {
+        List<UserGraphQLDTO> result = new ArrayList<>();
+        userRepository.FindUserList()
+                .forEach(el -> result.add(UserGraphQLDTO.from(el)));
+        return result;
+    }
+}
