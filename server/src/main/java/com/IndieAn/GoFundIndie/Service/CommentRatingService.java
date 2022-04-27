@@ -11,4 +11,14 @@ import java.util.HashMap;
 
 @Service
 public class CommentRatingService {
-    private final CommentRatin
+    private final CommentRatingRepository commentRatingRepository;
+    private final CommentRepository commentRepository;
+    private HashMap<String, Object> body = new HashMap<>();
+
+    @Autowired
+    public CommentRatingService(CommentRatingRepository commentRatingRepository, CommentRepository commentRepository) {
+        this.commentRatingRepository = commentRatingRepository;
+        this.commentRepository = commentRepository;
+    }
+
+    public HashMap<String, Object> addRati
