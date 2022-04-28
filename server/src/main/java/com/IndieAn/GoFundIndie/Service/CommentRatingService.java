@@ -33,4 +33,16 @@ public class CommentRatingService {
         CommentRating commentRating = commentRatingRepository.FindRatingByUserAndComment(user.getId(), commentId);
 
         // 존재하지 않으면 좋아요를 수행하는 것이다.
-        // CommentRating T
+        // CommentRating Table에 추가한다.
+        if(commentRating == null) {
+            commentRatingRepository.CreateRating(user.getId(), commentId);
+        }
+        // 그것이 아니라면 좋아요를 취소하는 것이다.
+        // CommentRating Table에서 삭제한다.
+        else {
+            commentRatingRepository.DeleteRating(commentRating.getId());
+        }
+        body.put("code", 2000);
+        return body;
+    }
+}
