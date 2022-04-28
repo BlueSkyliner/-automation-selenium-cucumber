@@ -21,4 +21,16 @@ public class CommentRatingService {
         this.commentRepository = commentRepository;
     }
 
-    public HashMap<String, Object> addRati
+    public HashMap<String, Object> addRating(User user, long commentId) {
+        body.clear();
+        // 존재하지 않는 코멘트id
+        if(commentRepository.FindCommentById(commentId) == null) {
+            body.put("code", 4405);
+            return body;
+        }
+
+        // 해당 유저가 코멘트에 좋아요를 했는지 레이팅 테이블의 존재를 확인한다.
+        CommentRating commentRating = commentRatingRepository.FindRatingByUserAndComment(user.getId(), commentId);
+
+        // 존재하지 않으면 좋아요를 수행하는 것이다.
+        // CommentRating T
