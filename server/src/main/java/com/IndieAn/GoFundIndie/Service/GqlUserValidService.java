@@ -33,4 +33,18 @@ public class GqlUserValidService {
 
             Map<String, Object> checkToken = userService.CheckToken(accessToken);
 
-            if(checkToken.get("email") == 
+            if(checkToken.get("email") == null) {
+                return Integer.parseInt(checkToken.get("code").toString());
+            } else {
+                return 0;
+            }
+        } catch (NullPointerException e) {
+            return 4400;
+        } catch (IllegalArgumentException e) {
+            return 4000;
+        }
+    }
+
+    public User findUser(DataFetchingEnvironment env) {
+        GraphQLServletContext context = env.getContext();
+        HttpServletRequest request 
