@@ -21,4 +21,16 @@ public class GqlUserValidService {
             return 4000;
         }
 
-        
+        try {
+            GraphQLServletContext context = env.getContext();
+            HttpServletRequest request = context.getHttpServletRequest();
+            String accessToken = request.getHeader("accesstoken");
+
+            // No token in the Header : 4000
+            if(accessToken == null) {
+                return 4000;
+            }
+
+            Map<String, Object> checkToken = userService.CheckToken(accessToken);
+
+            if(checkToken.get("email") == 
