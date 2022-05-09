@@ -1,0 +1,7 @@
+type comment {
+    id: ID
+    rating: Int
+    userId: ID
+    userNickname: String
+    profilePicture: String
+    do
