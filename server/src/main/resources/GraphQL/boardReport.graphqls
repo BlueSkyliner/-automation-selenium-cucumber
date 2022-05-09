@@ -1,0 +1,6 @@
+input CreateBoardReport {
+    boardId: ID!
+    body: String!
+}
+
+type WrappingR
