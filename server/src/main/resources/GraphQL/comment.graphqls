@@ -4,4 +4,9 @@ type comment {
     userId: ID
     userNickname: String
     profilePicture: String
-    do
+    donation: Int
+    body: String
+    spoiler: Boolean
+    like: Int
+    ratingChecked: Boolean
+}
