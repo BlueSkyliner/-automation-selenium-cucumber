@@ -9,4 +9,20 @@ type Query {
 
     FindBoardId(id: ID!): WrappingBoard
     FindBoardIdAdmin(id: ID!): WrappingAdminBoard
-    FindBoards(Type: SearchTypes, Li
+    FindBoards(Type: SearchTypes, Limit: Int): WrappingBoards
+    FindDonationBoards(Limit: Int): WrappingDonationBoards
+    FindLikeBoards(Limit: Int): WrappingLikeBoards
+    FindRandomBoard(Limit: Int): WrappingRandomBoards
+
+    FindGenreId(id: ID!): genre
+    FindAllGenre: [genre]
+
+    CommentTest(id: ID!, limit: Int): [comment]
+
+    FindBoardReport(id: ID!): WrappingReport
+    FindBoardReports: WrappingReports
+
+    SearchBoardName(what: String): WrappingSearchBoards
+}
+
+type 
