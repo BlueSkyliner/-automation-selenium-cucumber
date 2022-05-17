@@ -12,4 +12,14 @@ INSERT INTO `user` (email,password,nickname,total_donation) VALUES ("askdjaskjd@
 INSERT INTO `user` (email,password,nickname,total_donation) VALUES ("qwerasdf4567@gofundindie.com", "7777", "조일곱", 17000);
 INSERT INTO `user` (email,password,nickname,total_donation) VALUES ("mansoor@gofundindie.com", "8888", "만수르", 50000000);
 
-INSERT INTO `user` (email,password,nickname) VALUES ("mansoor@gofundindie.com"
+INSERT INTO `user` (email,password,nickname) VALUES ("mansoor@gofundindie.com", "1234", "스포왕");
+
+INSERT INTO `user` (email,password,nickname,ad_agree) VALUES ("mansoor@gofundindie.com", "1234", "광고 거부맨", false);
+INSERT INTO `user` (email,password,nickname,ad_agree) VALUES ("mansoor@gofundindie.com", "1234", "광고 거부걸", false);
+
+
+--Genre
+INSERT INTO `genre` (id, name) VALUES (1, "드라마");
+INSERT INTO `genre` (id, name) VALUES (2, "공포");
+INSERT INTO `genre` (id, name) VALUES (3, "로멘스");
+INSERT INTO `ge
