@@ -22,4 +22,13 @@ INSERT INTO `user` (email,password,nickname,ad_agree) VALUES ("mansoor@gofundind
 INSERT INTO `genre` (id, name) VALUES (1, "드라마");
 INSERT INTO `genre` (id, name) VALUES (2, "공포");
 INSERT INTO `genre` (id, name) VALUES (3, "로멘스");
-INSERT INTO `ge
+INSERT INTO `genre` (id, name) VALUES (4, "판타지");
+INSERT INTO `genre` (id, name) VALUES (5, "스릴러");
+INSERT INTO `genre` (id, name) VALUES (6, "다큐멘터리");
+INSERT INTO `genre` (id, name) VALUES (7, "가족");
+INSERT INTO `genre` (id, name) VALUES (8, "범죄");
+INSERT INTO `genre` (id, name) VALUES (9, "코미디");
+INSERT INTO `genre` (id, name) VALUES (10, "애니메이션");
+INSERT INTO `genre` (id, name) VALUES (11, "액션");
+INSERT INTO `genre` (id, name) VALUES (12, "SF");
+INSERT INTO `genre` (id, name) 
