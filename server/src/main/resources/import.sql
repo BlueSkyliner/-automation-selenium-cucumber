@@ -31,4 +31,7 @@ INSERT INTO `genre` (id, name) VALUES (9, "코미디");
 INSERT INTO `genre` (id, name) VALUES (10, "애니메이션");
 INSERT INTO `genre` (id, name) VALUES (11, "액션");
 INSERT INTO `genre` (id, name) VALUES (12, "SF");
-INSERT INTO `genre` (id, name) 
+INSERT INTO `genre` (id, name) VALUES (13, "뮤지컬");
+
+-- 유월
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES (33, 3, true, "유월", "베프 (BEFF)", null, "https://cdn.notefolio.net/img/b9/93/b9938dc2e3873a124318f5275a94219112a61af429a0a3791357d9540ac363e7_v1.jpg", "https://www.youtube.com/wa
