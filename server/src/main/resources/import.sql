@@ -68,4 +68,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (48,2);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(49,2,true,"The Wrong Rock","Michael Cawood",null,"https://user-images.githubusercontent.com/45745049/141709892-cb7d072f-f2af-43af-92ec-c5f04e9160eb.png","https://youtu.be/eDaNejmf-1A","미국","2018",null,13,1,null,true);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (49,10);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_lim
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(50,2,true,"언니","김인욱",null,"https://image.tmdb.org/t/p/w500/rG98Zhee2oPY9HysOx0wpRzpqLR.jpg","https://youtu.be/mqh_fWDDzig","한국","2017",null,21,2,"<p>아파트에 살고있는 두 자매. 청소년인 동생이 한밤에 집을 나가고, 언니 혼자 남게된 집안에 괴한이 들어온다.</p><p>동생을 납치한 괴한으로 부터 동생을 구하기위한 언니의 처절한 이야기가 펼쳐진다.</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (50,8);
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, 
