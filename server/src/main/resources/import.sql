@@ -78,4 +78,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (53,1);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(54,2,true,"철원에서","김혜정",null,"https://user-images.githubusercontent.com/45745049/141714122-a28d44e2-a3d0-4ba0-85e6-e19f17e50974.png","https://youtu.be/6OvDfaSJDIc?list=PL9WxTUjNNa_G0fNdRQQ794Mf0g-7o1p8Y","한국","2018",null,17,1,"<p>예술 강사인 남희는 강원도 철원으로 수업을 하러 떠나지만 어느 것 하나 순탄치가 않다. 일을 다 마친 남희는 집으로 돌아가기 위해 터미널로 향하지만 마지막 버스를 놓치게 된다. </p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (54,1);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(55,2,true,"인싸","차경훈",null,"https://user-images.githubusercontent.com/45745049/141714312-f74f1eed-d51a-496b-bb06-8f0e2ac407f4.png","https://www.youtube.com/watch?v=P2X93az89y8&t=2s","한국","2020",null,9,2,"<p>많은 사람들의 관심과 사랑을 받는 인스타 스타 세영이 모두들 세영이의 화려한 일상을 부러워 한다. 하지만 보이는 것과는 조금 달라 보이는데 ...</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (55,1);
+INSERT INTO
