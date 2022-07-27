@@ -84,4 +84,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (56,1);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(57,2,true,"왜 독립영화 감독들은 DVD를 주지 않는가?","구교환",null,"http://t1.daumcdn.net/cfile/276B3D41535419CD2E","https://www.youtube.com/watch?v=j9QzZ5hwDhA","한국","2013",null,28,1,"<p>고기환(32세,남)은 다수의 독립영화에 출연한 배우다. 기환은 대부분의 독립영화 감독들로부터 자신의 출연작dvd를 받지 못했다. 직접 dvd를 받기 위해 과거 함께 작업했던 감독들과 재회하면서 기환은 뜻밖의 사실들을 알게 된다.</p>",true);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (57,1);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, inf
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(58,2,true,"플라이 투 더 스카이","구교환, 이옥섭",null,"https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/kOf/image/rG2vEQA1HD9dKbMsJ-7UcE_068Q.jpg","https://www.youtube.com/watch?v=7y-eps3O-Ko","한국","2015",null,14,1,"<p>이태리에서 돌아온 성환이 교환과 재회한다. 성환은 한국에서 건설기계조종사 면허를 취득하려고 한다. 교환은 성환에게 우선 자동차 운전연습부터 시킨다.</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (58,1);
+INSERT INTO `board` (
