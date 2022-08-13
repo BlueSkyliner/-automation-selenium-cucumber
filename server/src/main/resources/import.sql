@@ -94,4 +94,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (61,12);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(62,2,true,"얼음꽃","이민영",null,"https://user-images.githubusercontent.com/45745049/141719986-81e042ec-8ba0-4897-bceb-8712155f2136.png","https://www.youtube.com/watch?v=Z-cEHs9OTc8","한국","2016",null,14,3,"<p>남편에게 버림받고 임신초기인 지현은 얼굴도 모르는 오프라인 자살 카페 모임에서 만난 사람들(병우, 슬철)과 죽을 장소로 향한다. 지현은 승철과 병우와 자살을 시도하는데 죽는 것도 쉽지 않다.</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (62,1);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(63,2,true,"도브맘","김아람",null,"https://www.indieground.kr/fileFolder/a6ac8334-3e1f-46ed-b820-c89d8e2b72ef_jpg",null,"한국","2021",null,29,1,"<p>김아람은 비둘기(Dove) 엄마(Mom)가 되길 자청한다.</p>",true);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (63,6);
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_cr
