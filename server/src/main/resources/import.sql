@@ -114,4 +114,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (71,5);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(72,2,true,"더 앵글러","장승욱",null,"https://www.indieground.kr/fileFolder/p031.jpg",null,"한국","2018",null,13,1,"<p>노아는 매일 물고기를 잡으려고 한다, 이유도 잊은 채. 마을의 점등사 이보는 묵묵히 등불을 밝히며 그를 살핀다.</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (72,10);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, inf
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(73,2,true,"레몬","이현지",null,"https://github.com/JogiYo/practice1/blob/master/practice1/%EB%A0%88%EB%AA%AC.png?raw=true","https://youtu.be/nvkhIuG7ias","한국","2017",null,7,1,"<p>롯데월드가 폭피하는 상상으로 사회적 불만을 해소한다는 내용의 단편 영화.</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (73,1);
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_y
