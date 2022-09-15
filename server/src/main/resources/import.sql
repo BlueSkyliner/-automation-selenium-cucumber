@@ -122,4 +122,5 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (75,1);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(76,1,true,"실버택배","김나연","필름다빈","https://www.indieground.kr/fileFolder/8cea0c8c-9a34-44f3-b293-8d3229ccbaf0_jpg",null,"한국","2020",null,26,2,"<p>70세 신정숙씨는 지하철 택배원이다.</p><p>그녀는 어느 날 범죄에 관련된 통장을 운반하게 되고 경찰 조사를 받게 된다.</p><p>하지만 경찰 앞에서 거짓말만 늘어놓는 그녀.</p><p>결국 기록 일지를 모두 불태워 증거인멸을 하게 되는데…</p><p>초고령 사회가 도래하면서 노후 파산에 빠지는 사람들이 점점 늘어나고 있다.</p><p>나름대로의 최선을 다해 살아온 최정숙씨 또한 노후 파산을 피해갈 수만은 없다.</p><p>과연 그녀는 눈앞에 놓인 문제를 어떻게 해결해 나갈까? 그녀가 원하는 인생의 막을 내릴 수 있을까?</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (76,1);
-INSERT INTO `board` (id, user_
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(77,1,true,"자매들의 밤","김보람","센트럴파크","https://www.indieground.kr/fileFolder/9740ac41-1786-4acf-a83a-e549551fd0b4_jpg",null,"한국","2020",null,22,2,"<p>어머니의 기일에 맞춰, 추모 예배를 드리기 위해 중년의 자매들이 첫째 혜정의 집에 모인다.</p>",false);
+INSER
