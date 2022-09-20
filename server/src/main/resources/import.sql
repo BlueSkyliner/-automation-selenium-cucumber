@@ -128,4 +128,5 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (78,10);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(79,1,true,"달팽이","김태양",null,"https://www.indieground.kr/fileFolder/b21dd63b-0446-4691-ac51-c9aea7e04e2b_jpg",null,"한국","2020",null,20,2,"<p>버스에서 잘못 내린 남자는 익숙한 길을 찾으려 거리를 걷는다. 그날 저녁, 우연히 같은 길을 다시 걷게 되는데, 무언가 달라졌다.</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (79,1);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(80,1,true,"두 개의 물과 한 개의 라이터","조희영","필름다빈","https://www.indieground.kr/fileFolder/p033.png","https://play24.yes24.com/Main/Detail/S000009821","한국","2020",null,30,1,"<p>어제 낮잠을 잔 지원은 평소와 다르게 이른 아침에 눈이 떠졌다. 책을 좀 보다가 창가에서 담배를 피우는데 저 멀리 숲의 나무들이 눈에 들어온다. 가만히 멈춰 있는 것 같던 나무의 나뭇잎들을 자세히 보니 살살 움직이고 있다. 산책을 간 숲에서 오래 전 친했던 친구이자, 같은 사람을 좋아했던 혜영을 마주친다.</p>",false);
+IN
