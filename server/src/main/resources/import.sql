@@ -150,4 +150,4 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (89,3);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(90,1,true,"한강에게","박근영","인디스토리","https://www.indieground.kr/fileFolder/p019.jpg","https://play24.yes24.com/Main/Detail/S000005813","한국","2018",null,89,2,"<p>첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서 시 수업을 하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 헤매며 써지지 않는 시를 붙잡고 있다.</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (90,3);
-INSERT
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(91,1,true,"방문","명소희","시네마달","https://www.indieground.kr/fileFolder/p009.jpg","https://purplay.co.kr/off/movie_introduction.php?fvCode=purplayindie&mvId=94","한국","2018",null,81,2,"<p>가을에 막 접어들 무렵에는 꼭 악몽을 꾸었다. 서울에 올라온 지 4년. 춘천을 떠나오면 끝날 것 같았던 악몽은 계속되었다
