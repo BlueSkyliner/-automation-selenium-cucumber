@@ -148,4 +148,6 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (88,7);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(89,1,true,"가끔 구름","박송열",null,"https://www.indieground.kr/fileFolder/p001.jpg",null,"한국","2018",null,70,2,"<p>영화감독의 꿈을 꾸며 시나리오를 쓰는 명훈. 매번 오디션에서 떨어지는 무명 배우 선희. 둘은 서로의 존재를 위안삼아 연애를 하고 결혼도 다짐한다. 어느 날 명훈의 시나리오는 프로듀서인 선배의 눈에 들어오고 영화제작 기회를 얻는다. 하지만 며칠 후, 선배는 돌연 명훈의 시나리오는 가능성이 없다고 말한다. 실망한 명훈은 자신의 꿈과 현실을 돌아본다. 명훈은 선희에게 취직을 하는게 좋겠다고 말한다.</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (89,3);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_ye
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(90,1,true,"한강에게","박근영","인디스토리","https://www.indieground.kr/fileFolder/p019.jpg","https://play24.yes24.com/Main/Detail/S000005813","한국","2018",null,89,2,"<p>첫 시집을 준비하는 시인 ‘진아’. 오랜 연인 ‘길우’의 뜻밖의 사고 후 매일 비슷한 일상을 보내고 있다. 대학교에서 시 수업을 하고, 친구를 만나며 괜찮은 것 같지만 추억과 일상을 헤매며 써지지 않는 시를 붙잡고 있다.</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (90,3);
+INSERT
