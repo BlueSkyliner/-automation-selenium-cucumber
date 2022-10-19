@@ -156,4 +156,8 @@ INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, post
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (92,1);
 INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(93,1,true,"그림자들의 섬","부산민주언론시민연합사업단미디토리","시네마달","https://www.indieground.kr/fileFolder/2fa34a9d-7953-4ee0-9b61-f9fbb2c995da_jpg","https://serieson.naver.com/v2/movie/158407?isWebtoonAgreePopUp=true","한국","2014",null,99,3,"<p>“마음을 잃지 않았으면 좋겠어요”</p><p>이 시대의 모든 그림자들을 위한 감동의 드라마</p>",false);
 INSERT INTO `board_genre` (board_id, genre_id) VALUES (93,6);
-INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(94,1,true,"내가 사는 세상","대구경북영화영상협동조합","인디스토리","https://www.indieground.kr/fileFolder/p005.jpg",null,"한국","2018",null,67,2,"<p>퀵서비스를 하고 있는 민규는 디제이가 되는 것이 
+INSERT INTO `board` (id, user_id, is_approve, title, producer, distributor, poster_img, view_link, info_country, info_created_year, info_created_date, info_time, info_limit, info_story, info_subtitle) VALUES(94,1,true,"내가 사는 세상","대구경북영화영상협동조합","인디스토리","https://www.indieground.kr/fileFolder/p005.jpg",null,"한국","2018",null,67,2,"<p>퀵서비스를 하고 있는 민규는 디제이가 되는 것이 꿈이다. 민규는 친한 형인 지홍이 운영하는 클럽에서의 첫 공연을 앞두고 있지만, 지홍은 친하다는 이유로 민규를 아는 동생 이상으로 대우해주지 않는다. 민규의 연인인 시은은 이러한 지홍과 그에 대해 아무 말 못하는 민규가 못 마땅하다. 한편 학교 선배가 운영하는 미술학원에서 입시반 강사를 하고 있는 시은 역시 정해진 일보다 더 많은 일을 요구하는 선배로 인해 학원 생활이 점점 힘들어 진다.</p>",false);
+INSERT INTO `board_genre` (board_id, genre_id) VALUES (94,3);
+
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강길우",2,"https://cdn.topstarnews.net/news/photo/201904/608104_294474_1340.jpg",90);
+INSERT
