@@ -162,4 +162,6 @@ INSERT INTO `board_genre` (board_id, genre_id) VALUES (94,3);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강길우",2,"https://cdn.topstarnews.net/news/photo/201904/608104_294474_1340.jpg",90);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강애심",2,null,77);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강유가람",1,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP43DhUF8pDn2EaQH_sKY9D96gKjruN00u2g&usqp=CAU",86);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강진아",2,"https://file.mk.co.kr/mkde/N0/2018/04/20180411_3668694_15234077
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강진아",2,"https://file.mk.co.kr/mkde/N0/2018/04/20180411_3668694_1523407723.jpeg",90);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고민시",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201911%2F20191129175928421.jpg",59);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고민시",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src
