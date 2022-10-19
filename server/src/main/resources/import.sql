@@ -164,4 +164,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강애심",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강유가람",1,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP43DhUF8pDn2EaQH_sKY9D96gKjruN00u2g&usqp=CAU",86);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("강진아",2,"https://file.mk.co.kr/mkde/N0/2018/04/20180411_3668694_1523407723.jpeg",90);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고민시",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201911%2F20191129175928421.jpg",59);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고민시",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고민시",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201911%2F20191129175928421.jpg",59);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고보결",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202010%2F20201015173132304-2945329.jpg",57);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("고형동",1,"https:/
