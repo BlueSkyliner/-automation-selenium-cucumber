@@ -174,4 +174,8 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("구교환",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("구교환",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202106%2F20210607161645168.jpg",58);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("구교환",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202106%2F20210607161645168.jpg",58);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김기천",3,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa4ac3d137586c308ad2fc9c077456c1014bce70e",44);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김나연",1,"https://t1.daumcdn.net/movie/2f4d3278079e9faa98e7
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김나연",1,"https://t1.daumcdn.net/movie/2f4d3278079e9faa98e773a1ceceeb2da7706083",76);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김뢰하",2,"https://image.cine21.com/resize/cine21/still/2017/1218/11_11_36__5a3723d887f49[X252,310].jpg",81);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김명선",2,null,75);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김민석",2,null,67);
+INSERT INTO `casting` (name, `positio
