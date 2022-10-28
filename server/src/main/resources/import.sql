@@ -178,4 +178,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김나연",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김뢰하",2,"https://image.cine21.com/resize/cine21/still/2017/1218/11_11_36__5a3723d887f49[X252,310].jpg",81);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김명선",2,null,75);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김민석",2,null,67);
-INSERT INTO `casting` (name, `positio
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김민주",2,null,56);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김민지",1,null,64);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김병석",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F12407A394D01B9361E",46);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김보람",1,"http://t1.daumcdn.net/m
