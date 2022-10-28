@@ -184,4 +184,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김병석",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김보람",1,"http://t1.daumcdn.net/movie/46d40451db6e3014bf7c96ca8943f9d215c25996",77);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김성민",1,"https://lh3.googleusercontent.com/proxy/RJDej22PTNN6TvzEgV9ffd7dyu9IwpNw2mccNeBRuzgCogIeuGsdUVIeJqk4BgRrwEoeuuLZJNqbBjU-Xk10QV-MAvKfZwq-2A",84);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김소영",1,"http://t1.daumcdn.net/cfile/152EFB10AD8AAE175C",83);
-INSERT INTO `casting` (name, `positio
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김소형",1,"https://img1.daumcdn.net/thumb/C200x210/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff93f6164230308c4a8da49731bd30d8f11180870",92);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김솔이",2,null,66);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김시은",2,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc1b459ea77541349aa699
