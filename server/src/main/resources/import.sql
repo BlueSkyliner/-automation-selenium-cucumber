@@ -197,4 +197,8 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김재식",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김정근",1,"https://img1.daumcdn.net/thumb/C200x210/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F53fed0042a3440c7e957fe473f8b395c0aff3057",93);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김진숙",2,null,93);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김진희",2,null,83);
-INSERT INTO `casting` (name, `position`, im
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김태양",1,null,79);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김하리",2,null,78);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김현",2,null,75);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김형석",3,null,65);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("김혜정",1,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmo
