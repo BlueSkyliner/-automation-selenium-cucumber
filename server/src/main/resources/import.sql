@@ -221,4 +221,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박재현",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박정언",3,"https://t1.daumcdn.net/movie/56397ca4faf0e3c138e61862b995ad0da470d25c",76);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박종철",1,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1519204B4E39333529",70);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박지홍",2,null,94);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박해정",1,"http://t1.daumcdn.n
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박해정",1,"http://t1.daumcdn.net/cfile/1341104E50AE2C4324",69);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박현영",2,"https://mblogthumb-phinf.pstatic.net/MjAyMDA4MTlfNDQg/MDAxNTk3ODQ0NzY0Mjg5.5gU3XwIWHNJHbFQQ-vWLy7s6gpnjozlTCNCR8KSMFKAg.iznat-ogLyPBbSUfWE0kfemnRRf5RIS9yIy89WMPOcAg.JPEG.mythvoice/DSC08977.jpg?type=w800",87);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("박현지",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=h
