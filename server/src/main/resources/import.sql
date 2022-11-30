@@ -237,4 +237,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("소재웅",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("송정우",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1569472F4CEF2B8B40",70);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("신신애",3,"https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F6b192bc15f91535100cd1accedefcd03aed38919",44);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("신지우",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202104%2F20210418190211843.png",65);
-INSERT INTO `casting` (na
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("안치연",2,null,85);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("양흥주",2,"https://cdn.kado.net/news/photo/202006/1026277_456963_2021.jpg",87);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("어라",2,"https://post-phinf.pstatic.net/MjAyMTA1MjhfMjk3/MDAxNjIyMTkwNjc3Mjgy.NXw9TjIwHSfoE72_zzGGu1yvQmXzErPsp1j3l48NOX4g.lzpL0AvkV9tecASidY3Zior5jrn2
