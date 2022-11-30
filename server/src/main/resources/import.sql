@@ -240,4 +240,8 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("신지우",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("안치연",2,null,85);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("양흥주",2,"https://cdn.kado.net/news/photo/202006/1026277_456963_2021.jpg",87);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("어라",2,"https://post-phinf.pstatic.net/MjAyMTA1MjhfMjk3/MDAxNjIyMTkwNjc3Mjgy.NXw9TjIwHSfoE72_zzGGu1yvQmXzErPsp1j3l48NOX4g.lzpL0AvkV9tecASidY3Zior5jrn21GySDh4VEpuJyi4g.JPEG/%EB%9F%B0%EC%B9%AD%ED%8F%AC%EC%8A%A4%ED%84%B0003%28%EC%88%98%EC%A0%95%29.jpg?type=w1200",86);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오매",2,"https://post-phinf.pstatic.net/MjAyMTA1MjdfNzAg/MDAxNjIyMDk1ODI4NDEz.FtHZ6NvjuHY1VT2bHWVn01qpJAhqjlnZbKV6zhNlCJYg.sTVYslSTyx18hxIikqAKRufV1U7XoFwzAgUBregyVXsg.JPEG/%EC%9A%B0%EB%A6%AC%EB%8A%94_%EB%A7%A4%EC%9D%BC%EB%A7%A4%EC%9D%BC_%EB%9F%B0%EC%B9
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오매",2,"https://post-phinf.pstatic.net/MjAyMTA1MjdfNzAg/MDAxNjIyMDk1ODI4NDEz.FtHZ6NvjuHY1VT2bHWVn01qpJAhqjlnZbKV6zhNlCJYg.sTVYslSTyx18hxIikqAKRufV1U7XoFwzAgUBregyVXsg.JPEG/%EC%9A%B0%EB%A6%AC%EB%8A%94_%EB%A7%A4%EC%9D%BC%EB%A7%A4%EC%9D%BC_%EB%9F%B0%EC%B9%AD_%ED%8F%AC%EC%8A%A4%ED%84%B0_04.jpg?type=w1200",86);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오선주",1,null,56);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오지영",2,null,77);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오태경",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F23725C47537D52072E",46);
+INSERT INTO `casting` (name, `position`, im
