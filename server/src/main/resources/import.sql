@@ -246,4 +246,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오지영",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오태경",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F23725C47537D52072E",46);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("오희준",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201310%2F20131007105246369-9974455.jpg",74);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("원향라",2,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F175cff339d87930ba53ea10cbd34ef5497d26227",89);
-INSERT INTO `ca
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("원호섭",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F153A0510AE2CFFC161",45);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("유명희",2,null,91);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("유연수",2,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F114A5410ADF990BBAE"
