@@ -251,4 +251,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("유명희",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("유연수",2,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F114A5410ADF990BBAE",81);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("유재선",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fpeople.phinf.naver.net%2F20200514_120%2F15894299281554qOQu_JPEG%2Fmovie_369664.jpg",74);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("윤단비",1,"http://images.khan.co.kr/article/2020/08/17/l_2020081302000560700114021.jpg",87);
-INSERT INTO `casti
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("윤일주",2,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1358CE10AE04506E5E",81);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("윤진",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fpeople.phinf.naver.net%2F20200514_201%2F1589429746815reLeC_PNG%2Fmovie_362333.png",65);
+INSERT 
