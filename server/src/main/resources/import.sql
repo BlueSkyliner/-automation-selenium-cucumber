@@ -263,4 +263,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이양희",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이옥섭",1,"https://w.namu.la/s/bfbe0a41454308d249c66461f91cfc04bb23c9b33dc480f4f83fb48a0f6d4b9ca9ac5ab84fd6093d4921965600d61eed29f6b64524012c6728aab51b59721c70eaebf2e288c13e26d9e1b800a3473dd759ed03afe5b17f8ed78d16e2b9f68482",58);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이용훈",1,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fdf987b5a9fc350f6b9fad374bf5bcd4a45d72ae9",45);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이재웅",2,null,67);
-INSERT INTO `casting` (nam
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이지수",2,null,64);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이현지",1,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F68ce8643bf85ce6bf00560f6c10a82e12de4f0a3",73);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이효은",2,null,69);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임상효",3,nul
