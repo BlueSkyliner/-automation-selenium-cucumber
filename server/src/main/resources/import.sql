@@ -268,4 +268,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이현지",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("이효은",2,null,69);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임상효",3,null,81);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임수형",3,"https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA2MTVfOTEg%2FMDAxNjIzNzI1ODAxNjAw.AeKRjDt80UmXXeIRqJSE4EZioMSbVrRMcSarIiqHtoIg.Jep3mOzPB00AIGGxJlO7XoIb6fLmfYrvHG_B-ury5-cg.JPEG.initialenter%2F%25C0%25D3%25BC%25F6%25C7%25FC_11.jpg&type=a340",64);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임지연",2,"https://img1.da
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임지연",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F1824f266b9a74ba09a501546087f1b1a1567960753106",41);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임투철",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202110%2F20211024161525382.jpg",59);
+INSERT INTO `casting` (name, `
