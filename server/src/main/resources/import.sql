@@ -273,4 +273,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임투철",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("임호준",2,null,92);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("장샘이",2,null,56);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("장승욱",1,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F123%2F201903261732256091.png",72);
-INSERT INTO `cast
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("전민정",3,null,65);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정수지",2,null,79);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정지인",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2055d7f7b947025a273d56c4a3fdb5b35e18f01a",54);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정진여",2,nul
