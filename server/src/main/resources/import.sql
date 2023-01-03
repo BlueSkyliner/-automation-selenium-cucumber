@@ -276,4 +276,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("장승욱",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("전민정",3,null,65);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정수지",2,null,79);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정지인",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2055d7f7b947025a273d56c4a3fdb5b35e18f01a",54);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정진여",2,nul
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정진여",2,null,85);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조민재",1,"http://siff.kr/wp-content/uploads/2021/09/2010268161.png",75);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조복례",2,null,85);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조현철",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F51590caa742bd3f29f483f5c3ab19b9d41176cb7",
