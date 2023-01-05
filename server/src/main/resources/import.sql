@@ -279,4 +279,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정지인",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("정진여",2,null,85);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조민재",1,"http://siff.kr/wp-content/uploads/2021/09/2010268161.png",75);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조복례",2,null,85);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조현철",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F51590caa742bd3f29f483f5c3ab19b9d41176cb7",
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조현철",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F51590caa742bd3f29f483f5c3ab19b9d41176cb7",41);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("조희영",1,"https://lh3.googleusercontent.com/proxy/piNipha_KFBryAMb4ufkZypvYSMzZQzOrglXErNLLQXZViuYve6mAoWwNIzRb_O1jV0Uf6xPPtTb9q8YHTZpYGsmKUdohXYJ_aHyHSPjzuYG",80);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("주예진",2,"https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fssta
