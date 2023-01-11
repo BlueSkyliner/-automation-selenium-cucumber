@@ -286,4 +286,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("짜투리",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("차경훈",1,null,55);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("차선희",2,null,83);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("차지원",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F42eff0d92d377fe187c7c2e76fde6c72621985522",46);
-INSERT INTO `casting` (name, `
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("최미경",2,"https://t1.daumcdn.net/movie/ba8861d2eea6780e219f15d48ae141a7dbad71ce",88);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("최용진",2,"https://newsimg.sedaily.com/2020/11/02/1ZA942DQAZ_1.jpg",84);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("최정운",2,"https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202105/12/newsen/20
