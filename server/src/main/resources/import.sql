@@ -299,4 +299,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("하준호",2,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("하지웅",2,null,78);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한기윤",2,"http://image.cine21.com/resize/cine21/still/2019/0327/14_53_12__5c9b0fc8b78d6[X230,230].jpg",90);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한서준",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5c1ba5a2d389fa5799855d3a6a69642a50614b28",45);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한지민",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한지민",2,"https://img1.daumcdn.net/thumb/C408x596/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fce5a5c9d5fbef8c6e5427212ed85f8839b8e7811",44);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한태의",1,"https://static.ebs.co.kr/images/public/2020/08/7/18/15/23/37c1133d-0e87-42ce-89d5-d5bb4d2d8f87.jpeg",88);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한흥만",2,"https://t1.daumcdn.net/movie/8aa52ffaaee59d7c23ad4c8a509bf099948f3c9a",88);
+INSERT INTO `casti
