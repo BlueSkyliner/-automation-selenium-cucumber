@@ -310,4 +310,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Allyn Carrell
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Bryan Massey",2,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjUKkvOM9X-NoHhbMgpf5KmJWwr95THwoYnGWjmsYF2MeiBH6",43);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Josh Schell",2,"https://m.media-amazon.com/images/M/MV5BYTRhNzMzN2YtNzIzNy00MDIyLWI5NzctZjE0M2Y2OWE3NjlhXkEyXkFqcGdeQXVyNjA2NDY3NzA@._V1_UX178_CR0,0,178,264_AL_.jpg",48);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Julianne Nicholson",2,"https://t1.daumcdn.net/cfile/blog/124B1F0B4C63D25B03",60);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Justin Tagg",1,"https://0.academia-photos.com/253205/168293/37562
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Justin Tagg",1,"https://0.academia-photos.com/253205/168293/3756208/s200_justin.tagg.jpg",60);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Laura Jane Turner",2,"https://m.media-amazon.com/images/M/MV5BNWNlYzczNzEtZTg3Ni00MjJmLWEzYWQtMzRlZGIxNDM5YWMzXkEyXkFqcGdeQXVyMjEwNjIxMTY@._V1_UY317_CR12,0,214,317_AL_.jpg",42);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Meredith Younger",2,null,61);
+INSERT INTO `casting` (name, `position`, image, board_id)
