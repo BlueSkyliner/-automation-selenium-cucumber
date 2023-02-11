@@ -308,4 +308,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("황주호",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("흐른",2,"https://post-phinf.pstatic.net/MjAyMTA1MjdfNDAg/MDAxNjIyMDk2MTA5Njgy.N0UtxgDMIMkY4SMDjHInRT9H_fOwDJvedTbxJ35hhu8g.w12G5pWb9B2RZQ5g7JIwNGNyFZOxG8kNrfmBeBCo9x4g.JPEG/%EC%9A%B0%EB%A6%AC%EB%8A%94_%EB%A7%A4%EC%9D%BC%EB%A7%A4%EC%9D%BC_%EB%9F%B0%EC%B9%AD_%ED%8F%AC%EC%8A%A4%ED%84%B0_05.jpg?type=w1200",86);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Allyn Carrell",2,"https://m.media-amazon.com/images/M/MV5BY2MzMjBiMjAtMjcxNC00NjAyLTkwZTYtMDI0OWViNjFlYmIyXkEyXkFqcGdeQXVyMzY0MjYyOQ@@._V1_FMjpg_UX1000_.jpg",43);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Bryan Massey",2,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShjUKkvOM9X-NoHhbMgpf5KmJWwr95THwoYnGWjmsYF2MeiBH6",43);
-INSERT INTO `casting` (name, `position`, i
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Josh Schell",2,"https://m.media-amazon.com/images/M/MV5BYTRhNzMzN2YtNzIzNy00MDIyLWI5NzctZjE0M2Y2OWE3NjlhXkEyXkFqcGdeQXVyNjA2NDY3NzA@._V1_UX178_CR0,0,178,264_AL_.jpg",48);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Julianne Nicholson",2,"https://t1.daumcdn.net/cfile/blog/124B1F0B4C63D25B03",60);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Justin Tagg",1,"https://0.academia-photos.com/253205/168293/37562
