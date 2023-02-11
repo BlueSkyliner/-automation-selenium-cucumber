@@ -304,4 +304,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한태의",1,
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("한흥만",2,"https://t1.daumcdn.net/movie/8aa52ffaaee59d7c23ad4c8a509bf099948f3c9a",88);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("허수영",1,"https://img1.daumcdn.net/thumb/C200x210/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F250b592e0788b5a2768b5c1af6b492cb2ce6f858",78);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("허진호",1,"https://img1.daumcdn.net/thumb/C408x596/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fe2fe5a0317524087245e7af756adc82183cf82c55",44);
-INSERT INTO `casting` (name, `pos
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("황주호",1,null,82);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("흐른",2,"https://post-phinf.pstatic.net/MjAyMTA1MjdfNDAg/MDAxNjIyMDk2MTA5Njgy.N0UtxgDMIMkY4SMDjHInRT9H_fOwDJvedTbxJ35hhu8g.w12G5pWb9B2RZQ5g7JIwNGNyFZOxG8kNrfmBeBCo9x4g.JPEG/%EC%9A%B0%EB%A6%AC%EB%8A%94_%EB%A7%A4%EC%9D%BC%EB%A7%A4%EC%9D%BC_%EB%9F%B0%EC%B9%AD_%ED%8F%AC%EC%8A%A4%ED%84%B0_05.jpg?type=w1200",86);
+INSERT
