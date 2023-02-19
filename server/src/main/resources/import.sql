@@ -313,4 +313,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Julianne Nich
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Justin Tagg",1,"https://0.academia-photos.com/253205/168293/3756208/s200_justin.tagg.jpg",60);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Laura Jane Turner",2,"https://m.media-amazon.com/images/M/MV5BNWNlYzczNzEtZTg3Ni00MjJmLWEzYWQtMzRlZGIxNDM5YWMzXkEyXkFqcGdeQXVyMjEwNjIxMTY@._V1_UY317_CR12,0,214,317_AL_.jpg",42);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Meredith Younger",2,null,61);
-INSERT INTO `casting` (name, `position`, image, board_id)
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("michael formanski",1,"https://s3-eu-west-1.amazonaws.com/images.castcall.blue-compass.com/portfolio/5944/5944957x300.webp",61);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Mykle McCoslin",2,"https://m.media-amazon.com/images/M/MV5BNmEyNjNhMWYtYThiZS00N2E2LTgzODEtNmFkODZlMDBiMTE5XkEyXkFqcGdeQXVyNzQ1OTQ5NA@@._V1_.jpg",43);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Natalie Balents"
