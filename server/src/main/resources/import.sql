@@ -315,4 +315,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Laura Jane Tu
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Meredith Younger",2,null,61);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("michael formanski",1,"https://s3-eu-west-1.amazonaws.com/images.castcall.blue-compass.com/portfolio/5944/5944957x300.webp",61);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Mykle McCoslin",2,"https://m.media-amazon.com/images/M/MV5BNmEyNjNhMWYtYThiZS00N2E2LTgzODEtNmFkODZlMDBiMTE5XkEyXkFqcGdeQXVyNzQ1OTQ5NA@@._V1_.jpg",43);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Natalie Balents"
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Natalie Balents",2,"https://yt3.ggpht.com/ytc/AKedOLRMjCovvR2PYakCT2E_HhGD3LvF42fF9mAkQEnxSQ=s900-c-k-c0x00ffffff-no-rj",61);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Nick Tag",2,"https://m.media-amazon.com/images/M/MV5BNjMyODgwYzYtZWQ5MC00N2ZjLWE5ZjAtYzQ5NzRlYmE3MjVkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY180_CR70,0,180,180_AL_.jpg",48);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Teagan Rose",2,"https://superset.imgix.n
