@@ -317,4 +317,6 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("michael forma
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Mykle McCoslin",2,"https://m.media-amazon.com/images/M/MV5BNmEyNjNhMWYtYThiZS00N2E2LTgzODEtNmFkODZlMDBiMTE5XkEyXkFqcGdeQXVyNzQ1OTQ5NA@@._V1_.jpg",43);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Natalie Balents",2,"https://yt3.ggpht.com/ytc/AKedOLRMjCovvR2PYakCT2E_HhGD3LvF42fF9mAkQEnxSQ=s900-c-k-c0x00ffffff-no-rj",61);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Nick Tag",2,"https://m.media-amazon.com/images/M/MV5BNjMyODgwYzYtZWQ5MC00N2ZjLWE5ZjAtYzQ5NzRlYmE3MjVkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY180_CR70,0,180,180_AL_.jpg",48);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Teagan Rose",2,"https://superset.imgix.n
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Teagan Rose",2,"https://superset.imgix.net/p8w3hgnxpgpy6fd97dkuwguvfvik?ixlib=rails-4.2.0&w=400&h=400",48);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Tyler Pochop",2,"https://m.media-amazon.com/images/M/MV5BZjU4YjlkZTgtOTZmYS00NDI3LWI3M2ItMGY3ZGM2YTU2ODNlXkEyXkFqcGdeQXVyNTgxNjEwNDM@._V1_UY1200_CR751,0,630,1200_AL_.jpg",48);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Valeska Mille
