@@ -319,4 +319,8 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Natalie Balen
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Nick Tag",2,"https://m.media-amazon.com/images/M/MV5BNjMyODgwYzYtZWQ5MC00N2ZjLWE5ZjAtYzQ5NzRlYmE3MjVkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY180_CR70,0,180,180_AL_.jpg",48);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Teagan Rose",2,"https://superset.imgix.net/p8w3hgnxpgpy6fd97dkuwguvfvik?ixlib=rails-4.2.0&w=400&h=400",48);
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Tyler Pochop",2,"https://m.media-amazon.com/images/M/MV5BZjU4YjlkZTgtOTZmYS00NDI3LWI3M2ItMGY3ZGM2YTU2ODNlXkEyXkFqcGdeQXVyNTgxNjEwNDM@._V1_UY1200_CR751,0,630,1200_AL_.jpg",48);
-INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Valeska Mille
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Valeska Miller",2,"https://m.media-amazon.com/images/M/MV5BMjdjMzc4NWEtZDdmMC00NDI4LTk5YWYtZTEwMzI1OTc2ZWVjXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg",47);
+INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("손정은",1,null,36);
+
+INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMTk2/MDAxNDg3MzAzOTIxNTA0.rJY-4dGy7JcMJzM4yYWIr9AOPnHRfjdEwNGFsrl6ySMg.2zwvdnWUg60ONdTVMMoao08EWu9WfFPTt9pJlG1kcRQg.JPEG.zzzzpig/13.jpg?type=w2", 41);
+INSE
