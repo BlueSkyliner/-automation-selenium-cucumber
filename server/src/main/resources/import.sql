@@ -323,4 +323,7 @@ INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("Valeska Mille
 INSERT INTO `casting` (name, `position`, image, board_id) VALUES ("손정은",1,null,36);
 
 INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.net/MjAxNzAyMTdfMTk2/MDAxNDg3MzAzOTIxNTA0.rJY-4dGy7JcMJzM4yYWIr9AOPnHRfjdEwNGFsrl6ySMg.2zwvdnWUg60ONdTVMMoao08EWu9WfFPTt9pJlG1kcRQg.JPEG.zzzzpig/13.jpg?type=w2", 41);
-INSE
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/cfile/2179564B51B537DA2B", 41);
+INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/daumtop_chanel/op/20180629021751634", 41);
+INSERT INTO `still` (image, board_id) VALUES ("https://cdn.indiepost.co.kr/uploads/images/2018/01/03/lVMb3s-700x338.png", 40);
+INSERT INTO `still` (image, board_id) VALUES ("https://pbs.twimg.com/media/Etw5MeOUcAM--JD
