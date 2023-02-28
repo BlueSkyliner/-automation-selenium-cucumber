@@ -326,4 +326,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/cfile/2179564B51B537DA2B", 41);
 INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/daumtop_chanel/op/20180629021751634", 41);
 INSERT INTO `still` (image, board_id) VALUES ("https://cdn.indiepost.co.kr/uploads/images/2018/01/03/lVMb3s-700x338.png", 40);
-INSERT INTO `still` (image, board_id) VALUES ("https://pbs.twimg.com/media/Etw5MeOUcAM--JD
+INSERT INTO `still` (image, board_id) VALUES ("https://pbs.twimg.com/media/Etw5MeOUcAM--JD.jpg", 38);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/0a49cfb72abb101193cb659840c8281f4e51e221", 38);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/5f4da858ee6441a883443fbac75386c71561867715680", 36);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/cd5363a80fcf45dd9e5c734c68b358ad1561867715936", 36);
+INSERT INTO `still` (image, board_id) VALUES ("http://
