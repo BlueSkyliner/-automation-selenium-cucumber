@@ -330,4 +330,7 @@ INSERT INTO `still` (image, board_id) VALUES ("https://pbs.twimg.com/media/Etw5M
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/0a49cfb72abb101193cb659840c8281f4e51e221", 38);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/5f4da858ee6441a883443fbac75386c71561867715680", 36);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/cd5363a80fcf45dd9e5c734c68b358ad1561867715936", 36);
-INSERT INTO `still` (image, board_id) VALUES ("http://
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/42c97f27f8d648ccacb62eb4f78d5dfb1561867715397", 36);
+INSERT INTO `still` (image, board_id) VALUES ("https://1.bp.blogspot.com/-eDzOYodz_6U/XRl4JFjHFaI/AAAAAAAAMRc/aori6jRFpR4zS07F68vk-u3VFmt2P6mTACEwYBhgL/s1600/maxresdefault.jpg", 42);
+INSERT INTO `still` (image, board_id) VALUES ("https://a.ltrbxd.com/resized/film-poster/3/2/5/8/4/1/325841-curve-0-230-0-345-crop.jpg?k=2d182ffd72", 42);
+INSERT INTO `still` (image, board_id) VALUES ("h
