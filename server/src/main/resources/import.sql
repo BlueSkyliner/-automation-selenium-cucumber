@@ -333,4 +333,8 @@ INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/cd536
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/42c97f27f8d648ccacb62eb4f78d5dfb1561867715397", 36);
 INSERT INTO `still` (image, board_id) VALUES ("https://1.bp.blogspot.com/-eDzOYodz_6U/XRl4JFjHFaI/AAAAAAAAMRc/aori6jRFpR4zS07F68vk-u3VFmt2P6mTACEwYBhgL/s1600/maxresdefault.jpg", 42);
 INSERT INTO `still` (image, board_id) VALUES ("https://a.ltrbxd.com/resized/film-poster/3/2/5/8/4/1/325841-curve-0-230-0-345-crop.jpg?k=2d182ffd72", 42);
-INSERT INTO `still` (image, board_id) VALUES ("h
+INSERT INTO `still` (image, board_id) VALUES ("https://blog.kakaocdn.net/dn/coUFuj/btqFNEXGeJv/GAHsEXaBVtLeucwIEkwg01/img.jpg", 42);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/cfile/237F5C365277D8E714", 57);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/cfile/247F5C365277D8E715", 57);
+INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/movie/ca09311e7e5754ca7c7a5f71f59c098dae6bd7a0", 57);
+INSERT INTO `still` (image, board_id) VALUES ("ht
