@@ -340,4 +340,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/movie/ca09
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/9e7b66bffbdaf01633077b5e9dc130cf3e3f9c1d", 58);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/afd0d9f773df79088ea0073231d4397324811640", 58);
 INSERT INTO `still` (image, board_id) VALUES ("http://artinsight.co.kr/data/tmp/1801/8a7aa7b2cc1c8658726cc7a2df93418f_FMkBxLYDEivaijzTy.jpg", 44);
-INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/6d70f
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/6d70f5e4b71d41a90b9b86ffd1f601f529a14321", 44);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/6ee43d0989001272ecd40d8a6c5a7917aa673a88", 44);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/5ea7fd3864a8afca00d6d2fee52dfc870410cc16", 44);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/4e114664e66c826ff1769aa6b3dbdc5d5033813a", 44);
+INSERT INTO `still` (image, board
