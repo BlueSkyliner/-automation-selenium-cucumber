@@ -375,4 +375,7 @@ INSERT INTO `still` (image, board_id) VALUES ("https://itsybitsyfilms.com/wp-con
 INSERT INTO `still` (image, board_id) VALUES ("https://i.vimeocdn.com/video/888697959-4bb67fd9380fb6ad3911ce110db6ffa4607b691acab2ef82614e48fc5e362f30-d?mw=1100&mh=619&q=70", 48);
 INSERT INTO `still` (image, board_id) VALUES ("https://horrornews.net/wp-content/uploads/2020/12/Other-Side-of-the-Box-A-Horror-Short-from-Caleb-J.-Phillips-5.jpg", 48);
 INSERT INTO `still` (image, board_id) VALUES ("https://images.mubicdn.net/images/film/229394/cache-413501-1550508900/image-w1280.jpg", 48);
-INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.net/MjAyMDA5MjFfMTMg/MDAxNjAwNjg4NDU0OTQx.VlaaFIr4yiKmNiygh8YyqN1L-Y2kLlU88D58WB9O0AAg.gPsvwUhhlnuR2N6A38wp6xQWj3HPklcr7fHj7Ew-nHIg.JP
+INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.net/MjAyMDA5MjFfMTMg/MDAxNjAwNjg4NDU0OTQx.VlaaFIr4yiKmNiygh8YyqN1L-Y2kLlU88D58WB9O0AAg.gPsvwUhhlnuR2N6A38wp6xQWj3HPklcr7fHj7Ew-nHIg.JPEG.jjjysy34/SE-7110d6c2-bea2-41f6-81f9-a32fba29d70c.jpg?type=w800", 48);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/4f2d6995-c647-4839-81e2-7eb7fbeba4fd_jpg", 81);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/42ebe9a7-7854-4b29-b31b-aef9001bf44d_jpg", 81);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFol
