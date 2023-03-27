@@ -373,4 +373,6 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieI
 INSERT INTO `still` (image, board_id) VALUES ("https://images.squarespace-cdn.com/content/v1/5f0ab9423a28cd44b42c8b4c/1618279148814-B4USBSKIK8UOEJAQ2D4A/Screen+Shot+2021-04-12+at+6.58.36+PM.png", 47);
 INSERT INTO `still` (image, board_id) VALUES ("https://itsybitsyfilms.com/wp-content/uploads/2021/06/the-ballerina-2021.jpg", 47);
 INSERT INTO `still` (image, board_id) VALUES ("https://i.vimeocdn.com/video/888697959-4bb67fd9380fb6ad3911ce110db6ffa4607b691acab2ef82614e48fc5e362f30-d?mw=1100&mh=619&q=70", 48);
-INSERT INTO `still` (image, board_id) VALUES ("https://horrornews.net/wp-content/uploads/2020/1
+INSERT INTO `still` (image, board_id) VALUES ("https://horrornews.net/wp-content/uploads/2020/12/Other-Side-of-the-Box-A-Horror-Short-from-Caleb-J.-Phillips-5.jpg", 48);
+INSERT INTO `still` (image, board_id) VALUES ("https://images.mubicdn.net/images/film/229394/cache-413501-1550508900/image-w1280.jpg", 48);
+INSERT INTO `still` (image, board_id) VALUES ("https://mblogthumb-phinf.pstatic.net/MjAyMDA5MjFfMTMg/MDAxNjAwNjg4NDU0OTQx.VlaaFIr4yiKmNiygh8YyqN1L-Y2kLlU88D58WB9O0AAg.gPsvwUhhlnuR2N6A38wp6xQWj3HPklcr7fHj7Ew-nHIg.JP
