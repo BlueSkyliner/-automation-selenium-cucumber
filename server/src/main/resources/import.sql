@@ -391,4 +391,8 @@ INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/afb96
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/c1221cb506b8486ebf5e57083b118a211565528867728", 83);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/77cfe5a1-0b53-4623-ba4e-6e2492bc4173_jpg", 84);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/e9133e15-276e-4892-a58d-3ce5d2d5b675_jpg", 84);
-INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/e2c
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/e2c51862-baa1-4b95-8dfe-cb9cfe012589_jpg", 84);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/892b3fe9-48ca-4154-91e2-7bac876eef36_jpg", 84);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/3996c19b-9f11-44bc-b446-4e52a4435309_jpg", 84);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/e8993f05-2976-42b9-bca6-1147c6da3cbc_jpg", 84);
+INSERT INTO `still` (i
