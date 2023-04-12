@@ -401,4 +401,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieI
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/1d620e5f-cd1c-4558-b054-5418832d8304_jpg", 85);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/5d708f36-7481-424b-b33b-d8d14be7baf8_jpg", 85);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/51bea985-fc53-4f9f-a98c-454007feb36d_jpg", 85);
-INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/38ca7a1e-27d3-48aa-81ed-e281c78b85ce_jpg", 8
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/38ca7a1e-27d3-48aa-81ed-e281c78b85ce_jpg", 85);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/25eeaf64-f28f-4187-b4e2-6437bde89693_jpg", 85);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/2fb06bbc-a20e-49e6-8f6f-e99077eba6a1_png", 86);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/movieImgFolder/c5f5f716-2ce9-4f7c-b3bc-640806e5af32_png", 86);
+INSERT INTO `still` (image, board_
