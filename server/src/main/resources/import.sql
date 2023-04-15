@@ -418,4 +418,7 @@ INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/78qw9yZ4wo
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/78qw9yZ4woE/maxresdefault.jpg", 50);
 INSERT INTO `still` (image, board_id) VALUES ("https://user-images.githubusercontent.com/45745049/141710223-b1a2723d-416e-47bc-8171-b002f8335421.png", 51);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/1ee86043f006ee203dd45f4d218739927ad6424b", 64);
-INSERT INTO `still` 
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/c6561819476720c33f709e9dab6b97d32ee1be3d", 64);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/2cd6077b3c853a2456986e5d21b2397bda317421", 64);
+INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/NXPsKHqkuEM/maxresdefault.jpg", 52);
+INSERT INTO `still` (image, board_id) VALUES ("https://cdn.indiep
