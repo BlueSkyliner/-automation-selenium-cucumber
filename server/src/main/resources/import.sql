@@ -439,4 +439,8 @@ INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/5cf32
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/91b824cbacc1d486130cbaa8749454f2b256fdea", 54);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/9e7a1fab0b352cc336aa1553b57f8f4750c1ba77", 54);
 INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/e9cbf9937661455198eef8f1745554951541473857691", 54);
-INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/mov
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/ae07bbe473e3444abe14c36bebe7dc4c1541473857341", 54);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/f9360ed32be545fa9593da54d669837b1560349740054", 67);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/b2be1c2e8a744756abf9292dc59443d81560349739174", 67);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/movie/f6e7fc1ef3cf431c8160915f8cc65c841560349738869", 67);
+INSERT INT
