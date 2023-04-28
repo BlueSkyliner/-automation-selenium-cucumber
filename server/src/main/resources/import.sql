@@ -457,4 +457,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFo
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_02.jpg", 89);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_03.jpg", 89);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_04.jpg", 89);
-INSE
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_05.jpg", 89);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_06.jpg", 89);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s001_07.jpg", 89);
+INSERT INTO `still` (image, board_id) VALUES ("http://t1.daumcdn.net/cfile/1864A23B50AB740F12", 69);
+INSERT INTO `still` (image, board_id) 
