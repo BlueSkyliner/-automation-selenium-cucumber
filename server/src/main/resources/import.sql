@@ -502,4 +502,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFo
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_02.jpg", 94);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_03.jpg", 94);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_04.jpg", 94);
-INSERT INTO `still` (image, board_id) VALUES ("https://www.indiegro
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_05.jpg", 94);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_06.jpg", 94);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_07.jpg", 94);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolder/s005_08.jpg", 94);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFolde
