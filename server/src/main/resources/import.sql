@@ -513,4 +513,6 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFo
 =======
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/_dApFdx_psg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlgs_qUfenghs2bk3mvCVEczdieg", 37);
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/zrsUszuLZ0I/maxresdefault.jpg", 39);
-INSERT INTO `still` (image, board_id) VALUES ("https://an2-img.amz.wtchn.net/image/v2/12f5638c95ab97e31a0422a5fdb96828.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPakV3T0RBc0luQmhkR2dpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRZeE5UZ3p
+INSERT INTO `still` (image, board_id) VALUES ("https://an2-img.amz.wtchn.net/image/v2/12f5638c95ab97e31a0422a5fdb96828.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPakV3T0RBc0luQmhkR2dpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRZeE5UZ3pOak15T1RRek1qVTBNVEEwTmlJc0luRjFZV3hwZEhraU9qZ3dMQ0ozYVdSMGFDSTZNVGt5TUgwLnAyeFVaWF95NEl5MnlrWkdQTFBjcWhPSjhVckZsWHRBdW85RWRhTmVKOTg", 40);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.cinequest.org/sites/default/files/styles/1000x316/public/alternativemath_1000x316.jpg?itok=eR6dGBPt", 43);
+INSERT INTO `still` (image, board_id) VALUES ("https://3.bp.blogspot.com/-oB1Dg690Szw/WyTI5IRm81I/AAAAAAAA9R0/VY0dYzjBAX0vxPaTL89juGR2avsKWRJpgCLcBGAs/s1600/Alte
