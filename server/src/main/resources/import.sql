@@ -512,3 +512,5 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.indieground.kr/fileFo
 <<<<<<< HEAD
 =======
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/_dApFdx_psg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlgs_qUfenghs2bk3mvCVEczdieg", 37);
+INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/zrsUszuLZ0I/maxresdefault.jpg", 39);
+INSERT INTO `still` (image, board_id) VALUES ("https://an2-img.amz.wtchn.net/image/v2/12f5638c95ab97e31a0422a5fdb96828.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKaVlXTnJaM0p2ZFc1a0lqcDdJbklpT2pJMU5Td2laeUk2TWpVMUxDSmlJam95TlRWOUxDSmpjbTl3SWpwMGNuVmxMQ0pvWldsbmFIUWlPakV3T0RBc0luQmhkR2dpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRZeE5UZ3p
