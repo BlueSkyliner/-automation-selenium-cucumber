@@ -521,4 +521,8 @@ INSERT INTO `still` (image, board_id) VALUES ("https://user-images.githubusercon
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/P2X93az89y8/original.jpg", 55);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.purplay.co.kr/uploads/purplay/movie/280/b0.jpg", 56);
 INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/Guc4QrdHUKY/maxresdefault.jpg", 59);
-INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/25s7/
+INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/25s7/image/-2ccDxEKF-DozsDn-94wwYTDCK0.png", 59);
+INSERT INTO `still` (image, board_id) VALUES ("http://cdn.indiepost.co.kr/uploads/images/2017/02/4ylhjg-1093x531.jpeg", 59);
+INSERT INTO `still` (image, board_id) VALUES ("https://m.media-amazon.com/images/M/MV5BMTM5NDU2NDA1MF5BMl5BanBnXkFtZTgwMDM4MTUzMTE@._V1_.jpg", 60);
+INSERT INTO `still` (image, board_id) VALUES ("https://meganmclatchiea2mediastudies.files.wordpress.com/2014/10/1.jpg", 60);
+INSERT INTO `still` (ima
