@@ -518,4 +518,7 @@ INSERT INTO `still` (image, board_id) VALUES ("https://www.cinequest.org/sites/d
 INSERT INTO `still` (image, board_id) VALUES ("https://3.bp.blogspot.com/-oB1Dg690Szw/WyTI5IRm81I/AAAAAAAA9R0/VY0dYzjBAX0vxPaTL89juGR2avsKWRJpgCLcBGAs/s1600/Alternative_Math_Short_Film_cover_Bored_Teachers_1024x1024.jpg", 43);
 INSERT INTO `still` (image, board_id) VALUES ("https://www.awn.com/sites/default/files/styles/original/public/image/attached/1051082-thewrongrockheromation50-1280.jpg?itok=-hbW_rfr", 49);
 INSERT INTO `still` (image, board_id) VALUES ("https://user-images.githubusercontent.com/45745049/141714628-3593309a-17fe-418a-b42e-e783c9be2be0.png", 55);
-INSERT INTO `still` (image, board_id) VALUES ("https://i.
+INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/P2X93az89y8/original.jpg", 55);
+INSERT INTO `still` (image, board_id) VALUES ("https://www.purplay.co.kr/uploads/purplay/movie/280/b0.jpg", 56);
+INSERT INTO `still` (image, board_id) VALUES ("https://i.ytimg.com/vi/Guc4QrdHUKY/maxresdefault.jpg", 59);
+INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/25s7/
