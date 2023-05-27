@@ -525,4 +525,6 @@ INSERT INTO `still` (image, board_id) VALUES ("https://t1.daumcdn.net/thumb/R720
 INSERT INTO `still` (image, board_id) VALUES ("http://cdn.indiepost.co.kr/uploads/images/2017/02/4ylhjg-1093x531.jpeg", 59);
 INSERT INTO `still` (image, board_id) VALUES ("https://m.media-amazon.com/images/M/MV5BMTM5NDU2NDA1MF5BMl5BanBnXkFtZTgwMDM4MTUzMTE@._V1_.jpg", 60);
 INSERT INTO `still` (image, board_id) VALUES ("https://meganmclatchiea2mediastudies.files.wordpress.com/2014/10/1.jpg", 60);
-INSERT INTO `still` (ima
+INSERT INTO `still` (image, board_id) VALUES ("https://search3.kakaocdn.net/argon/0x200_85_hr/KCUBSPpA9Mc", 61);
+INSERT INTO `still` (image, board_id) VALUES ("https://post-phinf.pstatic.net/MjAxNzAyMjdfMjY5/MDAxNDg4MTM0MTEzOTcw.OoZW9yuAZJTwE23NwkLAxSX3WT7PWBidm-KPo9uXHHAg.RlAroTBNgWS7lzgLG_u5VnrPQQhX29r6giL77xOq6pog.JPEG/%EC%96%BC%EC%9D%8C%EA%BD%83%282016%29_%EC%A0%80%EC%9A%A9%EB%9F%89__0000031313ms.jpg?type=w1200", 62);
+INSERT INTO `still` (image, board_id) VALUES ("http://ojsfile.ohmynews.com/CRI_T_IMG/2020/0
