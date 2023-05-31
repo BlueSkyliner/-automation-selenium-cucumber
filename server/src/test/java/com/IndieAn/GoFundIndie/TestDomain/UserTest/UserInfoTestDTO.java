@@ -37,4 +37,24 @@ public class UserInfoTestDTO {
         return profile_picture;
     }
 
-    public void setProfile_picture(String profile_
+    public void setProfile_picture(String profile_picture) {
+        this.profile_picture = profile_picture;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public int getTotal_donation() {
+        return total_donation;
+    }
+
+    public void setTotal_donation(int total_donation) {
+        this.total_donation = total_donation;
+    }
+
+    pub
