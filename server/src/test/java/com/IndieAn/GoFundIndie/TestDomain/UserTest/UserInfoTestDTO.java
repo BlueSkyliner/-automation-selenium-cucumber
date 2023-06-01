@@ -57,4 +57,11 @@ public class UserInfoTestDTO {
         this.total_donation = total_donation;
     }
 
-    pub
+    public boolean isAd_agree() {
+        return ad_agree;
+    }
+
+    public void setAd_agree(boolean ad_agree) {
+        this.ad_agree = ad_agree;
+    }
+}
